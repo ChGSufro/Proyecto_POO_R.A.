@@ -1,4 +1,8 @@
-package ReservApp;
+package Interfaz;
+
+import ReservApp.Cliente;
+import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import java.util.Scanner;
 
