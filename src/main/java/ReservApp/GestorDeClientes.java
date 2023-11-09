@@ -1,4 +1,4 @@
-package R.A;
+package ReservApp;
 
 import GestionDeArchivos.GestorDeArchivos;
 import org.json.JSONObject;
