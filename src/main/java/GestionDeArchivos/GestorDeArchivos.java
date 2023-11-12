@@ -1,8 +1,7 @@
 package GestionDeArchivos;
 
-import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
-
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -14,31 +13,8 @@ public class GestorDeArchivos {
         Carpeta.mkdirs();
     }
 
-    private void eliminarArchivo(File file){
-        file.delete();
-    }
-
-    private String getExtension(File file) {
-        String fileName = file.getName();
-        int extension = fileName.lastIndexOf('.');
-        return (extension == -1) ? "" : fileName.substring(extension);
-    }
-
     //Archivos Json
 
-    //Metodo que verifica que un archivo sea .json
-    private Boolean esArchivoJson(File ruta) {
-        return getExtension(ruta).equals(".json");
-    }
-
-    //Metodo que verifica si existe un .json en especifico
-    private Boolean archivoJsonExiste(String carpeta, String archivo){
-        File Archivo = new File(carpeta + File.separator + archivo + ".json");
-        return Archivo.exists();
-    }
-
-
-    //Arreglar
     private void escribirArchivoJSON(String carpeta, String Nombre, ArrayList<JSONObject> list){
         crearCarpeta(carpeta);//Creo la carpeta si no existe
 
@@ -53,37 +29,32 @@ public class GestorDeArchivos {
                 file.write("\n");//Salta un espacio despues de cada JSONObject
             }
             file.write("]");//Cierro con un corchete
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ignored) {
         }
     }
+
     private ArrayList<JSONObject> leerArchivoJson(String ruta) {
-        ArrayList<JSONObject> lista = new ArrayList<>();
+        ArrayList<JSONObject> listaJson = new ArrayList<>();
 
         try {
             BufferedReader Lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
             String linea;
-            StringBuilder stringBuilderb = new StringBuilder();
 
             while ((linea = Lector.readLine()) != null) {//Mientras haya lineas en el archivo
-                stringBuilderb.append(linea);//Añade cada linea del archivo a un StringBuilder
-            }
 
-            JSONArray jsonArray = new JSONArray(stringBuilderb.toString());//Convierte el StringBuilder a un JSONArray
-
-            //Mantengo el formato de arraylist de JSONObject para que sea compatible con el resto del programa, pero no se si es lo mas optimo
-            for (int i = 0; i < jsonArray.length(); i++) {//Añade cada JSONObject del JSONArray a un ArrayList de JSONObject
-                JSONObject jsonObject = jsonArray.getJSONObject(i);
-                lista.add(jsonObject);
+                try {
+                    JSONObject json = new JSONObject(linea);//Convierte la linea en un JSONObject
+                    listaJson.add(json);//Añade el JSONObject a la lista
+                } catch (JSONException ignored) {//Ignora las lineas que no sean JSONObject
+                }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException ignored) {//No se cae si el archivo no existe
         }
 
-        return lista;
+        return listaJson;
     }
 
-///
+///publicos
 
     public void escribirCabañaJson(ArrayList<JSONObject> listaCabañas) {
         escribirArchivoJSON("Archivos", "Cabañas", listaCabañas);
