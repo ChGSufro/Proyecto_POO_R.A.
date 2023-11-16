@@ -22,6 +22,7 @@ public class GestorDeCabañas {
         GestorDeClientes gestorDeClientes = new GestorDeClientes();
         if (archivoCabaña.getBoolean("isOcupada")){
             int pos = gestorDeClientes.obtenerPosicionUsuario(archivoCabaña.getString("arrendatarios"));
+            try{
             return new Cabaña(
                     archivoCabaña.getInt("id"),
                     archivoCabaña.getString("nombre"),
@@ -29,6 +30,7 @@ public class GestorDeCabañas {
                     archivoCabaña.getInt("baños"),
                     archivoCabaña.getBoolean("isOcupada"),
                     gestorDeClientes.getListaClientes().get(pos));
+            }catch (IndexOutOfBoundsException ignore){}
         }
         return new Cabaña(
                 archivoCabaña.getInt("id"),
@@ -41,7 +43,9 @@ public class GestorDeCabañas {
     private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas){
         ArrayList<Cabaña> newListCabaña = new ArrayList<>();
         for (JSONObject cabaña : cabañas){
-            newListCabaña.add(instanciarCabañaJson(cabaña));
+
+                newListCabaña.add(instanciarCabañaJson(cabaña));
+
         }
         return newListCabaña;
     }

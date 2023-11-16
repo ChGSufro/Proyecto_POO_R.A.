@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="Interfaz">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="leerArchivo modificado">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Cabañas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;304&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A&quot;,
@@ -78,7 +80,10 @@
       <workItem from="1699568262132" duration="1385000" />
       <workItem from="1699569754566" duration="931000" />
       <workItem from="1699576615369" duration="24000" />
-      <workItem from="1699755465988" duration="2129000" />
+      <workItem from="1699755465988" duration="3469000" />
+      <workItem from="1699812441232" duration="906000" />
+      <workItem from="1699814804465" duration="1589000" />
+      <workItem from="1700135859258" duration="3070000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -128,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699573965098</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="leerArchivo modificado">
+      <option name="closed" value="true" />
+      <created>1699758773582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699758773582</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +151,7 @@
     <MESSAGE value="R.A" />
     <MESSAGE value=".json" />
     <MESSAGE value="Interfaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interfaz" />
+    <MESSAGE value="leerArchivo modificado" />
+    <option name="LAST_COMMIT_MESSAGE" value="leerArchivo modificado" />
   </component>
 </project>
