@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="leerArchivo modificado">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="Arrendatario index">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Cabañas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +57,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -66,6 +67,7 @@
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="GUI" />
       <recent name="GestionDeArchivos" />
     </key>
   </component>
@@ -83,7 +85,15 @@
       <workItem from="1699755465988" duration="3469000" />
       <workItem from="1699812441232" duration="906000" />
       <workItem from="1699814804465" duration="1589000" />
-      <workItem from="1700135859258" duration="3070000" />
+      <workItem from="1700135859258" duration="3166000" />
+      <workItem from="1700140823748" duration="4188000" />
+      <workItem from="1700168291753" duration="1000" />
+      <workItem from="1700168363935" duration="139000" />
+      <workItem from="1700223192232" duration="11000" />
+      <workItem from="1700532702011" duration="15094000" />
+      <workItem from="1700738885117" duration="69000" />
+      <workItem from="1700740695965" duration="2824000" />
+      <workItem from="1700773482628" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -141,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699758773582</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Arrendatario index">
+      <option name="closed" value="true" />
+      <created>1700139011712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700139011712</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +170,7 @@
     <MESSAGE value=".json" />
     <MESSAGE value="Interfaz" />
     <MESSAGE value="leerArchivo modificado" />
-    <option name="LAST_COMMIT_MESSAGE" value="leerArchivo modificado" />
+    <MESSAGE value="Arrendatario index" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrendatario index" />
   </component>
 </project>

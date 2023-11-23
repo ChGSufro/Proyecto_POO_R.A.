@@ -30,7 +30,9 @@ public class GestorDeCabañas {
                     archivoCabaña.getInt("baños"),
                     archivoCabaña.getBoolean("isOcupada"),
                     gestorDeClientes.getListaClientes().get(pos));
-            }catch (IndexOutOfBoundsException ignore){}
+            }catch (IndexOutOfBoundsException error){
+                System.out.println("Arrendatario no registrado, se desocupara la cabaña.");
+            }
         }
         return new Cabaña(
                 archivoCabaña.getInt("id"),

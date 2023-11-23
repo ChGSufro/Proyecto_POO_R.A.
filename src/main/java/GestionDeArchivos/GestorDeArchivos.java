@@ -21,7 +21,7 @@ public class GestorDeArchivos {
         try (FileWriter file = new FileWriter(carpeta + File.separator + Nombre + ".json")) {
             file.write("[\n");//Agrego un corchete al inicio
             for (int posicion = 0; posicion < list.size(); posicion++) {
-                file.write(list.get(posicion).toString());
+                file.write(list.get(posicion).toString());//Escribe cada JSONObject de la lista en una linea
 
                 if (posicion < list.size() - 1) {//Añade coma al final de cada objeto json exceptuando el ultimo
                     file.write(",");
@@ -40,15 +40,15 @@ public class GestorDeArchivos {
             BufferedReader Lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
             String linea;
 
-            while ((linea = Lector.readLine()) != null) {//Mientras haya lineas en el archivo
-
+            while ((linea = Lector.readLine()) != null) {//Mientras haya lineas en el archivo cada linia del archivo se la pasa a la variable linea
                 try {
                     JSONObject json = new JSONObject(linea);//Convierte la linea en un JSONObject
                     listaJson.add(json);//Añade el JSONObject a la lista
                 } catch (JSONException ignored) {//Ignora las lineas que no sean JSONObject
                 }
             }
-        } catch (IOException ignored) {//No se cae si el archivo no existe
+        } catch (IOException error) {//No se cae si el archivo no existe
+            System.out.println("No se encontro el archivo");
         }
 
         return listaJson;
@@ -81,6 +81,6 @@ public class GestorDeArchivos {
         Image newimg = image.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
         icono = new ImageIcon(newimg);  // transforma la imagen escalada en un icono
         return icono;
-        }
+    }
 
 }
