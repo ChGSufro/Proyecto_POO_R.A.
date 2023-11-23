@@ -41,7 +41,7 @@ public final class MenuBienvenida extends VentanaRA implements ActionListener {
         boton.setBounds(100, 450, 350, 90);
         return boton;
     }
-    public void goRegistroActionPerformed(ActionEvent event){
+    public void clickRegistroActionPerformed(ActionEvent event){
         this.dispose();
         //new RegistroUsuario();
     }
@@ -53,7 +53,7 @@ public final class MenuBienvenida extends VentanaRA implements ActionListener {
         boton.setBounds(100, 570, 350, 90);
         return boton;
     }
-    public void goInicioActionPerformedInicio(ActionEvent event){
+    public void clickInicioSesionActionPerformed(ActionEvent event){
         this.dispose();
         //new InicioSesion();
     }
