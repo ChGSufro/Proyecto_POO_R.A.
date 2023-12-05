@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="MenuBienvenida">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/Cabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/Cabaña.java" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="agregue un menu de las modficaiones de usuario solo para guiarnos">
+      <change beforePath="$PROJECT_DIR$/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Archivos/Clientes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +42,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "481",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "304",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Faundez",
-    "last_opened_file_path": "C:/Users/chris/IdeaProjects/Proyecto_POO_R.A",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;304&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
@@ -92,6 +92,7 @@
       <workItem from="1700738885117" duration="69000" />
       <workItem from="1700740695965" duration="2824000" />
       <workItem from="1700773482628" duration="416000" />
+      <workItem from="1701737072940" duration="1152000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -165,7 +166,31 @@
       <option name="project" value="LOCAL" />
       <updated>1700773886587</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="cree mi rama">
+      <option name="closed" value="true" />
+      <created>1701736959843</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701736959843</updated>
+    </task>
+    <task id="LOCAL-00011" summary="agregue las modifcaiones de nombre,contrasena,celular">
+      <option name="closed" value="true" />
+      <created>1701737817077</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701737817077</updated>
+    </task>
+    <task id="LOCAL-00012" summary="agregue un menu de las modficaiones de usuario solo para guiarnos">
+      <option name="closed" value="true" />
+      <created>1701738051907</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701738051907</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +203,9 @@
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
-    <option name="LAST_COMMIT_MESSAGE" value="MenuBienvenida" />
+    <MESSAGE value="cree mi rama" />
+    <MESSAGE value="agregue las modifcaiones de nombre,contrasena,celular" />
+    <MESSAGE value="agregue un menu de las modficaiones de usuario solo para guiarnos" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregue un menu de las modficaiones de usuario solo para guiarnos" />
   </component>
 </project>
