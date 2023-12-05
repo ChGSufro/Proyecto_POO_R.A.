@@ -43,23 +43,9 @@ public class Menu {
                 case "2" -> gestorDeCabañas.menuReservarCabaña(usuario);
                 case "3" -> gestorDeCabañas.mostrarCabañasReservadas(usuario);
                 case "4" -> gestorDeCabañas.menuCheckOutCabaña(usuario);
-                case "5" -> menuModificacionesUsuario(usuario);
             }
         } while (!seleccion.equals("0"));
 
-    }
-
-    public void menuModificacionesUsuario(Cliente usuario){
-        String seleccion;
-        do {
-            opcionesMenuModificacionesUsuario(usuario);
-            seleccion = leer.nextLine();
-            switch (seleccion) {
-                case "1" -> gestorDeClientes.modificarNombre(usuario);
-                case "2" -> gestorDeClientes.modificarContraseña(usuario);
-                case "3" -> gestorDeClientes.modificarCelular(usuario);
-            }
-        } while (!seleccion.equals("0"));
     }
 
     public void opcionesMenuPrincipal(Cliente usuarioIngresado) {
@@ -70,11 +56,6 @@ public class Menu {
     public void opcionesMenuBienvenida() {
         System.out.println("\n#-----Bienvenido a R.A-----#\nElija una opcion:");
         System.out.println("[0] Salir\n[1] Iniciar sesión\n[2] Registrar usuario\nQue desea hacer?: ");
-    }
-
-    public void opcionesMenuModificacionesUsuario(Cliente usuarioIngresado) {
-        System.out.println("\n#-----MODIFICACIONES USUARIO-----#\nUsuario: " + usuarioIngresado.getUsuario());
-        System.out.println("[0] Salir\n[1] Modificar nombre de usuario\n[2] Modificar contraseña\n[3] Modificar celular\nQue desea hacer?: ");
     }
 
 }
