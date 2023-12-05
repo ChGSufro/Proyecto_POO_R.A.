@@ -129,7 +129,7 @@ public class GestorDeClientes {
         new GestorDeArchivos().escribirClienteJson(list);
     }
 
-    private void modificarNombreUsuario(Cliente usuarioIngresado){
+    public void modificarNombre(Cliente usuarioIngresado){
 
         System.out.println("\n#-----MODIFICAR NOMBRE DE USUARIO-----#");
         System.out.println("\nIngrese su nuevo nombre de usuario: ");
@@ -143,7 +143,7 @@ public class GestorDeClientes {
 
     }
 
-    private void modificarContraseña(Cliente usuarioIngresado){
+    public void modificarContraseña(Cliente usuarioIngresado){
 
         System.out.println("\n#-----MODIFICAR CONTRASEÑA-----#");
         System.out.println("\nIngrese su nueva contraseña: ");
@@ -159,7 +159,7 @@ public class GestorDeClientes {
 
     }
 
-    private void modificarCelular(Cliente usuarioIngresado){
+    public void modificarCelular(Cliente usuarioIngresado){
 
         System.out.println("\n#-----MODIFICAR CELULAR-----#");
         System.out.println("\nIngrese su nuevo numero de celular: ");
