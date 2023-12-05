@@ -50,7 +50,7 @@ public class Menu {
 
     public void opcionesMenuPrincipal(Cliente usuarioIngresado) {
         System.out.println("\n#-----MENÚ CABAÑAS-----#\nUsuario: " + usuarioIngresado.getUsuario());
-        System.out.println("[0] Salir\n[1] Mostrar Cabañas existentes\n[2] Reservar Cabaña\n[3] Ver Mis Cabañas Reservadas\n[4] Realizar Check-Out\n[5] Modificar Usuario\nQue desea hacer?: ");
+        System.out.println("[0] Salir\n[1] Mostrar Cabañas existentes\n[2] Reservar Cabaña\n[3] Ver Mis Cabañas Reservadas\n[4] Realizar Check-Out\n[Que desea hacer?: ");
     }
 
     public void opcionesMenuBienvenida() {
