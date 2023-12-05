@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="agregue un menu de las modficaiones de usuario solo para guiarnos">
-      <change beforePath="$PROJECT_DIR$/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Archivos/Clientes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="me equivoque de rama pero lo arregle">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaz/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaz/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Gajardo" />
+        <entry key="$PROJECT_DIR$" value="Faundez" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,7 +189,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701738051907</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="me equivoque de rama pero lo arregle">
+      <option name="closed" value="true" />
+      <created>1701738502068</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701738502068</updated>
+    </task>
+    <task id="LOCAL-00014" summary="me equivoque de rama pero lo arregle">
+      <option name="closed" value="true" />
+      <created>1701738559976</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701738559976</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +221,7 @@
     <MESSAGE value="cree mi rama" />
     <MESSAGE value="agregue las modifcaiones de nombre,contrasena,celular" />
     <MESSAGE value="agregue un menu de las modficaiones de usuario solo para guiarnos" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue un menu de las modficaiones de usuario solo para guiarnos" />
+    <MESSAGE value="me equivoque de rama pero lo arregle" />
+    <option name="LAST_COMMIT_MESSAGE" value="me equivoque de rama pero lo arregle" />
   </component>
 </project>
