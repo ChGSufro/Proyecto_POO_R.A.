@@ -12,7 +12,6 @@ public class Menu {
     private GestorDeCabañas gestorDeCabañas =  new GestorDeCabañas();
 
     public void menuBienvenida() {
-
         String Seleccion;
 
         do {

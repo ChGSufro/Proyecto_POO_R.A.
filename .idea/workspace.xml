@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="me equivoque de rama pero lo arregle">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaz/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaz/Menu.java" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="MenuBienvenida">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Logos/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/Logos/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/MenuBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/MenuBienvenida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaRA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Interfaz/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Interfaz/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -27,10 +34,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Faundez" />
+        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Proyecto_POO_R.A" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -46,10 +53,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;304&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -60,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\java" />
     </key>
@@ -91,7 +99,16 @@
       <workItem from="1700738885117" duration="69000" />
       <workItem from="1700740695965" duration="2824000" />
       <workItem from="1700773482628" duration="416000" />
-      <workItem from="1701737072940" duration="1152000" />
+      <workItem from="1700774205315" duration="209000" />
+      <workItem from="1700923658209" duration="511000" />
+      <workItem from="1701021820360" duration="4849000" />
+      <workItem from="1701035936597" duration="43000" />
+      <workItem from="1701218984073" duration="5827000" />
+      <workItem from="1701275343071" duration="1650000" />
+      <workItem from="1701291261078" duration="125000" />
+      <workItem from="1701297921533" duration="3374000" />
+      <workItem from="1701304119437" duration="221000" />
+      <workItem from="1701343559556" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -165,47 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700773886587</updated>
     </task>
-    <task id="LOCAL-00010" summary="cree mi rama">
+    <task id="LOCAL-00010" summary="MenuBienvenida">
       <option name="closed" value="true" />
-      <created>1701736959843</created>
+      <created>1700774339859</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1701736959843</updated>
+      <updated>1700774339860</updated>
     </task>
-    <task id="LOCAL-00011" summary="agregue las modifcaiones de nombre,contrasena,celular">
-      <option name="closed" value="true" />
-      <created>1701737817077</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1701737817077</updated>
-    </task>
-    <task id="LOCAL-00012" summary="agregue un menu de las modficaiones de usuario solo para guiarnos">
-      <option name="closed" value="true" />
-      <created>1701738051907</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1701738051907</updated>
-    </task>
-    <task id="LOCAL-00013" summary="me equivoque de rama pero lo arregle">
-      <option name="closed" value="true" />
-      <created>1701738502068</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1701738502068</updated>
-    </task>
-    <task id="LOCAL-00014" summary="me equivoque de rama pero lo arregle">
-      <option name="closed" value="true" />
-      <created>1701738559976</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1701738559976</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,10 +203,6 @@
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
-    <MESSAGE value="cree mi rama" />
-    <MESSAGE value="agregue las modifcaiones de nombre,contrasena,celular" />
-    <MESSAGE value="agregue un menu de las modficaiones de usuario solo para guiarnos" />
-    <MESSAGE value="me equivoque de rama pero lo arregle" />
-    <option name="LAST_COMMIT_MESSAGE" value="me equivoque de rama pero lo arregle" />
+    <option name="LAST_COMMIT_MESSAGE" value="MenuBienvenida" />
   </component>
 </project>

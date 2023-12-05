@@ -37,19 +37,18 @@ public class GestorDeArchivos {
         ArrayList<JSONObject> listaJson = new ArrayList<>();
 
         try {
-            BufferedReader Lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
+            BufferedReader lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
             String linea;
 
-            while ((linea = Lector.readLine()) != null) {//Mientras haya lineas en el archivo cada linia del archivo se la pasa a la variable linea
+            while ((linea = lector.readLine()) != null) {//Mientras haya lineas en el archivo cada linia del archivo se la pasa a la variable linea
                 try {
-                    JSONObject json = new JSONObject(linea);//Convierte la linea en un JSONObject
+                    JSONObject json = new JSONObject(linea.toString());//Convierte la linea en un JSONObject
                     listaJson.add(json);//Añade el JSONObject a la lista
-                } catch (JSONException ignored) {//Ignora las lineas que no sean JSONObject
-                }
+                } catch (JSONException ignore){}
             }
-        } catch (IOException error) {//No se cae si el archivo no existe
-            System.out.println("No se encontro el archivo");
-        }
+
+        } catch (IOException ignore) {}//No se cae si el archivo no existe
+
 
         return listaJson;
     }
@@ -73,7 +72,7 @@ public class GestorDeArchivos {
     }
 
     //Gui
-    public ImageIcon cargarIcono(String carpeta, String nombre, int ancho, int alto) {
+    public ImageIcon cargarImgIcono(String carpeta, String nombre, int ancho, int alto) {
         crearCarpeta(carpeta);
 
         ImageIcon icono = new ImageIcon(carpeta + File.separator + nombre + ".png");
@@ -82,5 +81,6 @@ public class GestorDeArchivos {
         icono = new ImageIcon(newimg);  // transforma la imagen escalada en un icono
         return icono;
     }
+
 
 }

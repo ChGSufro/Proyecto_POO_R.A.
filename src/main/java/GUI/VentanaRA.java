@@ -11,9 +11,10 @@ public abstract class VentanaRA extends JFrame {
 
     public VentanaRA(){
         setSize(new Dimension(400, 800));
+        setIconImage(new GestorDeArchivos().cargarImgIcono("Logos", "iconoApp", 500, 500).getImage());
 
         fondo = panelConGradiente();
-        fondo.setPreferredSize(new Dimension(0, 0));//Con 0,0 se adapta al tamaño de la ventana
+        fondo.setPreferredSize(new Dimension(0, 0));
         fondo.setLayout(new BoxLayout(fondo, BoxLayout.Y_AXIS));
 
         setResizable(false);//Bloqueo boton de maximizar
@@ -39,14 +40,14 @@ public abstract class VentanaRA extends JFrame {
             protected void paintComponent(Graphics g) {
                 Graphics2D g2 = (Graphics2D) g.create();
                 g2.setPaint(Color.decode(color));//Establezco el color del fondo
-                g2.fill(new RoundRectangle2D.Double(0, 0, getWidth()-1, getHeight()-1, 30, 30));//Pinto un rectangulo de bordes redondeados
+                g2.fill(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 30, 30));//Pinto un rectangulo de bordes redondeados
                 g2.dispose();
-                super.paintComponent(g);//Pinto el original por encima para que se vea el texto
+                super.paintComponent(g);//Pinto el original por encima para que se vean todas las propiedades
             }
         };
         boton.setContentAreaFilled(false); //Hago que no se genere el fondo por defecto
         boton.setBorderPainted(false); //Elimina bordes por defecto
-        boton.setForeground(Color.BLACK); //Establezco el color del texto
+        boton.setFocusPainted(false); //Elimina el efecto de click
         return boton;
     }
     public JScrollPane scrollInvisible(JPanel panel){//Agrega un scroll invisible a un panel
@@ -75,7 +76,7 @@ public abstract class VentanaRA extends JFrame {
         panel.add(titulo);
 
         //Agrego un png
-        JLabel logo = new JLabel(new GestorDeArchivos().cargarIcono("Logos", "logo" ,500, 500));
+        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos", "logo" ,250, 250));
         logo.setBounds(70, 90, 250, 250);
         panel.add(logo);
 
