@@ -107,7 +107,6 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
                 menu.setVisible(true);
             }
         }
-
         if (e.getSource() == b_regresar){
             this.dispose();
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida();
