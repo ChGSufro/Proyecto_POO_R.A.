@@ -107,7 +107,7 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
             } else {
                 this.dispose();
-                VentanaMenuPrincipal menu = new VentanaMenuPrincipal();
+                VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes);
                 menu.setVisible(true);
             }
         }

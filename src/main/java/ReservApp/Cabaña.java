@@ -54,6 +54,7 @@ public class Cabaña {
         return isOcupada;
     }
 
+
     //Metodos setter:
     public void setNombre(String Nombre) {
         this.nombre = Nombre;
@@ -67,16 +68,35 @@ public class Cabaña {
 
     //Metodos de la clase:
 
-    public void reservarCabaña(Cliente usr){
-        if (!isOcupada) {
+    public boolean reservarCabaña_INTERFAZ(Cliente usuarioIngresado){
+        if (!this.isOcupada){
+            setArrendatario(usuarioIngresado);
             setIsOcupada(true);
-            setArrendatario(usr);
-            mostrarCabaña();
-            System.out.println("\n" + usr.getUsuario() + "! Su cabaña fue reservada exitosamente");
-        } else{
-            System.out.println("\nCabaña ocupada");
+            return true;
+        }
+        return false;
+
+    }
+    public void checkOutCabaña_INTERFAZ() {
+        if (this.isOcupada){
+            setArrendatario(null);
+            setIsOcupada(false);
         }
     }
+
+    public JSONObject cabañaToJson(){
+        JSONObject json = new JSONObject();
+        json.put("id" , this.id);
+        json.put("nombre", this.nombre);
+        json.put("habitaciones", this.habitaciones);
+        json.put("baños", this.baños);
+        json.put("isOcupada", this.isOcupada);
+        if (this.arrendatario != null) {
+            json.put("arrendatarios", this.arrendatario.getUsuario());}
+        return json;
+    }
+
+    //-----------------DE AQUI PARA ABAJO YA NO LOS NECESITAMOS-----------------------
 
     public void mostrarCabaña() {
         System.out.println();
@@ -91,6 +111,7 @@ public class Cabaña {
             System.out.println("Arrendatario: " + "Sin Arrendatario");
         }
     }
+
     public void checkOutCabaña(Cliente usr){
         if (this.isOcupada) {
             setIsOcupada(false);
@@ -99,15 +120,14 @@ public class Cabaña {
         }
     }
 
-    public JSONObject cabañaToJson(){
-        JSONObject json = new JSONObject();
-        json.put("id" , this.id);
-        json.put("nombre", this.nombre);
-        json.put("habitaciones", this.habitaciones);
-        json.put("baños", this.baños);
-        json.put("isOcupada", this.isOcupada);
-        if (this.arrendatario != null) {
-            json.put("arrendatarios", this.arrendatario.getUsuario());}
-        return json;
+    public void reservarCabaña(Cliente usuarioIngresado){
+        if (!this.isOcupada) {
+            setIsOcupada(true);
+            setArrendatario(usuarioIngresado);
+            mostrarCabaña();
+            System.out.println("\n" + usuarioIngresado.getUsuario() + "! Su cabaña fue reservada exitosamente");
+        } else{
+            System.out.println("\nCabaña ocupada");
+        }
     }
 }
