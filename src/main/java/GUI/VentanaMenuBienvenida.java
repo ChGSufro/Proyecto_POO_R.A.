@@ -1,5 +1,8 @@
 package GUI;
 
+import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,8 +12,12 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
 
     JPanel panel;
     JButton b_registroSesion, b_inicioSesion;
+    private GestorDeClientes gestorDeClientes;
 
-    public VentanaMenuBienvenida(){
+
+    public VentanaMenuBienvenida(GestorDeClientes gestorDeClientes){
+        this.gestorDeClientes = gestorDeClientes;
+
         setTitle("Bienvenido a Resev-App");
 
         panel = new JPanel();
