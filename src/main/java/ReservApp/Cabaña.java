@@ -68,22 +68,19 @@ public class Cabaña {
 
     //Metodos de la clase:
 
-    public void reservarCabaña(Cliente usuarioIngresado){
-        if (!isOcupada) {
-            setIsOcupada(true);
+    public boolean reservarCabaña_INTERFAZ(Cliente usuarioIngresado){
+        if (!this.isOcupada){
             setArrendatario(usuarioIngresado);
-            mostrarCabaña();
-            System.out.println("\n" + usuarioIngresado.getUsuario() + "! Su cabaña fue reservada exitosamente");
-        } else{
-            System.out.println("\nCabaña ocupada");
+            setIsOcupada(true);
+            return true;
         }
-    }
+        return false;
 
-    public void checkOutCabaña(Cliente usr){
-        if (this.isOcupada) {
-            setIsOcupada(false);
+    }
+    public void checkOutCabaña_INTERFAZ() {
+        if (this.isOcupada){
             setArrendatario(null);
-            System.out.println(usr.getUsuario() + "! El check-out fue realizado exitosamente");
+            setIsOcupada(false);
         }
     }
 
@@ -112,6 +109,25 @@ public class Cabaña {
             System.out.println("Arrendatario: " + this.arrendatario.getUsuario());
         }catch (NullPointerException e){
             System.out.println("Arrendatario: " + "Sin Arrendatario");
+        }
+    }
+
+    public void checkOutCabaña(Cliente usr){
+        if (this.isOcupada) {
+            setIsOcupada(false);
+            setArrendatario(null);
+            System.out.println(usr.getUsuario() + "! El check-out fue realizado exitosamente");
+        }
+    }
+
+    public void reservarCabaña(Cliente usuarioIngresado){
+        if (!this.isOcupada) {
+            setIsOcupada(true);
+            setArrendatario(usuarioIngresado);
+            mostrarCabaña();
+            System.out.println("\n" + usuarioIngresado.getUsuario() + "! Su cabaña fue reservada exitosamente");
+        } else{
+            System.out.println("\nCabaña ocupada");
         }
     }
 }

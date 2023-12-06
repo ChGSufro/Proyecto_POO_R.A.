@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class GestorDeCabañas {
 
-    //Listas para almacenar los datos en formato de sus respectivas Clases:
     private ArrayList<Cabaña> listaCabañas;
 
     public GestorDeCabañas(){
@@ -48,7 +47,7 @@ public class GestorDeCabañas {
     }
 
 
-    // genera una lista de cabañas a partir de una lista de archivos json
+    //genera una lista de cabañas a partir de una lista de archivos json
     private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas){
         ArrayList<Cabaña> newListCabaña = new ArrayList<>();
         for (JSONObject cabaña : cabañas){
