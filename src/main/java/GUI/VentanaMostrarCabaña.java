@@ -3,6 +3,7 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
 import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,28 +13,27 @@ import java.util.ArrayList;
 
 public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionListener{
 
+    private GestorDeClientes gestorDeClientes;
+    private GestorDeCabañas gestorDeCabañas;
     JButton b_regreso;
 
-    public static void main(String[] args) {
-        VentanaMostrarCabaña mostrarCabañas = new VentanaMostrarCabaña(new GestorDeCabañas().getListaCabañas());
-        mostrarCabañas.setVisible(true);
-    }
+    public VentanaMostrarCabaña(GestorDeClientes gestorDeClientes, GestorDeCabañas gestorDeCabañas){
 
-
-    public VentanaMostrarCabaña(ArrayList<Cabaña> listaCabañas){
+        this.gestorDeClientes = gestorDeClientes;
+        this.gestorDeCabañas = gestorDeCabañas;
 
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 400));
+        panel.setPreferredSize(new Dimension(0, gestorDeCabañas.getListaCabañas().size()*250 + 500));
         panel.setLayout(null);
         panel.setOpaque(false);
 
-        b_regreso = b_regreso();
+        b_regreso = crearBotonRegresar();
         b_regreso.addActionListener(this);
         panel.add(b_regreso);
 
         cargarLogoPrincipal(panel);
 
-        cargarCabañas(listaCabañas, panel);
+        cargarCabañas(gestorDeCabañas.getListaCabañas(), panel);
 
         fondo.add(scrollInvisible(panel));
 
@@ -45,7 +45,7 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
     //Componentes
 
     private void cargarCabañas(ArrayList<Cabaña> listaCabañas, JPanel panel){
-        int posicion = 400;
+        int posicion = 500;
         for (Cabaña cabaña : listaCabañas){
             panel.add(cabañaTitulo(cabaña, posicion));
             posicion += 40;
@@ -64,7 +64,7 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
         }
     }
     private JLabel cabañaTitulo(Cabaña cabaña, int posicion){
-        JLabel titulo = new JLabel(cabaña.getNombre());
+        JLabel titulo = new JLabel(cabaña.getId() + ") " + cabaña.getNombre());
         titulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 30));
         titulo.setBounds(40, posicion, 200, 40);
         return titulo;
@@ -83,27 +83,30 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
     }
     private JLabel cabañaBaños(Cabaña cabaña, int posicion){
         JLabel baños = new JLabel("Baños: " + cabaña.getBaños());
-        baños.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
         baños.setBounds(40, posicion, 200, 20);
         return baños;
     }
     private JLabel cabañaEstado(Cabaña cabaña, int posicion){
         JLabel precio = new JLabel("Estado ocupada: " + cabaña.getIsOcupada());
-        precio.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
         precio.setBounds(40, posicion, 200, 20);
         return precio;
     }
 
-    private JButton b_regreso(){
+    private JButton crearBotonRegresar(){
         JButton boton = crearBoton("#047994");
         boton.setText("Volver");
         boton.setFont(new Font( "IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(10, 10, 100, 30);
+        boton.setBounds(125, 420, 150, 50);
         return boton;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == b_regreso){
+            dispose();
+            VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, this.gestorDeCabañas);
+            menu.setVisible(true);
+        }
 
     }
 }

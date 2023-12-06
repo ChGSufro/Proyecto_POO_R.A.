@@ -1,5 +1,6 @@
 package GUI;
 
+import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -13,9 +14,11 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion;
 
     private GestorDeClientes gestorDeClientes;
+    private GestorDeCabañas gestorDeCabañas;
 
-    public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes){
+    public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes, GestorDeCabañas gestorDeCabañas){
         this.gestorDeClientes = gestorDeClientes;
+        this.gestorDeCabañas = gestorDeCabañas;
         setTitle("Resev-App");
 
         panel = new JPanel();
@@ -93,8 +96,8 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_mostrarCabañas){
             dispose();
-            //VentanaMostrarCabañas menu = new VentanaMostrarCabañas();
-            //menu.setVisible(true);
+            VentanaMostrarCabaña menu = new VentanaMostrarCabaña(this.gestorDeClientes, this.gestorDeCabañas);
+            menu.setVisible(true);
         }
 
         if (e.getSource() == b_arrendarCabaña){
@@ -117,7 +120,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
         if (e.getSource() == b_cerrarSesion){
             dispose();
-            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes, this.gestorDeCabañas);
             menu.setVisible(true);
         }
 

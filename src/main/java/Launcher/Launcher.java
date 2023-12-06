@@ -7,7 +7,7 @@ import ReservApp.GestorDeClientes;
 public class Launcher {
 
     public static void main(String[] args) {
-        VentanaMenuBienvenida menuBienvenida = new VentanaMenuBienvenida(new GestorDeClientes());
+        VentanaMenuBienvenida menuBienvenida = new VentanaMenuBienvenida(new GestorDeClientes(), new GestorDeCabañas());
         menuBienvenida.setVisible(true);
     }
 
