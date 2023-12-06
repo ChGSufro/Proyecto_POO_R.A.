@@ -5,11 +5,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.RoundRectangle2D;
 
-public abstract class VentanaRA extends JFrame {
+public abstract class VentanaAbstractRA extends JFrame {
 
     protected JPanel fondo;
 
-    public VentanaRA(){
+    public VentanaAbstractRA(){
         setSize(new Dimension(400, 800));
         setIconImage(new GestorDeArchivos().cargarImgIcono("Logos", "iconoApp", 500, 500).getImage());
 

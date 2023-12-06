@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LogIn extends VentanaRA implements ActionListener {
+public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_contrasena;
@@ -13,7 +13,7 @@ public class LogIn extends VentanaRA implements ActionListener {
     JPasswordField field_contrasena;
     JButton b_iniciarSesion, b_regresar;
 
-    public LogIn(){
+    public VentanaLogIn(){
         setTitle("Inicio de sesión");
 
         panel = new JPanel();
@@ -99,14 +99,18 @@ public class LogIn extends VentanaRA implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_iniciarSesion){
-            this.dispose();
-            MenuPrinciapal menu = new MenuPrinciapal();
-            menu.setVisible(true);
+            if (field_usuario.getText().isEmpty() || field_contrasena.getText().isEmpty()){
+                JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
+            } else {
+                this.dispose();
+                VentanaMenuPrinciapal menu = new VentanaMenuPrinciapal();
+                menu.setVisible(true);
+            }
         }
 
         if (e.getSource() == b_regresar){
             this.dispose();
-            MenuBienvenida menu = new MenuBienvenida();
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida();
             menu.setVisible(true);
         }
     }
