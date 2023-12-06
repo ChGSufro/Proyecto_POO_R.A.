@@ -78,7 +78,6 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
     }
     private JLabel cabañaHaitacion(Cabaña cabaña, int posicion){
         JLabel habitaciones = new JLabel("Habitaciones: " + cabaña.getHabitaciones());
-        habitaciones.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
         habitaciones.setBounds(40, posicion, 200, 20);
         return habitaciones;
     }
