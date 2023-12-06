@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public final class MenuBienvenida extends VentanaRA implements ActionListener {
+public final class VentanaMenuBienvenida extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JButton b_registroSesion, b_inicioSesion;
 
-    public MenuBienvenida(){
-        setTitle("Bienvenido");
+    public VentanaMenuBienvenida(){
+        setTitle("Bienvenido a Resev-App");
 
         panel = new JPanel();
         panel.setPreferredSize(new Dimension(0, 0));
@@ -36,26 +36,19 @@ public final class MenuBienvenida extends VentanaRA implements ActionListener {
     //Eventos independientes de action listener
     public JButton b_registroSesion() {
         JButton boton = crearBoton("#EC9E48");
-        boton.setText("SingUp  ->");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 35));
+        boton.setText("Registro             ");
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 30));
         boton.setBounds(100, 450, 350, 90);
+        boton.setForeground(Color.BLACK);
         return boton;
     }
-    public void clickRegistroActionPerformed(ActionEvent event){
-        this.dispose();
-        //new RegistroUsuario();
-    }
-
     public JButton b_inicioSesion(){
         JButton boton = crearBoton("#047994");
-        boton.setText("LogIn    ->");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 35));
+        boton.setText("Inicio Sesión     ");
+        boton.setFont(new Font( "IBM Plex Sans", Font.BOLD, 30));
         boton.setBounds(100, 570, 350, 90);
+        boton.setForeground(Color.BLACK);
         return boton;
-    }
-    public void clickInicioSesionActionPerformed(ActionEvent event){
-        this.dispose();
-        //new InicioSesion();
     }
 
 
@@ -63,11 +56,15 @@ public final class MenuBienvenida extends VentanaRA implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_registroSesion) {
-            setVisible(false);
             dispose();
-        } else if (e.getSource() == b_inicioSesion) {
-            setVisible(false);
+            VentanaSingUp menu = new VentanaSingUp();
+            menu.setVisible(true);
+        }
+
+        if (e.getSource() == b_inicioSesion) {
             dispose();
+            VentanaLogIn menu = new VentanaLogIn();
+            menu.setVisible(true);
         }
     }
 
