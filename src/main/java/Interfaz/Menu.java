@@ -20,7 +20,7 @@ public class Menu {
 
             switch (Seleccion){
                 case "1" -> menuPrincipal(gestorDeClientes.loginUsario());
-                case "2" -> gestorDeClientes.singUP();
+                //case "2" -> gestorDeClientes.singUP();
             }
 
         } while (!Seleccion.equals("0"));

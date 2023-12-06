@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="agregue el objeto gestor de clientes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaSingUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaSingUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "481",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "21",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Faundez",
+    "git-widget-placeholder": "Alcalde",
     "last_opened_file_path": "C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

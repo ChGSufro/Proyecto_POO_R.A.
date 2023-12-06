@@ -29,33 +29,17 @@ public class GestorDeClientes {
         return newListClientes;
     }
 
-    public void singUP(){
-        String Usuario;
-        int Celular = 0;
-        String Contraseña;
-        String Contraseña2;
-        System.out.println("\n#----REGISTRAR USUARIO----#");
-        System.out.println("\n-> Ingrese el nombre de su nuevo usuario: ");
-        Usuario = lecturaString();
-        do {
-            System.out.println("-> Ingrese celular valido. (9 digitos, solo numeros): ");
-            try{
-                Celular = lecturaInt();}
-            catch (Exception e){
-                System.out.println("Valores no validos");
-            }
-        } while (!(Integer.toString(Celular).length() == 9));
-        do {
-            System.out.println("-> Ingrese Contraseña: ");
-            Contraseña = lecturaString();
-            System.out.println("-> Confirme Contaseña: ");
-            Contraseña2 = lecturaString();
-        } while (!Contraseña.equals(Contraseña2));
-        if (!usuarioExiste(Usuario)) {
-            this.listaClientes.add(new Cliente(Usuario, Contraseña, Celular));
-            System.out.println("¡Usuario creado correctamente!.");
-        } else {
-            System.out.println("Usuario ya existe.");
+    public boolean singUP(String usuario, int celular, String password, String passwordConf){
+        if(Integer.toString(celular).length() != 9){
+            return false;
+        }else if(!password.equals(passwordConf)) {
+            return false;
+        }
+        if (!usuarioExiste(usuario)){
+            this.listaClientes.add(new Cliente(usuario, password, celular));
+            return true;
+        }else{
+            return false;
         }
     }
 
