@@ -93,7 +93,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_mostrarCabañas){
             dispose();
-            //VentanaMostrarCabañas menu = new VentanaMostrarCabañas();
+            //VentanaMostrarCabaña menu = new VentanaMostrarCabaña();
             //menu.setVisible(true);
         }
 
