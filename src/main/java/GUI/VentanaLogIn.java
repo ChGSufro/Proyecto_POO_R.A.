@@ -1,7 +1,5 @@
 package GUI;
 
-import ReservApp.GestorDeClientes;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -14,10 +12,8 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
     JTextField field_usuario;
     JPasswordField field_contrasena;
     JButton b_iniciarSesion, b_regresar;
-    private GestorDeClientes gestorDeClientes;
 
-    public VentanaLogIn(GestorDeClientes gestorDeClientes){
-        this.gestorDeClientes = gestorDeClientes;
+    public VentanaLogIn(){
         setTitle("Inicio de sesión");
 
         panel = new JPanel();
@@ -107,14 +103,14 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
             } else {
                 this.dispose();
-                VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes);
+                VentanaMenuPrincipal menu = new VentanaMenuPrincipal();
                 menu.setVisible(true);
             }
         }
 
         if (e.getSource() == b_regresar){
             this.dispose();
-            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida();
             menu.setVisible(true);
         }
     }

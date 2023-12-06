@@ -1,7 +1,5 @@
 package GUI;
 
-import ReservApp.GestorDeClientes;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,10 +10,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     JPanel panel;
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion;
 
-    private GestorDeClientes gestorDeClientes;
+    public static void main(String[] args) {
+        VentanaMenuPrincipal menu = new VentanaMenuPrincipal();
+        menu.setVisible(true);
+    }
 
-    public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes){
-        this.gestorDeClientes = gestorDeClientes;
+    public VentanaMenuPrincipal(){
         setTitle("Resev-App");
 
         panel = new JPanel();
@@ -117,7 +117,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
         if (e.getSource() == b_cerrarSesion){
             dispose();
-            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida();
             menu.setVisible(true);
         }
 
