@@ -5,13 +5,13 @@ import org.json.JSONObject;
 public class Cabaña {
 
     //Atributos:
-
     private int id;
     private String nombre;
     private int habitaciones;
     private int baños;
     private boolean isOcupada;
     private Cliente arrendatario;
+
 
     //Este contructor es para instanciar el objeto a partir de un Json:
     public Cabaña(int id, String nombre, int habitaciones, int baños, boolean isOcupada, Cliente arrendatario) {
