@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="metodo ver cabañas reservadas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="empece la ventana de modificar usuario" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701897658317</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="empece la ventana de modificar usuario">
+      <option name="closed" value="true" />
+      <created>1701898568819</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701898568819</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +260,7 @@
     <MESSAGE value="agregue el objeto gestor de clientes" />
     <MESSAGE value="se registran usuarios, funciona todo bien hasta menu principal" />
     <MESSAGE value="metodo ver cabañas reservadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="metodo ver cabañas reservadas" />
+    <MESSAGE value="empece la ventana de modificar usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="empece la ventana de modificar usuario" />
   </component>
 </project>
