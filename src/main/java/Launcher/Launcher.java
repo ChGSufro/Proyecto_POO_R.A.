@@ -1,12 +1,11 @@
 package Launcher;
 
-import GUI.MenuBienvenida;
-import Interfaz.Menu;
+import GUI.VentanaMenuBienvenida;
 
 public class Launcher {
     public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.menuBienvenida();
+        VentanaMenuBienvenida menuBienvenida = new VentanaMenuBienvenida();
+        menuBienvenida.setVisible(true);
     }
 
     // color Amarillento #FFBC61 (fondo)

@@ -5,12 +5,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public final class MenuBienvenida extends VentanaRA implements ActionListener {
+public final class VentanaMenuBienvenida extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JButton b_registroSesion, b_inicioSesion;
 
-    public MenuBienvenida(){
+    public VentanaMenuBienvenida(){
         setTitle("Bienvenido a Resev-App");
 
         panel = new JPanel();
@@ -57,13 +57,13 @@ public final class MenuBienvenida extends VentanaRA implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_registroSesion) {
             dispose();
-            SingUp menu = new SingUp();
+            VentanaSingUp menu = new VentanaSingUp();
             menu.setVisible(true);
         }
 
         if (e.getSource() == b_inicioSesion) {
             dispose();
-            LogIn menu = new LogIn();
+            VentanaLogIn menu = new VentanaLogIn();
             menu.setVisible(true);
         }
     }

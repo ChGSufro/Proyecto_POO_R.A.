@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 
-public class SingUp extends VentanaRA implements ActionListener {
+public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_celular, l_contarseña, l_conf_contraseña;
@@ -13,7 +13,7 @@ public class SingUp extends VentanaRA implements ActionListener {
     JPasswordField field_contraseña, field_conf_contraseña;
     JButton b_registrasr, b_regresar;
 
-    public SingUp(){
+    public VentanaSingUp(){
         setTitle("Registro de usuario");
 
         panel = new JPanel();
@@ -146,7 +146,7 @@ public class SingUp extends VentanaRA implements ActionListener {
 
                 } else {
                     this.dispose();
-                    MenuPrinciapal menu = new MenuPrinciapal();
+                    VentanaMenuPrinciapal menu = new VentanaMenuPrinciapal();
                     menu.setVisible(true);
                 }
             }catch (RuntimeException exception){
@@ -156,7 +156,7 @@ public class SingUp extends VentanaRA implements ActionListener {
 
         if (e.getSource() == b_regresar){
             this.dispose();
-            MenuBienvenida menu = new MenuBienvenida();
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida();
             menu.setVisible(true);
         }
     }
