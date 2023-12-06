@@ -54,6 +54,7 @@ public class Cabaña {
         return isOcupada;
     }
 
+
     //Metodos setter:
     public void setNombre(String Nombre) {
         this.nombre = Nombre;
@@ -67,30 +68,17 @@ public class Cabaña {
 
     //Metodos de la clase:
 
-    public void reservarCabaña(Cliente usr){
+    public void reservarCabaña(Cliente usuarioIngresado){
         if (!isOcupada) {
             setIsOcupada(true);
-            setArrendatario(usr);
+            setArrendatario(usuarioIngresado);
             mostrarCabaña();
-            System.out.println("\n" + usr.getUsuario() + "! Su cabaña fue reservada exitosamente");
+            System.out.println("\n" + usuarioIngresado.getUsuario() + "! Su cabaña fue reservada exitosamente");
         } else{
             System.out.println("\nCabaña ocupada");
         }
     }
 
-    public void mostrarCabaña() {
-        System.out.println();
-        System.out.println("Id: " + this.id);
-        System.out.println("Nombre: " + this.nombre);
-        System.out.println("Cantidad de habitaciones: " + this.habitaciones);
-        System.out.println("Cantidad de baños: " + this.baños);
-        System.out.println("Esta ocupada: " + this.isOcupada);
-        try{
-            System.out.println("Arrendatario: " + this.arrendatario.getUsuario());
-        }catch (NullPointerException e){
-            System.out.println("Arrendatario: " + "Sin Arrendatario");
-        }
-    }
     public void checkOutCabaña(Cliente usr){
         if (this.isOcupada) {
             setIsOcupada(false);
@@ -109,5 +97,21 @@ public class Cabaña {
         if (this.arrendatario != null) {
             json.put("arrendatarios", this.arrendatario.getUsuario());}
         return json;
+    }
+
+    //-----------------DE AQUI PARA ABAJO YA NO LOS NECESITAMOS-----------------------
+
+    public void mostrarCabaña() {
+        System.out.println();
+        System.out.println("Id: " + this.id);
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Cantidad de habitaciones: " + this.habitaciones);
+        System.out.println("Cantidad de baños: " + this.baños);
+        System.out.println("Esta ocupada: " + this.isOcupada);
+        try{
+            System.out.println("Arrendatario: " + this.arrendatario.getUsuario());
+        }catch (NullPointerException e){
+            System.out.println("Arrendatario: " + "Sin Arrendatario");
+        }
     }
 }
