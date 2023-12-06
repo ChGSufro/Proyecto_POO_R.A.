@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="agregue el objeto gestor de clientes">
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaSingUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaSingUp.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="EDITs CLASE CABAÑA 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,7 +220,39 @@
       <option name="project" value="LOCAL" />
       <updated>1701871460099</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="agregue el objeto gestor de clientes">
+      <option name="closed" value="true" />
+      <created>1701871557804</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701871557804</updated>
+    </task>
+    <task id="LOCAL-00016" summary="metodo getCabañasReservadas">
+      <option name="closed" value="true" />
+      <created>1701872819113</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701872819113</updated>
+    </task>
+    <task id="LOCAL-00017" summary="EDIT CLASE CABAÑA">
+      <option name="closed" value="true" />
+      <created>1701873209612</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701873209613</updated>
+    </task>
+    <task id="LOCAL-00018" summary="EDITs CLASE CABAÑA 2">
+      <option name="closed" value="true" />
+      <created>1701873632562</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701873632562</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +266,9 @@
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
     <MESSAGE value="agregue el objeto gestor de clientes" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue el objeto gestor de clientes" />
+    <MESSAGE value="metodo getCabañasReservadas" />
+    <MESSAGE value="EDIT CLASE CABAÑA" />
+    <MESSAGE value="EDITs CLASE CABAÑA 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="EDITs CLASE CABAÑA 2" />
   </component>
 </project>
