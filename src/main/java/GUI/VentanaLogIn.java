@@ -106,9 +106,13 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
             if (field_usuario.getText().isEmpty() || field_contrasena.getText().isEmpty()){
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
             } else {
-                this.dispose();
-                VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes);
-                menu.setVisible(true);
+                if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword() ) )) {
+                    this.dispose();
+                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, gestorDeClientes.loginUsario(field_usuario.getText(), new String(field_contrasena.getPassword())));
+                    menu.setVisible(true);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
+                }
             }
         }
 

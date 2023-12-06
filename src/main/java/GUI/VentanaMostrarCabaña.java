@@ -14,11 +14,6 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
 
     JButton b_regreso;
 
-    public static void main(String[] args) {
-        VentanaMostrarCabaña mostrarCabañas = new VentanaMostrarCabaña(new GestorDeCabañas().getListaCabañas());
-        mostrarCabañas.setVisible(true);
-    }
-
 
     public VentanaMostrarCabaña(ArrayList<Cabaña> listaCabañas){
 
@@ -104,6 +99,10 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
+        if (e.getSource().equals(b_regreso)){
+            dispose();
+        }
 
     }
 }

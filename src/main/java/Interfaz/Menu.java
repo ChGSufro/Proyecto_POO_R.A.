@@ -19,7 +19,7 @@ public class Menu {
             Seleccion = leer.nextLine();
 
             switch (Seleccion){
-                case "1" -> menuPrincipal(gestorDeClientes.loginUsario());
+                //case "1" -> menuPrincipal(gestorDeClientes.loginUsario());
                 //case "2" -> gestorDeClientes.singUP();
             }
 

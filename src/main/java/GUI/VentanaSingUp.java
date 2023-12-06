@@ -17,10 +17,6 @@ public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
 
     private GestorDeClientes gestorDeClientes;
 
-    public static void main(String[] args) {
-        VentanaSingUp ventana = new VentanaSingUp(new GestorDeClientes());
-        ventana.setVisible(true);
-    }
 
     public VentanaSingUp(GestorDeClientes gestorDeClientes){
         this.gestorDeClientes = gestorDeClientes;
@@ -149,19 +145,21 @@ public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_registrasr){
             try {
-                if (field_usuario.getText().isEmpty() || field_celular.getText().isEmpty() ||
-                        field_contraseña.getText().isEmpty() || field_conf_contraseña.getText().isEmpty()) {
+                if (field_usuario.getText().isEmpty() || field_celular.getText().isEmpty() || field_contraseña.getText().isEmpty() || field_conf_contraseña.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Debe llenar todos los campos");
 
                 } else {
                     String usuarioIngresado = field_usuario.getText();
-                    String passwordIngresada = field_contraseña.getText();
-                    String passwordCongIngresada = field_conf_contraseña.getText();
+                    String passwordIngresada = new String(field_contraseña.getPassword());
+                    String passwordCongIngresada = new String(field_conf_contraseña.getPassword());
                     try {
                         int celularUsuario = Integer.parseInt(field_celular.getText());
-                        if(new GestorDeClientes().singUP(usuarioIngresado,
-                                celularUsuario, passwordIngresada, passwordCongIngresada)){
+                        if(gestorDeClientes.singUP(usuarioIngresado, celularUsuario, passwordIngresada, passwordCongIngresada)){
                             JOptionPane.showMessageDialog(null, "Usuario creado Existosamente");
+                            this.gestorDeClientes.registrarClientesEnArchivoJson();
+                            this.dispose();
+                            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
+                            menu.setVisible(true);
                         }
                     }catch (NumberFormatException exception){
                         JOptionPane.showMessageDialog(null, "Ingrese valores validos");

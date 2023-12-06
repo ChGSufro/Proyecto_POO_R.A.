@@ -1,7 +1,6 @@
 package Launcher;
 
 import GUI.VentanaMenuBienvenida;
-import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 public class Launcher {
@@ -9,6 +8,7 @@ public class Launcher {
     public static void main(String[] args) {
         VentanaMenuBienvenida menuBienvenida = new VentanaMenuBienvenida(new GestorDeClientes());
         menuBienvenida.setVisible(true);
+
     }
 
 

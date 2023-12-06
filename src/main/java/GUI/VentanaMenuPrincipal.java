@@ -1,5 +1,7 @@
 package GUI;
 
+import ReservApp.Cliente;
+import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -14,8 +16,13 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
     private GestorDeClientes gestorDeClientes;
 
-    public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes){
+    private GestorDeCabañas gestorDeCabañas;
+    private Cliente usuarioIngresado;
+
+    public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes, Cliente usuarioIngresado){
         this.gestorDeClientes = gestorDeClientes;
+        this.gestorDeCabañas = new GestorDeCabañas();
+        this.usuarioIngresado = usuarioIngresado;
         setTitle("Resev-App");
 
         panel = new JPanel();
@@ -92,13 +99,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_mostrarCabañas){
-            dispose();
-            //VentanaMostrarCabaña menu = new VentanaMostrarCabaña();
-            //menu.setVisible(true);
+            VentanaMostrarCabaña ventanaMostrarCabaña = new VentanaMostrarCabaña(gestorDeCabañas.getListaCabañas());
+            ventanaMostrarCabaña.setVisible(true);
         }
 
         if (e.getSource() == b_arrendarCabaña){
-            dispose();
+            JOptionPane.showMessageDialog(null, this.usuarioIngresado.getUsuario());
             //VentanaArrendarCabaña menu = new VentanaArrendarCabaña();
             //menu.setVisible(true);
         }
