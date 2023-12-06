@@ -29,6 +29,20 @@ public class GestorDeClientes {
         return newListClientes;
     }
 
+    public boolean singUP(String usuario, int celular, String password, String passwordConf){
+        if(Integer.toString(celular).length() != 9){
+            return false;
+        }else if(!password.equals(passwordConf)) {
+            return false;
+        }
+        if (!usuarioExiste(usuario)){
+            this.listaClientes.add(new Cliente(usuario, password, celular));
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     private Boolean usuarioExiste(String usuario){
         for (Cliente cliente : this.listaClientes){
             if (cliente.getUsuario().equals(usuario)){
@@ -38,52 +52,24 @@ public class GestorDeClientes {
         return false;
     }
 
-    private Boolean celularExiste(int celular){
-        for (Cliente cliente : this.listaClientes){
-            if (cliente.getCelular() == celular){
-                return true;
+    public Cliente loginUsario() {
+        int posicion;
+        String usuario;
+        boolean validar = false;
+        do {
+            System.out.println("\n#----INICIO DE SESION----#");
+            System.out.println("\nA continuacion ingrese los datos solicitados");
+            System.out.println("-> Ingrese su nombre previamente registrado: ");
+            usuario = lecturaString();
+            System.out.println("-> Ingrese su contraseña: ");
+            String contraseña = lecturaString();
+            posicion = 0;
+            if (validarUsuario(usuario, contraseña)) {
+                posicion = obtenerPosicionUsuario(usuario);
+                validar = true;
             }
-        }
-        return false;
-    }
-
-    private Boolean celularValido(int celular){
-        try{
-            if (Integer.toString(celular).length() == 9){
-                return true;
-            }
-        } catch (Exception e){
-            return false;
-        }
-        return false;
-    }
-
-
-
-    public Boolean registrarUsuario(String usuario, int celular ,String contraseña, String confContraseña) {
-        if (usuarioExiste(usuario)) {
-            return false;
-        }
-
-        if (!contraseña.equals(confContraseña)) {
-            return false;
-        }
-
-        if (!celularValido(celular) && celularExiste(celular)) {
-            return false;
-        }
-
-        this.listaClientes.add(new Cliente(usuario, contraseña, celular));
-        return true;
-    }
-
-    public Cliente loginUsario(String usuario, String contraseña) {
-
-        if (validarUsuario(usuario, contraseña)) {
-            return this.listaClientes.get(obtenerPosicionUsuario(usuario));
-        }
-
-        return null;
+        } while (!validar);
+        return listaClientes.get(posicion);
     }
 
     private boolean validarUsuario(String usuario, String contraseña) {
@@ -93,6 +79,7 @@ public class GestorDeClientes {
                 return true;
             }
         }
+        System.out.println("Usuario y/o contraseña incorrecto");
         return false;
     }
 

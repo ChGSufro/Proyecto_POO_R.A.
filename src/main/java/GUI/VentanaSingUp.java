@@ -17,6 +17,11 @@ public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
 
     private GestorDeClientes gestorDeClientes;
 
+    public static void main(String[] args) {
+        VentanaSingUp ventana = new VentanaSingUp(new GestorDeClientes());
+        ventana.setVisible(true);
+    }
+
     public VentanaSingUp(GestorDeClientes gestorDeClientes){
         this.gestorDeClientes = gestorDeClientes;
         setTitle("Registro de usuario");
@@ -143,16 +148,24 @@ public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_registrasr){
-
             try {
                 if (field_usuario.getText().isEmpty() || field_celular.getText().isEmpty() ||
                         field_contraseña.getText().isEmpty() || field_conf_contraseña.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Debe llenar todos los campos");
 
                 } else {
-                    this.dispose();
-                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes);
-                    menu.setVisible(true);
+                    String usuarioIngresado = field_usuario.getText();
+                    String passwordIngresada = field_contraseña.getText();
+                    String passwordCongIngresada = field_conf_contraseña.getText();
+                    try {
+                        int celularUsuario = Integer.parseInt(field_celular.getText());
+                        if(new GestorDeClientes().singUP(usuarioIngresado,
+                                celularUsuario, passwordIngresada, passwordCongIngresada)){
+                            JOptionPane.showMessageDialog(null, "Usuario creado Existosamente");
+                        }
+                    }catch (NumberFormatException exception){
+                        JOptionPane.showMessageDialog(null, "Ingrese valores validos");
+                    }
                 }
             }catch (RuntimeException exception){
                 JOptionPane.showMessageDialog(null, "Debe llenar todos los campos");
