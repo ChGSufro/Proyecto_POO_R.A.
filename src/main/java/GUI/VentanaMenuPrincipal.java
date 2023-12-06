@@ -5,17 +5,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class VentanaMenuPrinciapal extends VentanaAbstractRA implements ActionListener {
+public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion;
 
     public static void main(String[] args) {
-        VentanaMenuPrinciapal menu = new VentanaMenuPrinciapal();
+        VentanaMenuPrincipal menu = new VentanaMenuPrincipal();
         menu.setVisible(true);
     }
 
-    public VentanaMenuPrinciapal(){
+    public VentanaMenuPrincipal(){
         setTitle("Resev-App");
 
         panel = new JPanel();
