@@ -1,6 +1,5 @@
 package GUI;
 
-import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -16,11 +15,9 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
     JPasswordField field_contrasena;
     JButton b_iniciarSesion, b_regresar;
     private GestorDeClientes gestorDeClientes;
-    private GestorDeCabañas gestorDeCabañas;
 
-    public VentanaLogIn(GestorDeClientes gestorDeClientes, GestorDeCabañas gestorDeCabañas){
+    public VentanaLogIn(GestorDeClientes gestorDeClientes){
         this.gestorDeClientes = gestorDeClientes;
-        this.gestorDeCabañas = gestorDeCabañas;
         setTitle("Inicio de sesión");
 
         panel = new JPanel();
@@ -109,15 +106,19 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
             if (field_usuario.getText().isEmpty() || field_contrasena.getText().isEmpty()){
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
             } else {
-                this.dispose();
-                VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, this.gestorDeCabañas);
-                menu.setVisible(true);
+                if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword() ) )) {
+                    this.dispose();
+                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, gestorDeClientes.loginUsario(field_usuario.getText(), new String(field_contrasena.getPassword())));
+                    menu.setVisible(true);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
+                }
             }
         }
 
         if (e.getSource() == b_regresar){
             this.dispose();
-            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes, this.gestorDeCabañas);
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
         }
     }

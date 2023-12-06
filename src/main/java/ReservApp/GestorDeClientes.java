@@ -29,6 +29,20 @@ public class GestorDeClientes {
         return newListClientes;
     }
 
+    public boolean singUP(String usuario, int celular, String password, String passwordConf){
+        if(Integer.toString(celular).length() != 9){
+            return false;
+        }else if(!password.equals(passwordConf)) {
+            return false;
+        }
+        if (!usuarioExiste(usuario)){
+            this.listaClientes.add(new Cliente(usuario, password, celular));
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     private Boolean usuarioExiste(String usuario){
         for (Cliente cliente : this.listaClientes){
             if (cliente.getUsuario().equals(usuario)){
@@ -38,55 +52,13 @@ public class GestorDeClientes {
         return false;
     }
 
-    private Boolean celularExiste(int celular){
-        for (Cliente cliente : this.listaClientes){
-            if (cliente.getCelular() == celular){
-                return true;
-            }
-        }
-        return false;
+    public Cliente loginUsario(String usuario, String contraseña){
+        int posicion = 0;
+        posicion = obtenerPosicionUsuario(usuario);
+        return listaClientes.get(posicion);
     }
 
-    private Boolean celularValido(int celular){
-        try{
-            if (Integer.toString(celular).length() == 9){
-                return true;
-            }
-        } catch (Exception e){
-            return false;
-        }
-        return false;
-    }
-
-
-
-    public Boolean registrarUsuario(String usuario, int celular ,String contraseña, String confContraseña) {
-        if (usuarioExiste(usuario)) {
-            return false;
-        }
-
-        if (!contraseña.equals(confContraseña)) {
-            return false;
-        }
-
-        if (!celularValido(celular) && celularExiste(celular)) {
-            return false;
-        }
-
-        this.listaClientes.add(new Cliente(usuario, contraseña, celular));
-        return true;
-    }
-
-    public Cliente loginUsario(String usuario, String contraseña) {
-
-        if (validarUsuario(usuario, contraseña)) {
-            return this.listaClientes.get(obtenerPosicionUsuario(usuario));
-        }
-
-        return null;
-    }
-
-    private boolean validarUsuario(String usuario, String contraseña) {
+    public boolean validarUsuario(String usuario, String contraseña) {
         for (int i = 0; i < listaClientes.size(); i++) {
 
             if ((listaClientes.get(i)).getUsuario().equals(usuario) && (listaClientes.get(i)).getContraseña().equals(contraseña)) {
@@ -124,6 +96,26 @@ public class GestorDeClientes {
             list.add(cliente.clienteToJson());
         }
         new GestorDeArchivos().escribirClienteJson(list);
+    }
+
+    private void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
+        if (!usuarioExiste(nuevoNombre)) {
+            usuarioIngresado.setUsuario(nuevoNombre);
+        }
+    }
+
+    private void modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+        if (nuevaContraseña.equals(nuevaContraseña2)){
+            usuarioIngresado.setContraseña(nuevaContraseña);
+        }
+    }
+
+    private void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
+
+        if (Integer.toString(nuevoCelular).length() == 9) {
+            usuarioIngresado.setCelular(nuevoCelular);
+        }
+
     }
 
 }

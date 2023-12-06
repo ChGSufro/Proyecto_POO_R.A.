@@ -1,6 +1,5 @@
 package GUI;
 
-import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -8,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 
-public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
+public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_celular, l_contarseña, l_conf_contraseña;
@@ -17,11 +16,10 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
     JButton b_registrasr, b_regresar;
 
     private GestorDeClientes gestorDeClientes;
-    private GestorDeCabañas gestorDeCabañas;
 
-    public VentanaSignUp(GestorDeClientes gestorDeClientes, GestorDeCabañas gestorDeCabañas){
+
+    public VentanaSingUp(GestorDeClientes gestorDeClientes){
         this.gestorDeClientes = gestorDeClientes;
-        this.gestorDeCabañas = gestorDeCabañas;
         setTitle("Registro de usuario");
 
         panel = new JPanel();
@@ -146,16 +144,26 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_registrasr){
-
             try {
-                if (field_usuario.getText().isEmpty() || field_celular.getText().isEmpty() ||
-                        field_contraseña.getText().isEmpty() || field_conf_contraseña.getText().isEmpty()) {
+                if (field_usuario.getText().isEmpty() || field_celular.getText().isEmpty() || field_contraseña.getText().isEmpty() || field_conf_contraseña.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Debe llenar todos los campos");
 
                 } else {
-                    this.dispose();
-                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, this.gestorDeCabañas);
-                    menu.setVisible(true);
+                    String usuarioIngresado = field_usuario.getText();
+                    String passwordIngresada = new String(field_contraseña.getPassword());
+                    String passwordCongIngresada = new String(field_conf_contraseña.getPassword());
+                    try {
+                        int celularUsuario = Integer.parseInt(field_celular.getText());
+                        if(gestorDeClientes.singUP(usuarioIngresado, celularUsuario, passwordIngresada, passwordCongIngresada)){
+                            JOptionPane.showMessageDialog(null, "Usuario creado Existosamente");
+                            this.gestorDeClientes.registrarClientesEnArchivoJson();
+                            this.dispose();
+                            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
+                            menu.setVisible(true);
+                        }
+                    }catch (NumberFormatException exception){
+                        JOptionPane.showMessageDialog(null, "Ingrese valores validos");
+                    }
                 }
             }catch (RuntimeException exception){
                 JOptionPane.showMessageDialog(null, "Debe llenar todos los campos");
@@ -164,7 +172,7 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
         if (e.getSource() == b_regresar){
             this.dispose();
-            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes, this.gestorDeCabañas);
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
         }
     }
