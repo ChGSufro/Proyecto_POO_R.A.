@@ -19,7 +19,6 @@ public class GestorDeCabañas {
 
     public ArrayList<Cabaña> getCabañasReservadas(Cliente usuarioIngresao){
 
-        int contador = 0;
 
         ArrayList<Cabaña> cabañasReservadas = new ArrayList<>();
 
@@ -27,16 +26,11 @@ public class GestorDeCabañas {
             if (cabaña.getIsOcupada()){
                 if (cabaña.getArrendatario().equals(usuarioIngresao)){
                     cabañasReservadas.add(cabaña);
-                    contador +=1;
                 }
             }
         }
 
-        if (contador > 0){
-            return cabañasReservadas;
-        }
-
-        return null;
+        return cabañasReservadas;
 
     }
 

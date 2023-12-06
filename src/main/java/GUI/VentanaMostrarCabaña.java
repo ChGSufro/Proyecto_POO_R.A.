@@ -2,7 +2,6 @@ package GUI;
 
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
-import ReservApp.GestorDeCabañas;
 
 import javax.swing.*;
 import java.awt.*;

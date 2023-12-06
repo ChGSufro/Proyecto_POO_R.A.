@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
-    JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion;
+    JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion,b_modificarUsuario;
 
     private GestorDeClientes gestorDeClientes;
 
@@ -51,6 +51,10 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         b_cerrarSesion = crearBotonCerrarSesion();
         b_cerrarSesion.addActionListener(this);
         panel.add(b_cerrarSesion);
+
+        b_modificarUsuario = crearBotonModificarUsuario();
+        b_modificarUsuario.addActionListener(this);
+        panel.add(b_modificarUsuario);
 
         fondo.add(scrollInvisible(panel));
         setContentPane(fondo);
@@ -96,6 +100,14 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         return boton;
     }
 
+    private JButton crearBotonModificarUsuario(){
+        JButton boton = crearBoton("#047994");
+        boton.setText("Modificar usuario");
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
+        boton.setBounds(100, 1000, 200, 50);
+        return boton;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_mostrarCabañas){
@@ -104,15 +116,19 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         }
 
         if (e.getSource() == b_arrendarCabaña){
-            JOptionPane.showMessageDialog(null, this.usuarioIngresado.getUsuario());
+            dispose();
             //VentanaArrendarCabaña menu = new VentanaArrendarCabaña();
             //menu.setVisible(true);
         }
 
         if (e.getSource() == b_verReservas){
-            dispose();
-            //VentanaVerReservas menu = new VentanaVerReservas();
-            //menu.setVisible(true);
+            if (gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado).isEmpty()){
+                JOptionPane.showMessageDialog(null, "No tiene cabañas reservadas");
+                return;
+            } else {
+                VentanaMostrarCabaña ventanaMostrarCabaña = new VentanaMostrarCabaña(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado));
+                ventanaMostrarCabaña.setVisible(true);
+            }
         }
 
         if (e.getSource() == b_checkOut){
@@ -125,6 +141,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
             dispose();
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
+        }
+
+        if (e.getSource() == b_modificarUsuario){
+            dispose();
+            //VentanaModificarUsuario menu = new VentanaModificarUsuario(this.gestorDeClientes, this.usuarioIngresado);
+            //menu.setVisible(true);
         }
 
     }
