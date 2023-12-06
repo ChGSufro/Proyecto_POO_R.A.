@@ -151,7 +151,7 @@ public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
 
                 } else {
                     this.dispose();
-                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal();
+                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes);
                     menu.setVisible(true);
                 }
             }catch (RuntimeException exception){
