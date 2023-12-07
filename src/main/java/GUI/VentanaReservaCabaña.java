@@ -3,7 +3,6 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
 import ReservApp.Cliente;
-import ReservApp.GestorDeCabañas;
 
 import javax.swing.*;
 import java.awt.*;
@@ -157,14 +156,9 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
 
                     if (cabaña.getId() == idCabaña) {
 
-                        if (!cabaña.getIsOcupada()) {
-                            cabaña.reservarCabaña_INTERFAZ(this.usuarioIngresado);
-                            JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
-                            dispose();
-
-                        } else {
-                            JOptionPane.showMessageDialog(null, "La cabaña ya está reservada");
-                        }
+                        cabaña.reservarCabaña_INTERFAZ(this.usuarioIngresado);
+                        JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
+                        dispose();
 
                     } else {
                         JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
