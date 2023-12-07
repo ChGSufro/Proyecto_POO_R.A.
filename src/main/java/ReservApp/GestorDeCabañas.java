@@ -10,8 +10,8 @@ public class GestorDeCabañas {
 
     private ArrayList<Cabaña> listaCabañas;
 
-    public GestorDeCabañas(){
-        listaCabañas = setListaCabaña(new GestorDeArchivos().listaCabañaJson());
+    public GestorDeCabañas(GestorDeClientes gestorDeClientes){
+        listaCabañas = setListaCabaña(new GestorDeArchivos().listaCabañaJson(),gestorDeClientes);
     }
 
     public ArrayList<Cabaña> getListaCabañas() {
@@ -55,17 +55,17 @@ public class GestorDeCabañas {
 
 
     //genera una lista de cabañas a partir de una lista de archivos json
-    private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas){
+    private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas, GestorDeClientes gestorDeClientes){
         ArrayList<Cabaña> newListCabaña = new ArrayList<>();
         for (JSONObject cabaña : cabañas){
-            newListCabaña.add(instanciarCabañaJson(cabaña));
+            newListCabaña.add(instanciarCabañaJson(cabaña, gestorDeClientes));
         }
         return newListCabaña;
     }
 
     //Metodo para instanciar los objetos, a partir de un Json:
-    private Cabaña instanciarCabañaJson (JSONObject archivoCabaña) {
-        GestorDeClientes gestorDeClientes = new GestorDeClientes();
+    private Cabaña instanciarCabañaJson (JSONObject archivoCabaña, GestorDeClientes gestorDeClientes) {
+        //GestorDeClientes gestorDeClientes = new GestorDeClientes();
         if (archivoCabaña.getBoolean("isOcupada")){
             int pos = gestorDeClientes.obtenerPosicionUsuario(archivoCabaña.getString("arrendatarios"));
             try{

@@ -21,7 +21,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
     public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes, Cliente usuarioIngresado){
         this.gestorDeClientes = gestorDeClientes;
-        this.gestorDeCabañas = new GestorDeCabañas();
+        this.gestorDeCabañas = new GestorDeCabañas(this.gestorDeClientes);
         this.usuarioIngresado = usuarioIngresado;
         setTitle("Resev-App");
 
@@ -149,6 +149,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
             dispose();
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
+            this.gestorDeCabañas.registrarCabañasEnArchivoJson();
         }
 
         if (e.getSource() == b_modificarUsuario){
