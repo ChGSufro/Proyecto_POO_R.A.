@@ -7,7 +7,15 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * Esta clase se encarga de leer, escribir los archivos .json de la carperta Archivos.
+ */
+
 public class GestorDeArchivos {
+    /**
+     * Crea una carpeta en el proyecto
+     * @param nombre es el nombre que tendrá la carpeta
+     */
     private void crearCarpeta(String nombre){
         File Carpeta = new File(nombre);
         Carpeta.mkdirs();
@@ -15,8 +23,17 @@ public class GestorDeArchivos {
 
     //Archivos Json
 
-    private void escribirArchivoJSON(String ruta, ArrayList<JSONObject> list){
-        try (FileWriter file = new FileWriter(ruta)) {
+    /**
+     * Metodo el cual escribe en los json.
+     * Es el encargado de guardar los cambios a la hora de cerrar el programa.
+     * @param carpeta recibe el nombre de la carpeta en donde se encuentra el archivo.
+     * @param Nombre recibe el nombre del archivo el cual será escrito o sobre escrito.
+     * @param list Es un ArrayList de JSONObject de donde se obtendrán los datos para escribir.
+     */
+    private void escribirArchivoJSON(String carpeta, String Nombre, ArrayList<JSONObject> list){
+        crearCarpeta(carpeta);//Creo la carpeta si no existe
+
+        try (FileWriter file = new FileWriter(carpeta + File.separator + Nombre + ".json")) {
             file.write("[\n");//Agrego un corchete al inicio
             for (int posicion = 0; posicion < list.size(); posicion++) {
                 file.write(list.get(posicion).toString());//Escribe cada JSONObject de la lista en una linea
@@ -27,15 +44,20 @@ public class GestorDeArchivos {
                 file.write("\n");//Salta un espacio despues de cada JSONObject
             }
             file.write("]");//Cierro con un corchete
-        } catch (IOException error) {
-            throw new RuntimeException("Error al actualizar la informacion, no se guardaron los cambios.");
+        } catch (IOException ignored) {
         }
     }
 
+    /**
+     * Se encarga de leer un archivo json.
+     * @param ruta es la ruta en el proyecto que hace referencia al archivo que se quiere leer.
+     * @return devuelve un ArrayList de JSONObjetc del archivo json leido.
+     */
     private ArrayList<JSONObject> leerArchivoJson(String ruta) {
         ArrayList<JSONObject> listaJson = new ArrayList<>();
 
-        try (BufferedReader lector = new BufferedReader(new FileReader(ruta))){
+        try {
+            BufferedReader lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
             String linea;
 
             while ((linea = lector.readLine()) != null) {//Mientras haya lineas en el archivo cada linia del archivo se la pasa a la variable linea
@@ -44,37 +66,67 @@ public class GestorDeArchivos {
                     listaJson.add(json);//Añade el JSONObject a la lista
                 } catch (JSONException ignore){}
             }
+
         } catch (IOException ignore) {}//No se cae si el archivo no existe
+
 
         return listaJson;
     }
 
 ///publicos
-    public void escribirCabañaJson(ArrayList<JSONObject> listaCabañas) {
-        crearCarpeta("Archivos");
-        escribirArchivoJSON("Archivos/Cabañas.json", listaCabañas);
-    }
-    public void escribirClienteJson(ArrayList<JSONObject> listaClientes) {
-        crearCarpeta("Archivos");
-        escribirArchivoJSON("Archivos/Clientes.json", listaClientes);
+
+    /**
+     * Se encarga de escribir las cabañas en el archivo "Cabañas" haciendo uso del metodo escribirArchivoJson.
+     * @param listaCabañas es el ArrayList de JSONObject de cabañas el cual se escribirá en el archivo.
+     */
+    public void escribirCabañasEnArchivoJson(ArrayList<JSONObject> listaCabañas) {
+        escribirArchivoJSON("Archivos", "Cabañas", listaCabañas);
     }
 
-    public ArrayList<JSONObject> listaCabañaJson() {
-        crearCarpeta("Archivos");
+    /**
+     * Se encarga de escribir las cabañas en el archivo "Clientes" haciendo uso del metodo escribirArchivoJson.
+     * @param listaClientes es el ArrayList de JSONObject de clientes el cual se escribirá en el archivo.
+     */
+    public void escribirClientesEnArchivoJson(ArrayList<JSONObject> listaClientes) {
+        escribirArchivoJSON("Archivos", "Clientes", listaClientes);
+    }
+
+    /**
+     * Hace uso de leerArchivoJson para leer el archivo Cabañas.json.
+     * @return devuelve el ArrayList de JSONObject de cabañas.
+     */
+
+    public ArrayList<JSONObject> obtenerCabañasDesdeArchivoJson() {
         return leerArchivoJson("Archivos/Cabañas.json");
     }
 
-    public ArrayList<JSONObject> listaClienteJson() {
-        crearCarpeta("Archivos");
+    /**
+     * Hace uso de leerArchivoJson para leer el archivo Clientes.json.
+     * @return devuelve el ArrayList de JSONObject de clientes.
+     */
+    public ArrayList<JSONObject> obtenerClientesDesdeArchivoJson() {
         return leerArchivoJson("Archivos/Clientes.json");
     }
 
     //Gui
-    public ImageIcon cargarImgIcono(String ruta, int ancho, int alto) {
 
-        ImageIcon icono = new ImageIcon(ruta);
-        Image imagen = icono.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
-        return new ImageIcon(imagen);
+    /**
+     * Metodo encargado de obtener y cargar una imagen en las ventanas desde su ruta en el proyecto.
+     * @param carpeta nombre de la carpeta donde se encuentra la imagen.
+     * @param nombre nombre de la imagen que será cargada.
+     * @param ancho ancho de la imagen.
+     * @param alto alto de la imagen.
+     * @return devuelve el objeto de tipo ImageIcon que será mostrado en la ventana correspondiente
+     */
+    public ImageIcon cargarImgIcono(String carpeta, String nombre, int ancho, int alto) {
+        crearCarpeta(carpeta);
+
+        ImageIcon icono = new ImageIcon(carpeta + File.separator + nombre + ".png");
+        Image image = icono.getImage(); // transforma el icono en una imagen
+        Image newimg = image.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
+        icono = new ImageIcon(newimg);  // transforma la imagen escalada en un icono
+        return icono;
     }
+
 
 }

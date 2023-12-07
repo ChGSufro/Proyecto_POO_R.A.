@@ -9,7 +9,7 @@ public class GestorDeClientes {
     private ArrayList<Cliente> listaClientes;
 
     public GestorDeClientes(){
-        listaClientes = setListaClientes(new GestorDeArchivos().listaClienteJson());
+        listaClientes = setListaClientes(new GestorDeArchivos().obtenerClientesDesdeArchivoJson());
     }
 
     public ArrayList<Cliente> getListaClientes(){
@@ -86,7 +86,7 @@ public class GestorDeClientes {
         for (Cliente cliente : listaClientes){
             list.add(cliente.clienteToJson());
         }
-        new GestorDeArchivos().escribirClienteJson(list);
+        new GestorDeArchivos().escribirClientesEnArchivoJson(list);
     }
 
     public void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
