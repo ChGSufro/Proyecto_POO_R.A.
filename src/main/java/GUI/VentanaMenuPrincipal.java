@@ -148,10 +148,10 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
         if (e.getSource() == b_cerrarSesion){
             dispose();
-            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
-            menu.setVisible(true);
             this.gestorDeCabañas.registrarCabañasEnArchivoJson();
             this.gestorDeClientes.registrarClientesEnArchivoJson();
+            VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
+            menu.setVisible(true);
         }
 
         if (e.getSource() == b_modificarUsuario){

@@ -80,16 +80,6 @@ public class GestorDeClientes {
         return posicion;
     }
 
-    private String lecturaString(){
-        java.util.Scanner leer = new java.util.Scanner(System.in);
-        return leer.nextLine();
-    }
-
-    private int lecturaInt(){
-        java.util.Scanner leer = new java.util.Scanner(System.in);
-        return leer.nextInt();
-    }
-
     public void registrarClientesEnArchivoJson(){
         ArrayList<JSONObject> list = new ArrayList<>();
         for (Cliente cliente : listaClientes){
@@ -104,10 +94,12 @@ public class GestorDeClientes {
         }
     }
 
-    public void modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+    public boolean modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
         if (nuevaContraseña.equals(nuevaContraseña2)){
             usuarioIngresado.setContraseña(nuevaContraseña);
+            return true;
         }
+        return false;
     }
 
     public void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
