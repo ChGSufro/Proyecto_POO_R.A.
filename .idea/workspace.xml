@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701959786116</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <option name="closed" value="true" />
+      <created>1701959801100</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701959801100</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update">
+      <option name="closed" value="true" />
+      <created>1701960414746</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701960414746</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
