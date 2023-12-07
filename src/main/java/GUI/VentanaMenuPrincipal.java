@@ -110,6 +110,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
         if (e.getSource() == b_mostrarCabañas){
             VentanaMostrarCabaña ventanaMostrarCabaña = new VentanaMostrarCabaña(gestorDeCabañas.getListaCabañas());
             ventanaMostrarCabaña.setVisible(true);

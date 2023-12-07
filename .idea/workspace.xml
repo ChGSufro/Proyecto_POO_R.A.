@@ -46,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Launcher.executor": "Run",
     "Application.VentanaCheckOut.executor": "Run",
     "Application.VentanaReservaCabaña.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -120,7 +121,7 @@
       <workItem from="1701800027577" duration="3373000" />
       <workItem from="1701898611241" duration="139000" />
       <workItem from="1701956249688" duration="115000" />
-      <workItem from="1701956386491" duration="1630000" />
+      <workItem from="1701956386491" duration="2406000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -290,7 +291,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701958015318</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="commit reservar cabaña">
+      <option name="closed" value="true" />
+      <created>1701958026129</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701958026129</updated>
+    </task>
+    <task id="LOCAL-00023" summary="commit reservar cabaña">
+      <option name="closed" value="true" />
+      <created>1701958791702</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701958791702</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
