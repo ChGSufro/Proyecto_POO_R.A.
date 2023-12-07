@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="idea">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/Archivos/Cabañas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Archivos/Clientes.json" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="arreglos pequeños de encapsulamiento">
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeCabañas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeCabañas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaSignUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +125,7 @@
       <workItem from="1701800027577" duration="3373000" />
       <workItem from="1701898611241" duration="139000" />
       <workItem from="1701956249688" duration="115000" />
-      <workItem from="1701956386491" duration="6864000" />
+      <workItem from="1701956386491" duration="7265000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -386,7 +383,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701962052660</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fix cabañas no se instancian con arrendatario">
+      <option name="closed" value="true" />
+      <created>1701963393949</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701963393949</updated>
+    </task>
+    <task id="LOCAL-00034" summary="arreglos pequeños de encapsulamiento">
+      <option name="closed" value="true" />
+      <created>1701963651319</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1701963651319</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +424,8 @@
     <MESSAGE value="arreglos reservar" />
     <MESSAGE value="arreglos reservar y checkout" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="fix cabañas no se instancian con arrendatario" />
+    <MESSAGE value="arreglos pequeños de encapsulamiento" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos pequeños de encapsulamiento" />
   </component>
 </project>
