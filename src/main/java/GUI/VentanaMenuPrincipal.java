@@ -136,9 +136,14 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         }
 
         if (e.getSource() == b_checkOut){
-            dispose();
-            //VentanaCheckOut menu = new VentanaCheckOut();
-            //menu.setVisible(true);
+            if(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado).isEmpty()){
+                JOptionPane.showMessageDialog(null, "No tiene cabañas reservadas");
+            }else{
+                VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado),
+                        this.usuarioIngresado);
+                ventanaCheckOut.setVisible(true);
+            }
+
         }
 
         if (e.getSource() == b_cerrarSesion){
