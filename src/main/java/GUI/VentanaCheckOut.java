@@ -148,18 +148,18 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
         }
         if (event.getSource() == b_checkOut){
             try {
+                boolean idValido = false;
                 int idCabaña = Integer.parseInt(field_idCabaña.getText());
                 for (Cabaña cabaña : this.listaCabañas) {
                     if (cabaña.getId() == idCabaña) {
-
                         cabaña.checkOutCabaña_INTERFAZ();
                         JOptionPane.showMessageDialog(null, "CheckOut realizado exitosamente");
                         dispose();
-
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
-
+                        idValido = true;
+                        break; // Terminar el bucle una vez que se encuentre el ID
                     }
+                }if (!idValido) {
+                    JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
                 }
 
             }catch (NumberFormatException ex){
