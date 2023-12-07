@@ -271,8 +271,11 @@ private JComboBox<String> crearBoxModificarUsuario(){
                     JOptionPane.showMessageDialog(null, "Ingrese todos los campos");
                 }
                 else{
-                    gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText());
-                    JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente");
+                    if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
+                        JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Las contraseñas no coinciden");
+                    }
                 }
             }
         }

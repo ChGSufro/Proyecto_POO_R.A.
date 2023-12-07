@@ -104,10 +104,12 @@ public class GestorDeClientes {
         }
     }
 
-    public void modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+    public boolean modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
         if (nuevaContraseña.equals(nuevaContraseña2)){
             usuarioIngresado.setContraseña(nuevaContraseña);
+            return true;
         }
+        return false;
     }
 
     public void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
