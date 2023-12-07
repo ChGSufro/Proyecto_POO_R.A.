@@ -143,7 +143,10 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent event) {
+        if(event.getSource() == b_regresar){
+            dispose();
 
+        }
     }
 }

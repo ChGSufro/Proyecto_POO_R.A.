@@ -57,7 +57,6 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
         return boton;
     }
 
-
     //Eventos de action listener
     @Override
     public void actionPerformed(ActionEvent e) {
