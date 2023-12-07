@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commit para merge">
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuBienvenida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaModificarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaModificarUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaSignUp.java" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="Detalles">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Faundez" />
+    <option name="BRANCH" value="origin/Alcalde" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -121,7 +110,7 @@
       <workItem from="1701739374681" duration="5258000" />
       <workItem from="1701800027577" duration="8742000" />
       <workItem from="1701905325344" duration="11783000" />
-      <workItem from="1701956986264" duration="20237000" />
+      <workItem from="1701956986264" duration="20649000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -331,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701973938782</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Detalles">
+      <option name="closed" value="true" />
+      <created>1701992695963</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701992695963</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +347,7 @@
     <MESSAGE value="Modificar Usuario" />
     <MESSAGE value="actualizar" />
     <MESSAGE value="commit para merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit para merge" />
+    <MESSAGE value="Detalles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detalles" />
   </component>
 </project>
