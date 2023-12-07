@@ -110,15 +110,19 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
         if (e.getSource() == b_mostrarCabañas){
             VentanaMostrarCabaña ventanaMostrarCabaña = new VentanaMostrarCabaña(gestorDeCabañas.getListaCabañas());
             ventanaMostrarCabaña.setVisible(true);
         }
 
         if (e.getSource() == b_arrendarCabaña){
-            //VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(gestorDeCabañas.getCabañasDisponibles(), this.usuarioIngresado);
-            //VentanaArrendarCabaña menu = new VentanaArrendarCabaña();
-            //menu.setVisible(true);
+            if (gestorDeCabañas.getCabañasDisponibles().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "No hay cabañas disponibles");
+            } else {
+                VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(gestorDeCabañas.getCabañasDisponibles(), this.usuarioIngresado);
+                ventanaReservaCabaña.setVisible(true);
+            }
         }
 
         if (e.getSource() == b_verReservas){
