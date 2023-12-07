@@ -22,7 +22,7 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
         setTitle("Inicio de sesión");
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 0));
+        panel.setPreferredSize(new Dimension(0, 800));
         panel.setOpaque(false);
         panel.setLayout(null);
 

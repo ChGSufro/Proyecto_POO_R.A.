@@ -98,19 +98,19 @@ public class GestorDeClientes {
         new GestorDeArchivos().escribirClienteJson(list);
     }
 
-    private void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
+    public void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
         if (!usuarioExiste(nuevoNombre)) {
             usuarioIngresado.setUsuario(nuevoNombre);
         }
     }
 
-    private void modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+    public void modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
         if (nuevaContraseña.equals(nuevaContraseña2)){
             usuarioIngresado.setContraseña(nuevaContraseña);
         }
     }
 
-    private void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
+    public void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
 
         if (Integer.toString(nuevoCelular).length() == 9) {
             usuarioIngresado.setCelular(nuevoCelular);

@@ -11,6 +11,13 @@ import java.awt.event.ActionListener;
 
 public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
+    public static void main(String[] args) {
+        GestorDeClientes gestorDeClientes = new GestorDeClientes();
+        Cliente usuarioIngresado = gestorDeClientes.getListaClientes().get(0);
+        VentanaMenuPrincipal menu = new VentanaMenuPrincipal(gestorDeClientes, usuarioIngresado);
+        menu.setVisible(true);
+    }
+
     JPanel panel;
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion,b_modificarUsuario;
 
@@ -23,6 +30,8 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         this.gestorDeCabañas = new GestorDeCabañas(this.gestorDeClientes);
         this.usuarioIngresado = usuarioIngresado;
         setTitle("Resev-App");
+
+        setJMenuBar(menu());
 
         panel = new JPanel();
         panel.setPreferredSize(new Dimension(0, 1050));
@@ -149,12 +158,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
             this.gestorDeCabañas.registrarCabañasEnArchivoJson();
+            this.gestorDeClientes.registrarClientesEnArchivoJson();
         }
 
         if (e.getSource() == b_modificarUsuario){
-            dispose();
-            //VentanaModificarUsuario menu = new VentanaModificarUsuario(this.gestorDeClientes, this.usuarioIngresado);
-            //menu.setVisible(true);
+            VentanaModificarUsuario menu = new VentanaModificarUsuario(this.usuarioIngresado, this.gestorDeClientes);
+            menu.setVisible(true);
         }
 
     }
