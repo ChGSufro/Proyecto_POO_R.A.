@@ -80,16 +80,6 @@ public class GestorDeClientes {
         return posicion;
     }
 
-    private String lecturaString(){
-        java.util.Scanner leer = new java.util.Scanner(System.in);
-        return leer.nextLine();
-    }
-
-    private int lecturaInt(){
-        java.util.Scanner leer = new java.util.Scanner(System.in);
-        return leer.nextInt();
-    }
-
     public void registrarClientesEnArchivoJson(){
         ArrayList<JSONObject> list = new ArrayList<>();
         for (Cliente cliente : listaClientes){
