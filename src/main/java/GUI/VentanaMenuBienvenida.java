@@ -1,6 +1,5 @@
 package GUI;
 
-import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -64,7 +63,7 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_registroSesion) {
             dispose();
-            VentanaSingUp menu = new VentanaSingUp(this.gestorDeClientes);
+            VentanaSignUp menu = new VentanaSignUp(this.gestorDeClientes);
             menu.setVisible(true);
         }
 

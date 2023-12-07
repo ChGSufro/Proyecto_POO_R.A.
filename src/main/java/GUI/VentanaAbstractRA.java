@@ -15,7 +15,7 @@ public abstract class VentanaAbstractRA extends JFrame {
 
         fondo = panelConGradiente();
         fondo.setPreferredSize(new Dimension(0, 0));
-        fondo.setLayout(new BoxLayout(fondo, BoxLayout.Y_AXIS));
+        fondo.setLayout(new BoxLayout(fondo, BoxLayout.PAGE_AXIS));
 
         setResizable(false);//Bloqueo boton de maximizar
         setLocationRelativeTo(null);//Posiciona la ventana en el centro

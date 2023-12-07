@@ -31,7 +31,6 @@ public class GestorDeCabañas {
         }
 
         return cabañasReservadas;
-
     }
 
     //Scanners:

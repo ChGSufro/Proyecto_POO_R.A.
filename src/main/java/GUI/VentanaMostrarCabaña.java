@@ -13,8 +13,8 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
 
     JButton b_regreso;
 
-
     public VentanaMostrarCabaña(ArrayList<Cabaña> listaCabañas){
+        setTitle("Cabañas existentes");
 
         JPanel panel = new JPanel();
         panel.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 400));
@@ -58,7 +58,7 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
         }
     }
     private JLabel cabañaTitulo(Cabaña cabaña, int posicion){
-        JLabel titulo = new JLabel(cabaña.getNombre());
+        JLabel titulo = new JLabel(cabaña.getId() + ")\t" + cabaña.getNombre());
         titulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 30));
         titulo.setBounds(40, posicion, 200, 40);
         return titulo;
@@ -77,17 +77,14 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
     }
     private JLabel cabañaBaños(Cabaña cabaña, int posicion){
         JLabel baños = new JLabel("Baños: " + cabaña.getBaños());
-        baños.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
         baños.setBounds(40, posicion, 200, 20);
         return baños;
     }
     private JLabel cabañaEstado(Cabaña cabaña, int posicion){
         JLabel precio = new JLabel("Estado ocupada: " + cabaña.getIsOcupada());
-        precio.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
         precio.setBounds(40, posicion, 200, 20);
         return precio;
     }
-
     private JButton b_regreso(){
         JButton boton = crearBoton("#047994");
         boton.setText("Volver");

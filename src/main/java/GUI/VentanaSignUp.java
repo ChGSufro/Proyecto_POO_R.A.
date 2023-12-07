@@ -1,5 +1,6 @@
 package GUI;
 
+import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -7,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 
-public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
+public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_celular, l_contarseña, l_conf_contraseña;
@@ -16,9 +17,10 @@ public class VentanaSingUp extends VentanaAbstractRA implements ActionListener {
     JButton b_registrasr, b_regresar;
 
     private GestorDeClientes gestorDeClientes;
+    private GestorDeCabañas gestorDeCabañas;
 
 
-    public VentanaSingUp(GestorDeClientes gestorDeClientes){
+    public VentanaSignUp(GestorDeClientes gestorDeClientes){
         this.gestorDeClientes = gestorDeClientes;
         setTitle("Registro de usuario");
 

@@ -1,5 +1,6 @@
 package GUI;
 
+import ReservApp.Cliente;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -108,10 +109,11 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
             } else {
                 if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword() ) )) {
                     this.dispose();
-                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, gestorDeClientes.loginUsario(field_usuario.getText(), new String(field_contrasena.getPassword())));
+                    Cliente usuario_activo = this.gestorDeClientes.loginUsario(field_usuario.getText(), new String(field_contrasena.getPassword()));
+                    VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, usuario_activo);
                     menu.setVisible(true);
                 } else {
-                    JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
+                    JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrectos");
                 }
             }
         }
