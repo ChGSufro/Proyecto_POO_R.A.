@@ -68,13 +68,13 @@ public class Cabaña {
 
     //Metodos de la clase:
 
-    public boolean reservarCabaña_INTERFAZ(Cliente usuarioIngresado){
+    public void reservarCabaña_INTERFAZ(Cliente usuarioIngresado){
+
         if (!this.isOcupada){
             setArrendatario(usuarioIngresado);
             setIsOcupada(true);
-            return true;
+
         }
-        return false;
 
     }
     public void checkOutCabaña_INTERFAZ() {
