@@ -3,14 +3,17 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.geom.RoundRectangle2D;
 
 public abstract class VentanaAbstractRA extends JFrame {
 
     protected JPanel fondo;
+    protected JButton b_usuario;
 
     public VentanaAbstractRA(){
-        setSize(new Dimension(400, 800));
+        setSize(new Dimension(400, 700));
         setIconImage(new GestorDeArchivos().cargarImgIcono("Logos", "iconoApp", 500, 500).getImage());
 
         fondo = panelConGradiente();
@@ -91,6 +94,32 @@ public abstract class VentanaAbstractRA extends JFrame {
         subTitulo2.setFont(new Font("IBM Plex Sans", Font.BOLD, 25));
         subTitulo2.setBounds(150,365,200,30);
         panel.add(subTitulo2);
+    }
+
+    public JMenuBar menu(){
+        JMenuBar menuBar = new JMenuBar();
+        menuBar.setPreferredSize(new Dimension(300, 40));//Establezco dimensiones
+        menuBar.setBackground(Color.decode("#BA813E"));//Cambio color
+        menuBar.setBorderPainted(false);//Elimino bordes
+
+        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos", "logo", 50, 50));
+
+        JLabel separacion = new JLabel(
+                "                                                                                 ");//Etiqueta en blaco para separar los elementos, no se pudo de otra forma
+
+        // Añadir el botón y logo a la barra de menú
+        menuBar.add(logo);
+        menuBar.add(separacion);
+        menuBar.add(botonMenu());
+
+        return menuBar;
+    }
+    private JButton botonMenu() {
+        // Crear un botón con un logo
+        JButton b_usuario = new JButton(new GestorDeArchivos().cargarImgIcono("Logos", "usuario",40, 40));
+        b_usuario.setContentAreaFilled(false);//Elimino relleno automatico
+        b_usuario.setBorderPainted(false);//Elimino bordes
+        return b_usuario;
     }
 
 }

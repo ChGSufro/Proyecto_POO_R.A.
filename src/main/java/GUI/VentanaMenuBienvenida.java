@@ -20,7 +20,7 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
         setTitle("Bienvenido a Resev-App");
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 0));
+        panel.setPreferredSize(new Dimension(0, 800));
         panel.setOpaque(false);
         panel.setLayout(null);
 

@@ -7,13 +7,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
-
-    public static void main(String[] args) {
-        VentanaModificarUsuario ventanaModificarUsuario = new VentanaModificarUsuario(new GestorDeClientes().getListaClientes().get(0));
-        ventanaModificarUsuario.setVisible(true);
-    }
 
     JPanel panel;
     JLabel l_usuario, l_celular, l_contraseñaActual, l_contraseñaNueva, l_confirmarContraseña;
@@ -22,9 +18,11 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
     JPasswordField field_contraseñaActual, field_contraseñaNueva, field_confirmarContraseña;
     JButton b_guardar, b_regresar;
     Cliente cliente;
+    GestorDeClientes gestorDeClientes;
 
-    public VentanaModificarUsuario(Cliente cliente){
+    public VentanaModificarUsuario(Cliente cliente, GestorDeClientes gestorDeClientes){
         this.cliente = cliente;
+        this.gestorDeClientes = gestorDeClientes;
 
         setTitle("Modificar usuario");
 
@@ -246,6 +244,36 @@ private JComboBox<String> crearBoxModificarUsuario(){
 
                 l_confirmarContraseña.setVisible(true);
                 field_confirmarContraseña.setVisible(true);
+            }
+        }
+
+        if (e.getSource() == b_guardar){
+            if (box_modificarUsuario.getSelectedItem().equals("Nombre Usuario:")){
+                if (field_usuario.getText().equals("")){
+                    JOptionPane.showMessageDialog(null, "Ingrese un nombre de usuario valido");
+                }
+                else{
+                    gestorDeClientes.modificarNombreUsuario(cliente, field_usuario.getText());
+                    JOptionPane.showMessageDialog(null, "Nombre de usuario modificado correctamente");
+                }
+            }
+            else if (box_modificarUsuario.getSelectedItem().equals("Celular")){
+                if (field_celular.getText().equals("")){
+                    JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
+                }
+                else{
+                    gestorDeClientes.modificarCelular(cliente, Integer.parseInt(field_celular.getText()));
+                    JOptionPane.showMessageDialog(null, "Celular modificado correctamente");
+                }
+            }
+            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+                if (field_contraseñaActual.getText().equals("") || field_contraseñaNueva.getText().equals("") || field_confirmarContraseña.getText().equals("")){
+                    JOptionPane.showMessageDialog(null, "Ingrese todos los campos");
+                }
+                else{
+                    gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText());
+                    JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente");
+                }
             }
         }
 
