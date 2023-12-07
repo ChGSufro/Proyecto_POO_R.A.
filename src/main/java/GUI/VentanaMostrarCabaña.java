@@ -2,8 +2,6 @@ package GUI;
 
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
-import ReservApp.GestorDeCabañas;
-import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,10 +12,9 @@ import java.util.ArrayList;
 public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionListener{
 
     JButton b_regreso;
-    GestorDeClientes gestorDeClientes;
-    GestorDeCabañas gestorDeCabañas;
 
     public VentanaMostrarCabaña(ArrayList<Cabaña> listaCabañas){
+        setTitle("Cabañas existentes");
 
         JPanel panel = new JPanel();
         panel.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 400));
@@ -88,7 +85,6 @@ public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionLi
         precio.setBounds(40, posicion, 200, 20);
         return precio;
     }
-
     private JButton b_regreso(){
         JButton boton = crearBoton("#047994");
         boton.setText("Volver");

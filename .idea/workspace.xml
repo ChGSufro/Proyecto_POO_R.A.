@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="MostrarCabañas">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="actualizacion">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuBienvenida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaSignUp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
       <workItem from="1701343559556" duration="10000" />
       <workItem from="1701739374681" duration="5258000" />
       <workItem from="1701800027577" duration="8742000" />
-      <workItem from="1701905325344" duration="3126000" />
+      <workItem from="1701905325344" duration="11666000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -261,7 +259,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701905351617</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="actualizacion">
+      <option name="closed" value="true" />
+      <created>1701908756351</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701908756351</updated>
+    </task>
+    <task id="LOCAL-00020" summary="actualizacion">
+      <option name="closed" value="true" />
+      <created>1701908776351</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701908776351</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +289,7 @@
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
     <MESSAGE value="MostrarCabañas" />
-    <option name="LAST_COMMIT_MESSAGE" value="MostrarCabañas" />
+    <MESSAGE value="actualizacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizacion" />
   </component>
 </project>
