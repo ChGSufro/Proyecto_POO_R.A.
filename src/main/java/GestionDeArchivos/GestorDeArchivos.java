@@ -7,7 +7,15 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * Esta clase se encarga de leer, escribir los archivos .json de la carperta Archivos.
+ */
+
 public class GestorDeArchivos {
+    /**
+     * Crea una carpeta en el proyecto
+     * @param nombre es el nombre que tendrá la carpeta
+     */
     private void crearCarpeta(String nombre){
         File Carpeta = new File(nombre);
         Carpeta.mkdirs();
@@ -15,6 +23,13 @@ public class GestorDeArchivos {
 
     //Archivos Json
 
+    /**
+     * Metodo el cual escribe en los json.
+     * Es el encargado de guardar los cambios a la hora de cerrar el programa.
+     * @param carpeta recibe el nombre de la carpeta en donde se encuentra el archivo.
+     * @param Nombre recibe el nombre del archivo el cual será escrito o sobre escrito.
+     * @param list Es un ArrayList de JSONObject de donde se obtendrán los datos para escribir.
+     */
     private void escribirArchivoJSON(String carpeta, String Nombre, ArrayList<JSONObject> list){
         crearCarpeta(carpeta);//Creo la carpeta si no existe
 
@@ -33,6 +48,11 @@ public class GestorDeArchivos {
         }
     }
 
+    /**
+     * Se encarga de leer un archivo json.
+     * @param ruta es la ruta en el proyecto que hace referencia al archivo que se quiere leer.
+     * @return devuelve un ArrayList de JSONObjetc del archivo json leido.
+     */
     private ArrayList<JSONObject> leerArchivoJson(String ruta) {
         ArrayList<JSONObject> listaJson = new ArrayList<>();
 
@@ -55,23 +75,49 @@ public class GestorDeArchivos {
 
 ///publicos
 
-    public void escribirCabañaJson(ArrayList<JSONObject> listaCabañas) {
+    /**
+     * Se encarga de escribir las cabañas en el archivo "Cabañas" haciendo uso del metodo escribirArchivoJson.
+     * @param listaCabañas es el ArrayList de JSONObject de cabañas el cual se escribirá en el archivo.
+     */
+    public void escribirCabañasEnArchivoJson(ArrayList<JSONObject> listaCabañas) {
         escribirArchivoJSON("Archivos", "Cabañas", listaCabañas);
     }
 
-    public void escribirClienteJson(ArrayList<JSONObject> listaClientes) {
+    /**
+     * Se encarga de escribir las cabañas en el archivo "Clientes" haciendo uso del metodo escribirArchivoJson.
+     * @param listaClientes es el ArrayList de JSONObject de clientes el cual se escribirá en el archivo.
+     */
+    public void escribirClientesEnArchivoJson(ArrayList<JSONObject> listaClientes) {
         escribirArchivoJSON("Archivos", "Clientes", listaClientes);
     }
 
-    public ArrayList<JSONObject> listaCabañaJson() {
+    /**
+     * Hace uso de leerArchivoJson para leer el archivo Cabañas.json.
+     * @return devuelve el ArrayList de JSONObject de cabañas.
+     */
+
+    public ArrayList<JSONObject> obtenerCabañasDesdeArchivoJson() {
         return leerArchivoJson("Archivos/Cabañas.json");
     }
 
-    public ArrayList<JSONObject> listaClienteJson() {
+    /**
+     * Hace uso de leerArchivoJson para leer el archivo Clientes.json.
+     * @return devuelve el ArrayList de JSONObject de clientes.
+     */
+    public ArrayList<JSONObject> obtenerClientesDesdeArchivoJson() {
         return leerArchivoJson("Archivos/Clientes.json");
     }
 
     //Gui
+
+    /**
+     * Metodo encargado de obtener y cargar una imagen en las ventanas desde su ruta en el proyecto.
+     * @param carpeta nombre de la carpeta donde se encuentra la imagen.
+     * @param nombre nombre de la imagen que será cargada.
+     * @param ancho ancho de la imagen.
+     * @param alto alto de la imagen.
+     * @return devuelve el objeto de tipo ImageIcon que será mostrado en la ventana correspondiente
+     */
     public ImageIcon cargarImgIcono(String carpeta, String nombre, int ancho, int alto) {
         crearCarpeta(carpeta);
 
