@@ -2,6 +2,7 @@ package GUI;
 
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
+import ReservApp.Cliente;
 import ReservApp.GestorDeCabañas;
 
 import javax.swing.*;
@@ -18,8 +19,11 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     JButton b_reservar, b_regresar;
 
     ArrayList<Cabaña> listaCabañas;
+    Cliente usuarioIngresado;
 
-    public VentanaReservaCabaña(ArrayList<Cabaña> listaCabañas){
+
+    public VentanaReservaCabaña(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
+        this.usuarioIngresado = usuarioIngresado;
         this.listaCabañas = listaCabañas;
         setTitle("Reserva de cabaña");
 
@@ -142,5 +146,37 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if (e.getSource().equals(b_regresar)){
+            dispose();
+        }
+
+        if (e.getSource().equals(b_reservar)){
+            try {
+
+                int idCabaña = Integer.parseInt(field_idCabaña.getText());
+
+                for (Cabaña cabaña : this.listaCabañas) {
+
+                    if (cabaña.getId() == idCabaña) {
+
+                        if (!cabaña.getIsOcupada()) {
+                            cabaña.reservarCabaña_INTERFAZ(this.usuarioIngresado);
+                            JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
+                            dispose();
+
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La cabaña ya está reservada");
+                        }
+
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+                    }
+
+                }
+
+            }catch (NumberFormatException ex){
+                JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+            }
+        }
     }
 }

@@ -2,6 +2,8 @@ package ReservApp;
 
 import org.json.JSONObject;
 import GestionDeArchivos.GestorDeArchivos;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class GestorDeCabañas {
@@ -19,7 +21,6 @@ public class GestorDeCabañas {
 
     public ArrayList<Cabaña> getCabañasReservadas(Cliente usuarioIngresao){
 
-
         ArrayList<Cabaña> cabañasReservadas = new ArrayList<>();
 
         for (Cabaña cabaña : this.listaCabañas){
@@ -31,6 +32,19 @@ public class GestorDeCabañas {
         }
 
         return cabañasReservadas;
+    }
+
+    public ArrayList<Cabaña> getCabañasDisponibles(){
+
+        ArrayList<Cabaña> cabañasDisponibles = new ArrayList<>();
+
+        for (Cabaña cabaña : this.listaCabañas){
+            if (!cabaña.getIsOcupada()){
+                cabañasDisponibles.add(cabaña);
+            }
+        }
+
+        return cabañasDisponibles;
     }
 
     //Scanners:
