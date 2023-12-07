@@ -17,10 +17,8 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_reservar, b_regresar;
-
     ArrayList<Cabaña> listaCabañas;
     Cliente usuarioIngresado;
-
 
     public VentanaReservaCabaña(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.usuarioIngresado = usuarioIngresado;
@@ -35,7 +33,7 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
 
         cargarLogoPrincipal(panelSup);
 
-        cargarCabañas(new GestorDeCabañas().getListaCabañas(), panelSup);
+        cargarCabañas(this.listaCabañas, panelSup);
 
         panelInf = new JPanel();
         panelInf.setPreferredSize(new Dimension(0, 200));
@@ -142,7 +140,6 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     }
 
 
-
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -151,6 +148,7 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
         }
 
         if (e.getSource().equals(b_reservar)){
+
             try {
 
                 int idCabaña = Integer.parseInt(field_idCabaña.getText());
