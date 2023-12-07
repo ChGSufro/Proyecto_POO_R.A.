@@ -2,7 +2,9 @@ package GUI;
 
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
+import ReservApp.Cliente;
 import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,11 +19,12 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_checkOut, b_regresar;
+    private Cliente usuarioIngresado;
+    private ArrayList<Cabaña> listaCabañas;
 
-    ArrayList<Cabaña> listaCabañas;
-
-    public VentanaCheckOut(ArrayList<Cabaña> listaCabañas){
+    public VentanaCheckOut(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.listaCabañas = listaCabañas;
+        this.usuarioIngresado = usuarioIngresado;
         setTitle("Reserva de cabaña");
 
         panelSup = new JPanel();
@@ -139,7 +142,31 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent event) {
+        if(event.getSource() == b_regresar){
+            dispose();
+        }
+        if (event.getSource() == b_checkOut){
+            try {
+                int idCabaña = Integer.parseInt(field_idCabaña.getText());
+                for (Cabaña cabaña : this.listaCabañas) {
+                    if (cabaña.getId() == idCabaña) {
 
+                        if (!cabaña.getIsOcupada()) {
+                            cabaña.checkOutCabaña_INTERFAZ();
+                            JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
+                            dispose();
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La cabaña ya está reservada");
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+                    }
+                }
+
+            }catch (NumberFormatException ex){
+                JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+            }
+        }
     }
 }
