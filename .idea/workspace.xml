@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commit reservar cabaña">
-      <change beforePath="$PROJECT_DIR$/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Archivos/Clientes.json" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="arreglos reservar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +121,7 @@
       <workItem from="1701800027577" duration="3373000" />
       <workItem from="1701898611241" duration="139000" />
       <workItem from="1701956249688" duration="115000" />
-      <workItem from="1701956386491" duration="3792000" />
+      <workItem from="1701956386491" duration="4500000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -333,7 +331,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701959806691</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="arreglos checkout y reservar">
+      <option name="closed" value="true" />
+      <created>1701960405255</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701960405255</updated>
+    </task>
+    <task id="LOCAL-00028" summary="arreglos reservar">
+      <option name="closed" value="true" />
+      <created>1701960885188</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701960885188</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +367,8 @@
     <MESSAGE value="borre una cosa innecesaria" />
     <MESSAGE value="commit cosas idea" />
     <MESSAGE value="commit reservar cabaña" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit reservar cabaña" />
+    <MESSAGE value="arreglos checkout y reservar" />
+    <MESSAGE value="arreglos reservar" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos reservar" />
   </component>
 </project>
