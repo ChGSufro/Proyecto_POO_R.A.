@@ -116,7 +116,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         }
 
         if (e.getSource() == b_arrendarCabaña){
-            dispose();
+            //VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(gestorDeCabañas.getCabañasDisponibles(), this.usuarioIngresado);
             //VentanaArrendarCabaña menu = new VentanaArrendarCabaña();
             //menu.setVisible(true);
         }
