@@ -3,6 +3,7 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
 import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,6 +22,8 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_checkOut, b_regresar;
+    GestorDeCabañas gestorDeCabañas;
+    GestorDeClientes gestorDeClientes;
 
     ArrayList<Cabaña> listaCabañas;
 
@@ -146,7 +149,8 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     public void actionPerformed(ActionEvent event) {
         if(event.getSource() == b_regresar){
             dispose();
-
+            VentanaMenuPrincipal menu = new VentanaMenuPrincipal();
+            menu.setVisible(true);
         }
     }
 }
