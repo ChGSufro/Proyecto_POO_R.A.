@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="arreglos reservar">
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="arreglos reservar y checkout" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +121,7 @@
       <workItem from="1701800027577" duration="3373000" />
       <workItem from="1701898611241" duration="139000" />
       <workItem from="1701956249688" duration="115000" />
-      <workItem from="1701956386491" duration="4979000" />
+      <workItem from="1701956386491" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -365,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701961147654</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="arreglos reservar y checkout">
+      <option name="closed" value="true" />
+      <created>1701961499478</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1701961499478</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +394,7 @@
     <MESSAGE value="arreglos checkout y reservar" />
     <MESSAGE value="arreglos checkout" />
     <MESSAGE value="arreglos reservar" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos reservar" />
+    <MESSAGE value="arreglos reservar y checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos reservar y checkout" />
   </component>
 </project>
