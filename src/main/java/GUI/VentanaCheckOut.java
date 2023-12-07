@@ -13,10 +13,6 @@ import java.util.ArrayList;
 
 public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
 
-    public static void main(String[] args) {
-        VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(new GestorDeCabañas().getListaCabañas());
-        ventanaCheckOut.setVisible(true);
-    }
     JPanel panelInf, panelSup;
     JLabel idCabaña;
     JTextField field_idCabaña;

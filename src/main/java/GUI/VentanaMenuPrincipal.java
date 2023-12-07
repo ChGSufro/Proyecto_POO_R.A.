@@ -116,9 +116,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         }
 
         if (e.getSource() == b_arrendarCabaña){
-            //VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(gestorDeCabañas.getCabañasDisponibles(), this.usuarioIngresado);
-            //VentanaArrendarCabaña menu = new VentanaArrendarCabaña();
-            //menu.setVisible(true);
+            if (gestorDeCabañas.getCabañasDisponibles().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "No hay cabañas disponibles");
+            } else {
+                VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(gestorDeCabañas.getCabañasDisponibles(), this.usuarioIngresado);
+                ventanaReservaCabaña.setVisible(true);
+            }
         }
 
         if (e.getSource() == b_verReservas){
