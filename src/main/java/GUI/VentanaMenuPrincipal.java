@@ -11,13 +11,6 @@ import java.awt.event.ActionListener;
 
 public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
-    public static void main(String[] args) {
-        GestorDeClientes gestorDeClientes = new GestorDeClientes();
-        Cliente usuarioIngresado = gestorDeClientes.getListaClientes().get(0);
-        VentanaMenuPrincipal menu = new VentanaMenuPrincipal(gestorDeClientes, usuarioIngresado);
-        menu.setVisible(true);
-    }
-
     JPanel panel;
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion,b_modificarUsuario;
 
