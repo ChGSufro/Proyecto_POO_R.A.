@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
+public final class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_contrasena;
@@ -22,7 +22,7 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
         setTitle("Inicio de sesión");
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 800));
+        panel.setPreferredSize(new Dimension(0, 700));
         panel.setOpaque(false);
         panel.setLayout(null);
 
@@ -53,14 +53,14 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
 
     private JLabel crearLabelUsuario(){
         JLabel labelUsuario = new JLabel("Usuario: ");
-        labelUsuario.setBounds(50, 420, 300, 25);
+        labelUsuario.setBounds(25, 350, 100, 20);
         labelUsuario.setForeground(Color.BLACK);
         return labelUsuario;
     }
 
     private JTextField crearFieldUsuario(){
         JTextField fieldUsuario = new JTextField();
-        fieldUsuario.setBounds(50, 450, 300, 25);
+        fieldUsuario.setBounds(25, 370, 250, 20);
         fieldUsuario.setBackground(Color.decode("#D9D9D9"));
         fieldUsuario.setForeground(Color.BLACK);
         return fieldUsuario;
@@ -68,14 +68,14 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
 
     private JLabel cargarLabelContrasena(){
         JLabel labelContrasena = new JLabel("Contraseña: ");
-        labelContrasena.setBounds(50, 480, 300, 25);
+        labelContrasena.setBounds(25, 400, 100, 20);
         labelContrasena.setForeground(Color.BLACK);
         return labelContrasena;
     }
 
     private JPasswordField cargarFieldContrasena(){
         JPasswordField fieldContrasena = new JPasswordField();
-        fieldContrasena.setBounds(50, 510, 300, 25);
+        fieldContrasena.setBounds(25, 420, 250, 20);
         fieldContrasena.setBackground(Color.decode("#D9D9D9"));
         fieldContrasena.setForeground(Color.BLACK);
         return fieldContrasena;
@@ -84,8 +84,8 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
     private JButton crearBotonIniciarSesion(){
         JButton botonIniciarSesion = crearBoton("#EC9E48");
         botonIniciarSesion.setText("Iniciar sesión");
-        botonIniciarSesion.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        botonIniciarSesion.setBounds(100, 600, 200, 50);
+        botonIniciarSesion.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonIniciarSesion.setBounds(75, 500, 150, 50);
         botonIniciarSesion.setForeground(Color.BLACK);
         return botonIniciarSesion;
     }
@@ -93,8 +93,8 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
     private JButton crearBotonRegresar(){
         JButton botonRegresar = crearBoton("#047994");
         botonRegresar.setText("Regresar");
-        botonRegresar.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        botonRegresar.setBounds(125, 675, 150, 50);
+        botonRegresar.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonRegresar.setBounds(75, 570, 150, 50);
         botonRegresar.setForeground(Color.BLACK);
         return botonRegresar;
     }
@@ -106,6 +106,7 @@ public class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
         if (e.getSource() == b_iniciarSesion){
             if (field_usuario.getText().isEmpty() || field_contrasena.getText().isEmpty()){
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
+
             } else {
                 if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword() ) )) {
                     this.dispose();

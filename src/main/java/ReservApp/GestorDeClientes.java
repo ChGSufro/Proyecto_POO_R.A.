@@ -16,10 +16,10 @@ public class GestorDeClientes {
         return this.listaClientes;
     }
 
+    //genera un cliente a partir de un objeto json
     private Cliente instanciarClienteJson (JSONObject archivoCliente) {
         return new Cliente(archivoCliente.getString("usuario"), archivoCliente.getString("contraseña"), archivoCliente.getInt("celular"));
     }
-
     //genera una lista de clientes a partir de una lista de archivos json
     private ArrayList<Cliente> setListaClientes(ArrayList<JSONObject> clientes){
         ArrayList<Cliente> newListClientes = new ArrayList<>();
@@ -32,6 +32,7 @@ public class GestorDeClientes {
     public boolean singUP(String usuario, int celular, String password, String passwordConf){
         if(Integer.toString(celular).length() != 9){
             return false;
+
         }else if(!password.equals(passwordConf)) {
             return false;
         }
@@ -94,7 +95,15 @@ public class GestorDeClientes {
         }
     }
 
-    public boolean modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+    public Boolean contraseñaCorrecta(Cliente usuarioIngresado, String contraseña){
+        return usuarioIngresado.getContraseña().equals(contraseña);
+    }
+
+
+
+    public Boolean modificarContraseña(
+            Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+
         if (nuevaContraseña.equals(nuevaContraseña2)){
             usuarioIngresado.setContraseña(nuevaContraseña);
             return true;
@@ -102,12 +111,12 @@ public class GestorDeClientes {
         return false;
     }
 
-    public void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
+    public Boolean modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
 
         if (Integer.toString(nuevoCelular).length() == 9) {
             usuarioIngresado.setCelular(nuevoCelular);
         }
-
+        return true;
     }
 
 }

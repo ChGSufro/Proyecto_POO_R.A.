@@ -3,6 +3,8 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
 import ReservApp.Cliente;
+import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,12 +27,16 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
         setTitle("Reserva de cabaña");
 
         panelSup = new JPanel();
-        panelSup.setPreferredSize(new Dimension(0, 1000));
+        panelSup.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 450));
         panelSup.setOpaque(false);
         panelSup.setBorder(BorderFactory.createEmptyBorder());
         panelSup.setLayout(null);
 
         cargarLogoPrincipal(panelSup);
+
+        b_regresar = crearBotonRegresar();
+        b_regresar.addActionListener(this);
+        panelSup.add(b_regresar);
 
         cargarCabañas(this.listaCabañas, panelSup);
 
@@ -50,43 +56,24 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
         b_reservar.addActionListener(this);
         panelInf.add(b_reservar);
 
-        b_regresar = crearBotonRegresar();
-        b_regresar.addActionListener(this);
-        panelInf.add(b_regresar);
-
         fondo.add(scrollInvisible(panelSup));
         fondo.add(panelInf);
         setContentPane(fondo);
     }
 
-    private JLabel crearLabelIdCabaña(){
-        JLabel labelIdCabaña = new JLabel("ID cabaña a reservar: ");
-        labelIdCabaña.setBounds(50, 20, 130, 25);
-        labelIdCabaña.setForeground(Color.BLACK);
-        return labelIdCabaña;
+    private JButton crearBotonRegresar(){
+        JButton botonRegresar = crearBoton("#047994");
+        botonRegresar.setText("Regresar");
+        botonRegresar.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonRegresar.setBounds(75, 350, 150, 50);
+        botonRegresar.setForeground(Color.BLACK);
+        return botonRegresar;
     }
-
-    private JTextField crearFieldIdCabaña(){
-        JTextField fieldIdCabaña = new JTextField();
-        fieldIdCabaña.setBounds(180, 20, 50, 25);
-        fieldIdCabaña.setBackground(Color.decode("#D9D9D9"));
-        fieldIdCabaña.setForeground(Color.BLACK);
-        return fieldIdCabaña;
-    }
-
-    private JButton crearBotonReservar(){
-        JButton botonReservar = crearBoton("#EC9E48");
-        botonReservar.setText("Reservar");
-        botonReservar.setBounds(250, 10, 100, 50);
-        botonReservar.setForeground(Color.BLACK);
-        return botonReservar;
-    }
-
     private void cargarCabañas(ArrayList<Cabaña> listaCabañas, JPanel panel){
-        int posicion = 400;
+        int posicion = 450;
         for (Cabaña cabaña : listaCabañas){
             panel.add(cabañaTitulo(cabaña, posicion));
-            posicion += 40;
+            posicion += 20;
 
             panel.add(cabañaImagen(cabaña, posicion));
             posicion += 120;
@@ -102,40 +89,53 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
         }
     }
     private JLabel cabañaTitulo(Cabaña cabaña, int posicion){
-        JLabel titulo = new JLabel(cabaña.getId() + ")\t" + cabaña.getNombre());
-        titulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 30));
-        titulo.setBounds(40, posicion, 200, 40);
+        JLabel titulo = new JLabel(cabaña.getId() + ")  " + cabaña.getNombre());
+        titulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
+        titulo.setBounds(25, posicion, 200, 20);
         return titulo;
     }
     private JLabel cabañaImagen(Cabaña cabaña, int posicion){
-        JLabel imagen = new JLabel(new GestorDeArchivos().cargarImgIcono("CabañasImagenes", Integer.toString(cabaña.getId()), 200, 120));
+        JLabel imagen = new JLabel(new GestorDeArchivos().cargarImgIcono("CabañasImagenes/" + cabaña.getId() + ".png", 200, 120));
         imagen.setBackground(new Color(217, 217, 217, 100));//Gris 50% transparente
         imagen.setOpaque(true);//Hago que se vea el fondo
-        imagen.setBounds(40, posicion, 200, 120);
+        imagen.setBounds(25, posicion, 200, 120);
         return imagen;
     }
     private JLabel cabañaHaitacion(Cabaña cabaña, int posicion){
         JLabel habitaciones = new JLabel("Habitaciones: " + cabaña.getHabitaciones());
-        habitaciones.setBounds(40, posicion, 200, 20);
+        habitaciones.setBounds(25, posicion, 200, 20);
         return habitaciones;
     }
     private JLabel cabañaBaños(Cabaña cabaña, int posicion){
         JLabel baños = new JLabel("Baños: " + cabaña.getBaños());
-        baños.setBounds(40, posicion, 200, 20);
+        baños.setBounds(25, posicion, 200, 20);
         return baños;
     }
     private JLabel cabañaEstado(Cabaña cabaña, int posicion){
         JLabel precio = new JLabel("Estado ocupada: " + cabaña.getIsOcupada());
-        precio.setBounds(40, posicion, 200, 20);
+        precio.setBounds(25, posicion, 200, 20);
         return precio;
     }
-
-    private JButton crearBotonRegresar(){
-        JButton botonRegresar = crearBoton("#047994");
-        botonRegresar.setText("Regresar");
-        botonRegresar.setBounds(125, 70, 150, 50);
-        botonRegresar.setForeground(Color.BLACK);
-        return botonRegresar;
+    private JLabel crearLabelIdCabaña(){
+        JLabel labelIdCabaña = new JLabel("ID cabaña a reservar: ");
+        labelIdCabaña.setBounds(25, 10, 130, 20);
+        labelIdCabaña.setForeground(Color.BLACK);
+        return labelIdCabaña;
+    }
+    private JTextField crearFieldIdCabaña(){
+        JTextField fieldIdCabaña = new JTextField();
+        fieldIdCabaña.setBounds(150, 10, 50, 20);
+        fieldIdCabaña.setBackground(Color.decode("#D9D9D9"));
+        fieldIdCabaña.setForeground(Color.BLACK);
+        return fieldIdCabaña;
+    }
+    private JButton crearBotonReservar(){
+        JButton botonReservar = crearBoton("#EC9E48");
+        botonReservar.setText("Reservar");
+        botonReservar.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonReservar.setBounds(75, 40, 150, 50);
+        botonReservar.setForeground(Color.BLACK);
+        return botonReservar;
     }
 
 

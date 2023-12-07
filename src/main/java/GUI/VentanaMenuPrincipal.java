@@ -11,8 +11,15 @@ import java.awt.event.ActionListener;
 
 public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
+    public static void main(String[] args) {
+        GestorDeClientes gestorDeClientes = new GestorDeClientes();
+        Cliente usuario = gestorDeClientes.getListaClientes().get(0);
+        VentanaMenuPrincipal ventanaMenuPrincipal = new VentanaMenuPrincipal(gestorDeClientes, usuario);
+        ventanaMenuPrincipal.setVisible(true);
+    }
+
     JPanel panel;
-    JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion,b_modificarUsuario;
+    JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut, b_cerrarSesion, b_modificarUsuario;
 
     private GestorDeClientes gestorDeClientes;
     private GestorDeCabañas gestorDeCabañas;
@@ -25,9 +32,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         setTitle("Resev-App");
 
         setJMenuBar(menu());
+        b_modificarUsuario = botonMenu();
+        b_modificarUsuario.addActionListener(this);
+        getJMenuBar().add(b_modificarUsuario);
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 1050));
+        panel.setPreferredSize(new Dimension(0, 850));
         panel.setOpaque(false);
         panel.setLayout(null);
 
@@ -53,10 +63,6 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         b_cerrarSesion.addActionListener(this);
         panel.add(b_cerrarSesion);
 
-        b_modificarUsuario = crearBotonModificarUsuario();
-        b_modificarUsuario.addActionListener(this);
-        panel.add(b_modificarUsuario);
-
         fondo.add(scrollInvisible(panel));
         setContentPane(fondo);
     }
@@ -64,50 +70,43 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     private JButton crearBotonMostrarCabañas(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Mostrar cabañas");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(100, 420, 200, 100);
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        boton.setBounds(50, 350, 200, 70);
         return boton;
     }
 
     private JButton crearBotonArrendarCabaña(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Arrendar cabaña");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(100, 550, 200, 100);
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        boton.setBounds(50, 440, 200, 70);
         return boton;
     }
 
     private JButton crearBotonVerReservas(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Ver reservas");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(100, 680, 200, 100);
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        boton.setBounds(50, 530, 200, 70);
         return boton;
     }
 
     private JButton crearBotonCheckOut(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Check-out");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(100, 810, 200, 100);
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        boton.setBounds(50, 620, 200, 70);
         return boton;
     }
 
     private JButton crearBotonCerrarSesion(){
         JButton boton = crearBoton("#047994");
         boton.setText("Cerrar sesión");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(100, 940, 200, 50);
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        boton.setBounds(75, 710, 150, 50);
         return boton;
     }
 
-    private JButton crearBotonModificarUsuario(){
-        JButton boton = crearBoton("#047994");
-        boton.setText("Modificar usuario");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        boton.setBounds(100, 1000, 200, 50);
-        return boton;
-    }
 
     @Override
     public void actionPerformed(ActionEvent e) {

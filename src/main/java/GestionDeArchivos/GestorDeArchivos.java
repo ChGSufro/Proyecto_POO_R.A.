@@ -15,10 +15,8 @@ public class GestorDeArchivos {
 
     //Archivos Json
 
-    private void escribirArchivoJSON(String carpeta, String Nombre, ArrayList<JSONObject> list){
-        crearCarpeta(carpeta);//Creo la carpeta si no existe
-
-        try (FileWriter file = new FileWriter(carpeta + File.separator + Nombre + ".json")) {
+    private void escribirArchivoJSON(String ruta, ArrayList<JSONObject> list){
+        try (FileWriter file = new FileWriter(ruta)) {
             file.write("[\n");//Agrego un corchete al inicio
             for (int posicion = 0; posicion < list.size(); posicion++) {
                 file.write(list.get(posicion).toString());//Escribe cada JSONObject de la lista en una linea
@@ -29,15 +27,15 @@ public class GestorDeArchivos {
                 file.write("\n");//Salta un espacio despues de cada JSONObject
             }
             file.write("]");//Cierro con un corchete
-        } catch (IOException ignored) {
+        } catch (IOException error) {
+            throw new RuntimeException("Error al actualizar la informacion, no se guardaron los cambios.");
         }
     }
 
     private ArrayList<JSONObject> leerArchivoJson(String ruta) {
         ArrayList<JSONObject> listaJson = new ArrayList<>();
 
-        try {
-            BufferedReader lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
+        try (BufferedReader lector = new BufferedReader(new FileReader(ruta))){
             String linea;
 
             while ((linea = lector.readLine()) != null) {//Mientras haya lineas en el archivo cada linia del archivo se la pasa a la variable linea
@@ -46,41 +44,37 @@ public class GestorDeArchivos {
                     listaJson.add(json);//Añade el JSONObject a la lista
                 } catch (JSONException ignore){}
             }
-
         } catch (IOException ignore) {}//No se cae si el archivo no existe
-
 
         return listaJson;
     }
 
 ///publicos
-
     public void escribirCabañaJson(ArrayList<JSONObject> listaCabañas) {
-        escribirArchivoJSON("Archivos", "Cabañas", listaCabañas);
+        crearCarpeta("Archivos");
+        escribirArchivoJSON("Archivos/Cabañas.json", listaCabañas);
     }
-
     public void escribirClienteJson(ArrayList<JSONObject> listaClientes) {
-        escribirArchivoJSON("Archivos", "Clientes", listaClientes);
+        crearCarpeta("Archivos");
+        escribirArchivoJSON("Archivos/Clientes.json", listaClientes);
     }
 
     public ArrayList<JSONObject> listaCabañaJson() {
+        crearCarpeta("Archivos");
         return leerArchivoJson("Archivos/Cabañas.json");
     }
 
     public ArrayList<JSONObject> listaClienteJson() {
+        crearCarpeta("Archivos");
         return leerArchivoJson("Archivos/Clientes.json");
     }
 
     //Gui
-    public ImageIcon cargarImgIcono(String carpeta, String nombre, int ancho, int alto) {
-        crearCarpeta(carpeta);
+    public ImageIcon cargarImgIcono(String ruta, int ancho, int alto) {
 
-        ImageIcon icono = new ImageIcon(carpeta + File.separator + nombre + ".png");
-        Image image = icono.getImage(); // transforma el icono en una imagen
-        Image newimg = image.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
-        icono = new ImageIcon(newimg);  // transforma la imagen escalada en un icono
-        return icono;
+        ImageIcon icono = new ImageIcon(ruta);
+        Image imagen = icono.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
+        return new ImageIcon(imagen);
     }
-
 
 }

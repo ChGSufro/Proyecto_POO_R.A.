@@ -43,16 +43,16 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
     public JButton b_registroSesion() {
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Registro             ");
-        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 30));
-        boton.setBounds(100, 450, 350, 90);
+        boton.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
+        boton.setBounds(100, 350, 250, 50);
         boton.setForeground(Color.BLACK);
         return boton;
     }
     public JButton b_inicioSesion(){
         JButton boton = crearBoton("#047994");
         boton.setText("Inicio Sesión     ");
-        boton.setFont(new Font( "IBM Plex Sans", Font.BOLD, 30));
-        boton.setBounds(100, 570, 350, 90);
+        boton.setFont(new Font( "IBM Plex Sans", Font.BOLD, 20));
+        boton.setBounds(100, 430, 250, 50);
         boton.setForeground(Color.BLACK);
         return boton;
     }
