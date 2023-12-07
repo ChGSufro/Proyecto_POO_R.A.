@@ -17,7 +17,6 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
     JButton b_registrasr, b_regresar;
 
     private GestorDeClientes gestorDeClientes;
-    private GestorDeCabañas gestorDeCabañas;
 
 
     public VentanaSignUp(GestorDeClientes gestorDeClientes){

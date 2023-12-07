@@ -15,7 +15,6 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion,b_modificarUsuario;
 
     private GestorDeClientes gestorDeClientes;
-
     private GestorDeCabañas gestorDeCabañas;
     private Cliente usuarioIngresado;
 

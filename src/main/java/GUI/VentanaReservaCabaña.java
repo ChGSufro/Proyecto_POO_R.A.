@@ -16,8 +16,8 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_reservar, b_regresar;
-    ArrayList<Cabaña> listaCabañas;
-    Cliente usuarioIngresado;
+    private ArrayList<Cabaña> listaCabañas;
+    private Cliente usuarioIngresado;
 
     public VentanaReservaCabaña(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.usuarioIngresado = usuarioIngresado;
