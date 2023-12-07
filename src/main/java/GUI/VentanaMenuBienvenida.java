@@ -57,7 +57,6 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
         return boton;
     }
 
-
     //Eventos de action listener
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -66,8 +65,7 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
             VentanaSignUp menu = new VentanaSignUp(this.gestorDeClientes);
             menu.setVisible(true);
         }
-
-        if (e.getSource() == b_inicioSesion) {
+        else if(e.getSource() == b_inicioSesion) {
             dispose();
             VentanaLogIn menu = new VentanaLogIn(this.gestorDeClientes);
             menu.setVisible(true);

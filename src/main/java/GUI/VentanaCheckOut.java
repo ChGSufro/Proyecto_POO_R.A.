@@ -2,7 +2,9 @@ package GUI;
 
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
+import ReservApp.Cliente;
 import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,20 +15,17 @@ import java.util.ArrayList;
 
 public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
 
-    public static void main(String[] args) {
-        VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(new GestorDeCabañas().getListaCabañas());
-        ventanaCheckOut.setVisible(true);
-    }
     JPanel panelInf, panelSup;
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_checkOut, b_regresar;
-
+    Cliente usuarioIngresado;
     ArrayList<Cabaña> listaCabañas;
 
-    public VentanaCheckOut(ArrayList<Cabaña> listaCabañas){
+    public VentanaCheckOut(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.listaCabañas = listaCabañas;
-        setTitle("Reserva de cabaña");
+        this.usuarioIngresado = usuarioIngresado;
+        setTitle("CheckOut de cabaña");
 
         panelSup = new JPanel();
         panelSup.setPreferredSize(new Dimension(0, 1000));
@@ -36,7 +35,7 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
 
         cargarLogoPrincipal(panelSup);
 
-        cargarCabañas(new GestorDeCabañas().getListaCabañas(), panelSup);
+        cargarCabañas(listaCabañas, panelSup);
 
         panelInf = new JPanel();
         panelInf.setPreferredSize(new Dimension(0, 200));
@@ -143,7 +142,29 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent event) {
+        if(event.getSource() == b_regresar){
+            dispose();
+        }
+        if (event.getSource() == b_checkOut){
+            try {
+                boolean idValido = false;
+                int idCabaña = Integer.parseInt(field_idCabaña.getText());
+                for (Cabaña cabaña : this.listaCabañas) {
+                    if (cabaña.getId() == idCabaña) {
+                        cabaña.checkOutCabaña_INTERFAZ();
+                        JOptionPane.showMessageDialog(null, "CheckOut realizado exitosamente");
+                        dispose();
+                        idValido = true;
+                        break; // Terminar el bucle una vez que se encuentre el ID
+                    }
+                }if (!idValido) {
+                    JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+                }
 
+            }catch (NumberFormatException ex){
+                JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+            }
+        }
     }
 }

@@ -22,13 +22,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut,b_cerrarSesion,b_modificarUsuario;
 
     private GestorDeClientes gestorDeClientes;
-
     private GestorDeCabañas gestorDeCabañas;
     private Cliente usuarioIngresado;
 
     public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes, Cliente usuarioIngresado){
         this.gestorDeClientes = gestorDeClientes;
-        this.gestorDeCabañas = new GestorDeCabañas();
+        this.gestorDeCabañas = new GestorDeCabañas(this.gestorDeClientes);
         this.usuarioIngresado = usuarioIngresado;
         setTitle("Resev-App");
 
@@ -119,15 +118,19 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
         if (e.getSource() == b_mostrarCabañas){
             VentanaMostrarCabaña ventanaMostrarCabaña = new VentanaMostrarCabaña(gestorDeCabañas.getListaCabañas());
             ventanaMostrarCabaña.setVisible(true);
         }
 
         if (e.getSource() == b_arrendarCabaña){
-            dispose();
-            //VentanaArrendarCabaña menu = new VentanaArrendarCabaña();
-            //menu.setVisible(true);
+            if (gestorDeCabañas.getCabañasDisponibles().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "No hay cabañas disponibles");
+            } else {
+                VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(gestorDeCabañas.getCabañasDisponibles(), this.usuarioIngresado);
+                ventanaReservaCabaña.setVisible(true);
+            }
         }
 
         if (e.getSource() == b_verReservas){
@@ -141,15 +144,20 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         }
 
         if (e.getSource() == b_checkOut){
-            dispose();
-            //VentanaCheckOut menu = new VentanaCheckOut();
-            //menu.setVisible(true);
+            if(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado).isEmpty()){
+                JOptionPane.showMessageDialog(null, "No tiene cabañas reservadas");
+            }else{
+                VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado), this.usuarioIngresado);
+                ventanaCheckOut.setVisible(true);
+            }
+
         }
 
         if (e.getSource() == b_cerrarSesion){
             dispose();
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
+            this.gestorDeCabañas.registrarCabañasEnArchivoJson();
         }
 
         if (e.getSource() == b_modificarUsuario){

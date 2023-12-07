@@ -2,7 +2,7 @@ package GUI;
 
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
-import ReservApp.GestorDeCabañas;
+import ReservApp.Cliente;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,10 +16,11 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_reservar, b_regresar;
+    private ArrayList<Cabaña> listaCabañas;
+    private Cliente usuarioIngresado;
 
-    ArrayList<Cabaña> listaCabañas;
-
-    public VentanaReservaCabaña(ArrayList<Cabaña> listaCabañas){
+    public VentanaReservaCabaña(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
+        this.usuarioIngresado = usuarioIngresado;
         this.listaCabañas = listaCabañas;
         setTitle("Reserva de cabaña");
 
@@ -31,7 +32,7 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
 
         cargarLogoPrincipal(panelSup);
 
-        cargarCabañas(new GestorDeCabañas().getListaCabañas(), panelSup);
+        cargarCabañas(this.listaCabañas, panelSup);
 
         panelInf = new JPanel();
         panelInf.setPreferredSize(new Dimension(0, 200));
@@ -138,9 +139,32 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
     }
 
 
-
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        if (e.getSource().equals(b_regresar)){
+            dispose();
+        }
+
+        if (e.getSource().equals(b_reservar)){
+            try {
+                boolean idValido = false;
+                int idCabaña = Integer.parseInt(field_idCabaña.getText());
+                for (Cabaña cabaña : this.listaCabañas) {
+                    if (cabaña.getId() == idCabaña) {
+                        cabaña.reservarCabaña_INTERFAZ(this.usuarioIngresado);
+                        JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
+                        dispose();
+                        idValido = true;
+                        break; // Terminar el bucle una vez que se encuentre el ID
+                    }
+                }if (!idValido) {
+                    JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+                }
+
+            }catch (NumberFormatException ex){
+                JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
+            }
+        }
     }
 }
