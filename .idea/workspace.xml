@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="empece la ventana de modificar usuario" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="MostrarCabañas">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuBienvenida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuBienvenida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaSignUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,15 +32,15 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Gajardo" />
+    <option name="BRANCH" value="origin/Faundez" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Proyecto_POO_R.A" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
@@ -44,23 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "190",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "200",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Faundez",
-    "last_opened_file_path": "C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
@@ -106,7 +114,8 @@
       <workItem from="1701304119437" duration="221000" />
       <workItem from="1701343559556" duration="10000" />
       <workItem from="1701739374681" duration="5258000" />
-      <workItem from="1701800027577" duration="3373000" />
+      <workItem from="1701800027577" duration="8742000" />
+      <workItem from="1701905325344" duration="3126000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -212,39 +221,47 @@
       <option name="project" value="LOCAL" />
       <updated>1701870150274</updated>
     </task>
-    <task id="LOCAL-00014" summary="agregue el objeto gestor de clientes">
+    <task id="LOCAL-00014" summary="MenuBienvenida">
       <option name="closed" value="true" />
-      <created>1701871460099</created>
+      <created>1701871002988</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1701871460099</updated>
+      <updated>1701871002988</updated>
     </task>
-    <task id="LOCAL-00015" summary="se registran usuarios, funciona todo bien hasta menu principal">
+    <task id="LOCAL-00015" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701896948326</created>
+      <created>1701873732392</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1701896948326</updated>
+      <updated>1701873732392</updated>
     </task>
-    <task id="LOCAL-00016" summary="metodo ver cabañas reservadas">
+    <task id="LOCAL-00016" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701897658317</created>
+      <created>1701873894108</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1701897658317</updated>
+      <updated>1701873894108</updated>
     </task>
-    <task id="LOCAL-00017" summary="empece la ventana de modificar usuario">
+    <task id="LOCAL-00017" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701898568819</created>
+      <created>1701874008267</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1701898568819</updated>
+      <updated>1701874008267</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="MostrarCabañas">
+      <option name="closed" value="true" />
+      <created>1701905351617</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701905351617</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,10 +274,7 @@
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
-    <MESSAGE value="agregue el objeto gestor de clientes" />
-    <MESSAGE value="se registran usuarios, funciona todo bien hasta menu principal" />
-    <MESSAGE value="metodo ver cabañas reservadas" />
-    <MESSAGE value="empece la ventana de modificar usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="empece la ventana de modificar usuario" />
+    <MESSAGE value="MostrarCabañas" />
+    <option name="LAST_COMMIT_MESSAGE" value="MostrarCabañas" />
   </component>
 </project>
