@@ -158,12 +158,12 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
             this.gestorDeCabañas.registrarCabañasEnArchivoJson();
+            this.gestorDeClientes.registrarClientesEnArchivoJson();
         }
 
         if (e.getSource() == b_modificarUsuario){
-            dispose();
-            //VentanaModificarUsuario menu = new VentanaModificarUsuario(this.gestorDeClientes, this.usuarioIngresado);
-            //menu.setVisible(true);
+            VentanaModificarUsuario menu = new VentanaModificarUsuario(this.usuarioIngresado, this.gestorDeClientes);
+            menu.setVisible(true);
         }
 
     }

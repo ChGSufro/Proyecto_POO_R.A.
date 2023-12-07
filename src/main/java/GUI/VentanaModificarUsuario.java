@@ -277,5 +277,9 @@ private JComboBox<String> crearBoxModificarUsuario(){
             }
         }
 
+        if (e.getSource() == b_regresar){
+            dispose();
+        }
+
     }
 }
