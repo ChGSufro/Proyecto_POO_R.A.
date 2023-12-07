@@ -52,34 +52,19 @@ public class GestorDeClientes {
         return false;
     }
 
-    public Cliente loginUsario() {
-        int posicion;
-        String usuario;
-        boolean validar = false;
-        do {
-            System.out.println("\n#----INICIO DE SESION----#");
-            System.out.println("\nA continuacion ingrese los datos solicitados");
-            System.out.println("-> Ingrese su nombre previamente registrado: ");
-            usuario = lecturaString();
-            System.out.println("-> Ingrese su contraseña: ");
-            String contraseña = lecturaString();
-            posicion = 0;
-            if (validarUsuario(usuario, contraseña)) {
-                posicion = obtenerPosicionUsuario(usuario);
-                validar = true;
-            }
-        } while (!validar);
+    public Cliente loginUsario(String usuario, String contraseña){
+        int posicion = 0;
+        posicion = obtenerPosicionUsuario(usuario);
         return listaClientes.get(posicion);
     }
 
-    private boolean validarUsuario(String usuario, String contraseña) {
+    public boolean validarUsuario(String usuario, String contraseña) {
         for (int i = 0; i < listaClientes.size(); i++) {
 
             if ((listaClientes.get(i)).getUsuario().equals(usuario) && (listaClientes.get(i)).getContraseña().equals(contraseña)) {
                 return true;
             }
         }
-        System.out.println("Usuario y/o contraseña incorrecto");
         return false;
     }
 
@@ -111,6 +96,26 @@ public class GestorDeClientes {
             list.add(cliente.clienteToJson());
         }
         new GestorDeArchivos().escribirClienteJson(list);
+    }
+
+    private void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
+        if (!usuarioExiste(nuevoNombre)) {
+            usuarioIngresado.setUsuario(nuevoNombre);
+        }
+    }
+
+    private void modificarContraseña(Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+        if (nuevaContraseña.equals(nuevaContraseña2)){
+            usuarioIngresado.setContraseña(nuevaContraseña);
+        }
+    }
+
+    private void modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
+
+        if (Integer.toString(nuevoCelular).length() == 9) {
+            usuarioIngresado.setCelular(nuevoCelular);
+        }
+
     }
 
 }

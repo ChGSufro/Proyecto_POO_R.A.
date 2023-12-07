@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class GestorDeCabañas {
 
-    //Listas para almacenar los datos en formato de sus respectivas Clases:
     private ArrayList<Cabaña> listaCabañas;
 
     public GestorDeCabañas(){
@@ -17,19 +16,52 @@ public class GestorDeCabañas {
         return this.listaCabañas;
     }
 
+
+    public ArrayList<Cabaña> getCabañasReservadas(Cliente usuarioIngresao){
+
+
+        ArrayList<Cabaña> cabañasReservadas = new ArrayList<>();
+
+        for (Cabaña cabaña : this.listaCabañas){
+            if (cabaña.getIsOcupada()){
+                if (cabaña.getArrendatario().equals(usuarioIngresao)){
+                    cabañasReservadas.add(cabaña);
+                }
+            }
+        }
+
+        return cabañasReservadas;
+    }
+
+    //Scanners:
+    private int lecturaInt(){
+        java.util.Scanner leer = new java.util.Scanner(System.in);
+        return leer.nextInt();
+    }
+
+
+    //genera una lista de cabañas a partir de una lista de archivos json
+    private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas){
+        ArrayList<Cabaña> newListCabaña = new ArrayList<>();
+        for (JSONObject cabaña : cabañas){
+            newListCabaña.add(instanciarCabañaJson(cabaña));
+        }
+        return newListCabaña;
+    }
+
     //Metodo para instanciar los objetos, a partir de un Json:
     private Cabaña instanciarCabañaJson (JSONObject archivoCabaña) {
         GestorDeClientes gestorDeClientes = new GestorDeClientes();
         if (archivoCabaña.getBoolean("isOcupada")){
             int pos = gestorDeClientes.obtenerPosicionUsuario(archivoCabaña.getString("arrendatarios"));
             try{
-            return new Cabaña(
-                    archivoCabaña.getInt("id"),
-                    archivoCabaña.getString("nombre"),
-                    archivoCabaña.getInt("habitaciones"),
-                    archivoCabaña.getInt("baños"),
-                    archivoCabaña.getBoolean("isOcupada"),
-                    gestorDeClientes.getListaClientes().get(pos));
+                return new Cabaña(
+                        archivoCabaña.getInt("id"),
+                        archivoCabaña.getString("nombre"),
+                        archivoCabaña.getInt("habitaciones"),
+                        archivoCabaña.getInt("baños"),
+                        archivoCabaña.getBoolean("isOcupada"),
+                        gestorDeClientes.getListaClientes().get(pos));
             }catch (IndexOutOfBoundsException error){
                 System.out.println("Arrendatario no registrado, se desocupara la cabaña.");
             }
@@ -41,16 +73,15 @@ public class GestorDeCabañas {
                 archivoCabaña.getInt("baños"));
     }
 
-    // genera una lista de cabañas a partir de una lista de archivos json
-    private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas){
-        ArrayList<Cabaña> newListCabaña = new ArrayList<>();
-        for (JSONObject cabaña : cabañas){
-
-                newListCabaña.add(instanciarCabañaJson(cabaña));
-
+    public void registrarCabañasEnArchivoJson(){
+        ArrayList<JSONObject> list = new ArrayList<>();
+        for (Cabaña cabaña : listaCabañas){
+            list.add(cabaña.cabañaToJson());
         }
-        return newListCabaña;
+        new GestorDeArchivos().escribirCabañaJson(list);
     }
+
+    //---------------------DE AQUI PARA ABAJO SON TODOS SOLO CON CONSOLA----------------------------------------
 
     public void menuReservarCabaña(Cliente usr){
         System.out.println("\n#-----RESERVA DE CABAÑAS-----#");
@@ -94,6 +125,7 @@ public class GestorDeCabañas {
         }
     }
 
+
     public void mostrarCabañasReservadas(Cliente usr) {
         System.out.println("\n#-----CABAÑAS RESERVADAS-----#");
         int contador = 0;
@@ -109,19 +141,6 @@ public class GestorDeCabañas {
         if (contador == 0) {
             System.out.println(usr.getUsuario() + " Aun no ha reservado ninguna cabaña.");
         }
-    }
-
-    //Scanners:
-    private int lecturaInt(){
-        java.util.Scanner leer = new java.util.Scanner(System.in);
-        return leer.nextInt();
-    }
-    public void registrarCabañasEnArchivoJson(){
-        ArrayList<JSONObject> list = new ArrayList<>();
-        for (Cabaña cabaña : listaCabañas){
-            list.add(cabaña.cabañaToJson());
-        }
-        new GestorDeArchivos().escribirCabañaJson(list);
     }
 
 }

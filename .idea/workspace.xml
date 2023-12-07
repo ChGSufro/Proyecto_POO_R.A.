@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="SigUP adaptado">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="actualizacion">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,15 +30,15 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Gajardo" />
+    <option name="BRANCH" value="origin/Faundez" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Proyecto_POO_R.A" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
@@ -47,25 +50,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "481",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "21",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Alcalde",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
@@ -76,13 +77,6 @@
       <recent name="GUI" />
       <recent name="GestionDeArchivos" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-20.0.2-corretto-20.0.2.1-3183f394aec4-bc38cd27" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -118,8 +112,8 @@
       <workItem from="1701304119437" duration="221000" />
       <workItem from="1701343559556" duration="10000" />
       <workItem from="1701739374681" duration="5258000" />
-      <workItem from="1701800027577" duration="3373000" />
-      <workItem from="1701888599204" duration="1107000" />
+      <workItem from="1701800027577" duration="8742000" />
+      <workItem from="1701905325344" duration="11666000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -225,23 +219,63 @@
       <option name="project" value="LOCAL" />
       <updated>1701870150274</updated>
     </task>
-    <task id="LOCAL-00014" summary="agregue el objeto gestor de clientes">
+    <task id="LOCAL-00014" summary="MenuBienvenida">
       <option name="closed" value="true" />
-      <created>1701871460099</created>
+      <created>1701871002988</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1701871460099</updated>
+      <updated>1701871002988</updated>
     </task>
-    <task id="LOCAL-00015" summary="SigUP adaptado">
+    <task id="LOCAL-00015" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701874422697</created>
+      <created>1701873732392</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1701874422697</updated>
+      <updated>1701873732392</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="MostrarCabañas">
+      <option name="closed" value="true" />
+      <created>1701873894108</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701873894108</updated>
+    </task>
+    <task id="LOCAL-00017" summary="MostrarCabañas">
+      <option name="closed" value="true" />
+      <created>1701874008267</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874008267</updated>
+    </task>
+    <task id="LOCAL-00018" summary="MostrarCabañas">
+      <option name="closed" value="true" />
+      <created>1701905351617</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701905351617</updated>
+    </task>
+    <task id="LOCAL-00019" summary="actualizacion">
+      <option name="closed" value="true" />
+      <created>1701908756351</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701908756351</updated>
+    </task>
+    <task id="LOCAL-00020" summary="actualizacion">
+      <option name="closed" value="true" />
+      <created>1701908776351</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701908776351</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,8 +288,8 @@
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
-    <MESSAGE value="agregue el objeto gestor de clientes" />
-    <MESSAGE value="SigUP adaptado" />
-    <option name="LAST_COMMIT_MESSAGE" value="SigUP adaptado" />
+    <MESSAGE value="MostrarCabañas" />
+    <MESSAGE value="actualizacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizacion" />
   </component>
 </project>
