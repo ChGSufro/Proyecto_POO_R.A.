@@ -19,13 +19,13 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_checkOut, b_regresar;
-    private Cliente usuarioIngresado;
-    private ArrayList<Cabaña> listaCabañas;
+    Cliente usuarioIngresado;
+    ArrayList<Cabaña> listaCabañas;
 
     public VentanaCheckOut(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.listaCabañas = listaCabañas;
         this.usuarioIngresado = usuarioIngresado;
-        setTitle("Reserva de cabaña");
+        setTitle("CheckOut de cabaña");
 
         panelSup = new JPanel();
         panelSup.setPreferredSize(new Dimension(0, 1000));
@@ -35,7 +35,7 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
 
         cargarLogoPrincipal(panelSup);
 
-        cargarCabañas(new GestorDeCabañas().getListaCabañas(), panelSup);
+        cargarCabañas(listaCabañas, panelSup);
 
         panelInf = new JPanel();
         panelInf.setPreferredSize(new Dimension(0, 200));

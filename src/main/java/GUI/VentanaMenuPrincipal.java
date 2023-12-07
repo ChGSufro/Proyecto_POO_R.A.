@@ -139,8 +139,7 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
             if(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado).isEmpty()){
                 JOptionPane.showMessageDialog(null, "No tiene cabañas reservadas");
             }else{
-                VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado),
-                        this.usuarioIngresado);
+                VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado), this.usuarioIngresado);
                 ventanaCheckOut.setVisible(true);
             }
 

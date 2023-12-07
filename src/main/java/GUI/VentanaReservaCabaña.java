@@ -33,7 +33,7 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
 
         cargarLogoPrincipal(panelSup);
 
-        cargarCabañas(new GestorDeCabañas().getListaCabañas(), panelSup);
+        cargarCabañas(this.listaCabañas, panelSup);
 
         panelInf = new JPanel();
         panelInf.setPreferredSize(new Dimension(0, 200));
