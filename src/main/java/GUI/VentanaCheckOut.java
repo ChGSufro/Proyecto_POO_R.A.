@@ -153,10 +153,10 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
                     if (cabaña.getId() == idCabaña) {
                         if (cabaña.getIsOcupada()) {
                             cabaña.checkOutCabaña_INTERFAZ();
-                            JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
+                            JOptionPane.showMessageDialog(null, "CheckOut de cabaña realizado exitosamente");
                             dispose();
                         } else {
-                            JOptionPane.showMessageDialog(null, "La cabaña ya está reservada");
+                            JOptionPane.showMessageDialog(null, "La cabaña no está ocupada");
                         }
                     } else {
                         JOptionPane.showMessageDialog(null, "Ingrese un ID válido");
