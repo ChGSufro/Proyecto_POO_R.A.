@@ -22,6 +22,11 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
     Cliente usuarioIngresado;
     ArrayList<Cabaña> listaCabañas;
 
+    /**
+     * Constructor de la ventana que setea sus caracteristicas y carga los paneles.
+     * @param listaCabañas ArrayList de Cabañas reservadas por el usuario logeado en el caso de que tenga.
+     * @param usuarioIngresado Objeto Cliente del Usuario Ingresado actualmente.
+     */
     public VentanaCheckOut(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.usuarioIngresado = usuarioIngresado;
         this.listaCabañas = listaCabañas;
@@ -62,6 +67,10 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
         setContentPane(fondo);
     }
 
+    /**
+     * Metodo que crea el boton para regresar a la ventana anterior.
+     * @return Devuelve el JButton que cierra la ventana y vuelve a la anterior.
+     */
     private JButton crearBotonRegresar(){
         JButton botonRegresar = crearBoton("#047994");
         botonRegresar.setText("Regresar");
@@ -70,6 +79,12 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
         botonRegresar.setForeground(Color.BLACK);
         return botonRegresar;
     }
+
+    /**
+     * Metodo que hace uso de otros metodos para cargar las cabañas en el panel.
+     * @param listaCabañas ArrayList de Cabañas reservadas.
+     * @param panel panelSup donde se cargaran las cabañas.
+     */
     private void cargarCabañas(ArrayList<Cabaña> listaCabañas, JPanel panel){
         int posicion = 450;
         for (Cabaña cabaña : listaCabañas){
