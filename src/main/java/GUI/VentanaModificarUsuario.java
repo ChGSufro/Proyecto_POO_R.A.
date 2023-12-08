@@ -7,7 +7,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
 
@@ -32,6 +31,14 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
         panel.setLayout(null);
 
         cargarLogoPrincipal(panel);
+
+        b_regresar = crearBotonRegresar();
+        b_regresar.addActionListener(this);
+        panel.add(b_regresar);
+
+        b_guardar = crearBotonGuardar();
+        b_guardar.addActionListener(this);
+        panel.add(b_guardar);
 
         box_modificarUsuario = crearBoxModificarUsuario();
         box_modificarUsuario.addActionListener(this);
@@ -75,96 +82,29 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
         field_confirmarContraseña.setVisible(false);
         panel.add(field_confirmarContraseña);
 
-        b_guardar = crearBotonGuardar();
-        b_guardar.addActionListener(this);
-        panel.add(b_guardar);
-
-        b_regresar = crearBotonRegresar();
-        b_regresar.addActionListener(this);
-        panel.add(b_regresar);
-
         fondo.add(scrollInvisible(panel));
         setContentPane(fondo);
     }
 
-    private JLabel crearLabelUsuario(){
-        JLabel labelUsuario = new JLabel("Usuario: ");
-        labelUsuario.setBounds(50, 650, 130, 25);
-        labelUsuario.setForeground(Color.BLACK);
-        return labelUsuario;
+    private JButton crearBotonRegresar(){
+        JButton botonRegresar = crearBoton("#047994");
+        botonRegresar.setText("Regresar");
+        botonRegresar.setBounds(75, 350, 150, 50);
+        botonRegresar.setFont(new Font("IBM Plex Sans ", Font.BOLD, 15));
+        botonRegresar.setForeground(Color.BLACK);
+        return botonRegresar;
     }
-
-    private JTextField crearFieldUsuario(){
-        JTextField fieldUsuario = new JTextField(cliente.getUsuario());
-        fieldUsuario.setBounds(50, 680, 200, 25);
-        fieldUsuario.setBackground(Color.decode("#D9D9D9"));
-        fieldUsuario.setForeground(Color.BLACK);
-        return fieldUsuario;
+    private JButton crearBotonGuardar(){
+        JButton botonGuardar = crearBoton("#EC9E48");
+        botonGuardar.setText("Guardar");
+        botonGuardar.setBounds(75, 420, 150, 50);
+        botonGuardar.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonGuardar.setForeground(Color.BLACK);
+        return botonGuardar;
     }
-
-    private JLabel crearLabelCelular(){
-        JLabel labelCelular = new JLabel("Celular: ");
-        labelCelular.setBounds(50, 650, 130, 25);
-        labelCelular.setForeground(Color.BLACK);
-        return labelCelular;
-    }
-
-    private JTextField crearFieldCelular(){
-        JTextField fieldCelular = new JTextField(Integer.toString(this.cliente.getCelular()));
-        fieldCelular.setBounds(50, 680, 200, 25);
-        fieldCelular.setBackground(Color.decode("#D9D9D9"));
-        fieldCelular.setForeground(Color.BLACK);
-        return fieldCelular;
-    }
-
-    private JLabel crearLabelContraseñaActual(){
-        JLabel labelContraseñaActual = new JLabel("Contraseña actual: ");
-        labelContraseñaActual.setBounds(50, 650, 130, 25);
-        labelContraseñaActual.setForeground(Color.BLACK);
-        return labelContraseñaActual;
-    }
-
-    private JPasswordField crearFieldContraseñaActual(){
-        JPasswordField fieldContraseñaActual = new JPasswordField();
-        fieldContraseñaActual.setBounds(50, 680, 200, 25);
-        fieldContraseñaActual.setBackground(Color.decode("#D9D9D9"));
-        fieldContraseñaActual.setForeground(Color.BLACK);
-        return fieldContraseñaActual;
-    }
-
-    private JLabel crearLabelContraseñaNueva(){
-        JLabel labelContraseñaNueva = new JLabel("Contraseña nueva: ");
-        labelContraseñaNueva.setBounds(50, 720, 130, 25);
-        labelContraseñaNueva.setForeground(Color.BLACK);
-        return labelContraseñaNueva;
-    }
-
-    private JPasswordField crearFieldContraseñaNueva(){
-        JPasswordField fieldContraseñaNueva = new JPasswordField();
-        fieldContraseñaNueva.setBounds(50, 740, 200, 25);
-        fieldContraseñaNueva.setBackground(Color.decode("#D9D9D9"));
-        fieldContraseñaNueva.setForeground(Color.BLACK);
-        return fieldContraseñaNueva;
-    }
-
-    private JLabel crearLabelConfirmarContraseña(){
-        JLabel labelConfirmarContraseña = new JLabel("Confirmar contraseña: ");
-        labelConfirmarContraseña.setBounds(50, 780, 130, 25);
-        labelConfirmarContraseña.setForeground(Color.BLACK);
-        return labelConfirmarContraseña;
-    }
-
-    private JPasswordField crearFieldConfirmarContraseña(){
-        JPasswordField fieldConfirmarContraseña = new JPasswordField();
-        fieldConfirmarContraseña.setBounds(50, 810, 200, 25);
-        fieldConfirmarContraseña.setBackground(Color.decode("#D9D9D9"));
-        fieldConfirmarContraseña.setForeground(Color.BLACK);
-        return fieldConfirmarContraseña;
-    }
-
-private JComboBox<String> crearBoxModificarUsuario(){
+    private JComboBox<String> crearBoxModificarUsuario(){
         JComboBox<String> boxModificarUsuario = new JComboBox<>();
-        boxModificarUsuario.setBounds(50, 600, 300, 25);
+        boxModificarUsuario.setBounds(25, 500, 250, 20);
         boxModificarUsuario.setBackground(Color.decode("#D9D9D9"));
         boxModificarUsuario.setForeground(Color.BLACK);
 
@@ -173,23 +113,71 @@ private JComboBox<String> crearBoxModificarUsuario(){
         boxModificarUsuario.addItem("Contraseña");
         return boxModificarUsuario;
     }
-
-    private JButton crearBotonRegresar(){
-        JButton botonRegresar = crearBoton("#047994");
-        botonRegresar.setText("Regresar");
-        botonRegresar.setBounds(125, 430, 150, 50);
-        botonRegresar.setForeground(Color.BLACK);
-        return botonRegresar;
+    private JLabel crearLabelUsuario(){
+        JLabel labelUsuario = new JLabel("Usuario: ");
+        labelUsuario.setBounds(25, 550, 100, 20);
+        labelUsuario.setForeground(Color.BLACK);
+        return labelUsuario;
     }
-
-    private JButton crearBotonGuardar(){
-        JButton botonGuardar = crearBoton("#EC9E48");
-        botonGuardar.setText("Guardar");
-        botonGuardar.setBounds(125, 500, 150, 50);
-        botonGuardar.setForeground(Color.BLACK);
-        return botonGuardar;
+    private JTextField crearFieldUsuario(){
+        JTextField fieldUsuario = new JTextField(cliente.getUsuario());
+        fieldUsuario.setBounds(25, 570, 250, 20);
+        fieldUsuario.setBackground(Color.decode("#D9D9D9"));
+        fieldUsuario.setForeground(Color.BLACK);
+        return fieldUsuario;
     }
-
+    private JLabel crearLabelCelular(){
+        JLabel labelCelular = new JLabel("Celular: ");
+        labelCelular.setBounds(25, 550, 100, 20);
+        labelCelular.setForeground(Color.BLACK);
+        return labelCelular;
+    }
+    private JTextField crearFieldCelular(){
+        JTextField fieldCelular = new JTextField(Integer.toString(this.cliente.getCelular()));
+        fieldCelular.setBounds(25, 570, 250, 20);
+        fieldCelular.setBackground(Color.decode("#D9D9D9"));
+        fieldCelular.setForeground(Color.BLACK);
+        return fieldCelular;
+    }
+    private JLabel crearLabelContraseñaActual(){
+        JLabel labelContraseñaActual = new JLabel("Contraseña actual: ");
+        labelContraseñaActual.setBounds(25, 550, 150, 20);
+        labelContraseñaActual.setForeground(Color.BLACK);
+        return labelContraseñaActual;
+    }
+    private JPasswordField crearFieldContraseñaActual(){
+        JPasswordField fieldContraseñaActual = new JPasswordField();
+        fieldContraseñaActual.setBounds(25, 570, 250, 20);
+        fieldContraseñaActual.setBackground(Color.decode("#D9D9D9"));
+        fieldContraseñaActual.setForeground(Color.BLACK);
+        return fieldContraseñaActual;
+    }
+    private JLabel crearLabelContraseñaNueva(){
+        JLabel labelContraseñaNueva = new JLabel("Contraseña nueva: ");
+        labelContraseñaNueva.setBounds(25, 600, 130, 20);
+        labelContraseñaNueva.setForeground(Color.BLACK);
+        return labelContraseñaNueva;
+    }
+    private JPasswordField crearFieldContraseñaNueva(){
+        JPasswordField fieldContraseñaNueva = new JPasswordField();
+        fieldContraseñaNueva.setBounds(25, 620, 250, 20);
+        fieldContraseñaNueva.setBackground(Color.decode("#D9D9D9"));
+        fieldContraseñaNueva.setForeground(Color.BLACK);
+        return fieldContraseñaNueva;
+    }
+    private JLabel crearLabelConfirmarContraseña(){
+        JLabel labelConfirmarContraseña = new JLabel("Confirmar contraseña: ");
+        labelConfirmarContraseña.setBounds(25, 650, 150, 20);
+        labelConfirmarContraseña.setForeground(Color.BLACK);
+        return labelConfirmarContraseña;
+    }
+    private JPasswordField crearFieldConfirmarContraseña(){
+        JPasswordField fieldConfirmarContraseña = new JPasswordField();
+        fieldConfirmarContraseña.setBounds(25, 670, 250, 20);
+        fieldConfirmarContraseña.setBackground(Color.decode("#D9D9D9"));
+        fieldConfirmarContraseña.setForeground(Color.BLACK);
+        return fieldConfirmarContraseña;
+    }
 
 
 
@@ -248,33 +236,53 @@ private JComboBox<String> crearBoxModificarUsuario(){
         }
 
         if (e.getSource() == b_guardar){
+
             if (box_modificarUsuario.getSelectedItem().equals("Nombre Usuario:")){
-                if (field_usuario.getText().equals("")){
+                //Campos no vacios
+                if (field_usuario.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un nombre de usuario valido");
                 }
+
                 else{
                     gestorDeClientes.modificarNombreUsuario(cliente, field_usuario.getText());
                     JOptionPane.showMessageDialog(null, "Nombre de usuario modificado correctamente");
                 }
             }
+
             else if (box_modificarUsuario.getSelectedItem().equals("Celular")){
-                if (field_celular.getText().equals("")){
+                //Campos no vacios
+                if (field_celular.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
                 }
+
                 else{
-                    gestorDeClientes.modificarCelular(cliente, Integer.parseInt(field_celular.getText()));
-                    JOptionPane.showMessageDialog(null, "Celular modificado correctamente");
+                    try{
+                        gestorDeClientes.modificarCelular(cliente, Integer.parseInt(field_celular.getText()));
+                        JOptionPane.showMessageDialog(null, "Celular modificado correctamente");
+                    }catch (NumberFormatException error){
+                        JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
+                    }
                 }
             }
+
             else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
-                if (field_contraseñaActual.getText().equals("") || field_contraseñaNueva.getText().equals("") || field_confirmarContraseña.getText().equals("")){
+                //Campos no vacios
+                if (field_contraseñaActual.getText().replace(" ", "").isEmpty()||
+                        field_contraseñaNueva.getText().replace(" ", "").isEmpty() ||
+                        field_confirmarContraseña.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese todos los campos");
                 }
+
                 else{
+                    if (!gestorDeClientes.contraseñaCorrecta(cliente, field_contraseñaActual.getText())){
+                        JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
+                        return;
+                    }
+
                     if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
                         JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente");
                     } else {
-                        JOptionPane.showMessageDialog(null, "Las contraseñas no coinciden");
+                        JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden");
                     }
                 }
             }

@@ -1,6 +1,5 @@
 package GUI;
 
-import ReservApp.GestorDeCabañas;
 import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
@@ -24,7 +23,7 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
         setTitle("Registro de usuario");
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 900));
+        panel.setPreferredSize(new Dimension(0, 750));
         panel.setOpaque(false);
         panel.setLayout(null);
 
@@ -65,14 +64,14 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
     private JLabel crearLabelUsuario(){
         JLabel labelUsuario = new JLabel("Usuario: ");
-        labelUsuario.setBounds(50, 420, 300, 25);
+        labelUsuario.setBounds(25, 350, 100, 20);
         labelUsuario.setForeground(Color.BLACK);
         return labelUsuario;
     }
 
     private JTextField crearFieldUsuario(){
         JTextField fieldUsuario = new JTextField();
-        fieldUsuario.setBounds(50, 450, 300, 25);
+        fieldUsuario.setBounds(25, 370, 250, 20);
         fieldUsuario.setBackground(Color.decode("#D9D9D9"));
         fieldUsuario.setForeground(Color.BLACK);
         return fieldUsuario;
@@ -80,14 +79,14 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
     private JLabel crearLabelCelular(){
         JLabel labelCelular = new JLabel("Celular: ");
-        labelCelular.setBounds(50, 480, 300, 25);
+        labelCelular.setBounds(25, 400, 100, 20);
         labelCelular.setForeground(Color.BLACK);
         return labelCelular;
     }
 
     private JTextField crearFieldCelular(){
         JTextField fieldCelular = new JTextField();
-        fieldCelular.setBounds(50, 510, 300, 25);
+        fieldCelular.setBounds(25, 420, 250, 20);
         fieldCelular.setBackground(Color.decode("#D9D9D9"));
         fieldCelular.setForeground(Color.BLACK);
         return fieldCelular;
@@ -95,14 +94,14 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
     private JLabel crearLabelContraseña(){
         JLabel labelContraseña = new JLabel("Contraseña: ");
-        labelContraseña.setBounds(50, 540, 300, 25);
+        labelContraseña.setBounds(25, 450, 100, 20);
         labelContraseña.setForeground(Color.BLACK);
         return labelContraseña;
     }
 
     private JPasswordField crearFieldContraseña(){
         JPasswordField fieldContraseña = new JPasswordField();
-        fieldContraseña.setBounds(50, 570, 300, 25);
+        fieldContraseña.setBounds(25, 470, 250, 20);
         fieldContraseña.setBackground(Color.decode("#D9D9D9"));
         fieldContraseña.setForeground(Color.BLACK);
         return fieldContraseña;
@@ -110,14 +109,14 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
     private JLabel crearLabelConfContraseña(){
         JLabel labelConfContraseña = new JLabel("Confirmar contraseña: ");
-        labelConfContraseña.setBounds(50, 600, 300, 25);
+        labelConfContraseña.setBounds(25, 500, 150, 20);
         labelConfContraseña.setForeground(Color.BLACK);
         return labelConfContraseña;
     }
 
     private JPasswordField crearFieldConfContraseña(){
         JPasswordField fieldConfContraseña = new JPasswordField();
-        fieldConfContraseña.setBounds(50, 630, 300, 25);
+        fieldConfContraseña.setBounds(25, 520, 250, 20);
         fieldConfContraseña.setBackground(Color.decode("#D9D9D9"));
         fieldConfContraseña.setForeground(Color.BLACK);
         return fieldConfContraseña;
@@ -126,8 +125,8 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
     private JButton crearBotonRegistrarse(){
         JButton botonIniciarSesion = crearBoton("#EC9E48");
         botonIniciarSesion.setText("Registrar usuario");
-        botonIniciarSesion.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        botonIniciarSesion.setBounds(100, 725, 200, 50);
+        botonIniciarSesion.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonIniciarSesion.setBounds(50, 600, 200, 50);
         botonIniciarSesion.setForeground(Color.BLACK);
         return botonIniciarSesion;
     }
@@ -135,8 +134,8 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
     private JButton crearBotonRegresar(){
         JButton botonRegresar = crearBoton("#047994");
         botonRegresar.setText("Regresar");
-        botonRegresar.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
-        botonRegresar.setBounds(125, 800, 150, 50);
+        botonRegresar.setFont(new Font("IBM Plex Sans", Font.BOLD, 15));
+        botonRegresar.setBounds(75, 670, 150, 50);
         botonRegresar.setForeground(Color.BLACK);
         return botonRegresar;
     }

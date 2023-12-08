@@ -112,21 +112,14 @@ public class GestorDeArchivos {
 
     /**
      * Metodo encargado de obtener y cargar una imagen en las ventanas desde su ruta en el proyecto.
-     * @param carpeta nombre de la carpeta donde se encuentra la imagen.
-     * @param nombre nombre de la imagen que será cargada.
+     * @param ruta direccion de la imagen que será cargada.
      * @param ancho ancho de la imagen.
      * @param alto alto de la imagen.
      * @return devuelve el objeto de tipo ImageIcon que será mostrado en la ventana correspondiente
      */
-    public ImageIcon cargarImgIcono(String carpeta, String nombre, int ancho, int alto) {
-        crearCarpeta(carpeta);
-
-        ImageIcon icono = new ImageIcon(carpeta + File.separator + nombre + ".png");
-        Image image = icono.getImage(); // transforma el icono en una imagen
-        Image newimg = image.getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
-        icono = new ImageIcon(newimg);  // transforma la imagen escalada en un icono
-        return icono;
+    public ImageIcon cargarImgIcono(String ruta, int ancho, int alto) {
+        ImageIcon icono = new ImageIcon(ruta);
+        Image imagen = icono.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
+        return new ImageIcon(imagen);
     }
-
-
 }
