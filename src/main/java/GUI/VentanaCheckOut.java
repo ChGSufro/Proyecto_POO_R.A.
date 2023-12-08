@@ -10,10 +10,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-
+/**
+ * GUI en la que el usuario logeado puede realizar sus CheckOuts de cabañas.
+ * Siempre y cuando cuente con cabañas reservadas.
+ */
 public final class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
-
-
     JPanel panelInf, panelSup;
     JLabel idCabaña;
     JTextField field_idCabaña;
