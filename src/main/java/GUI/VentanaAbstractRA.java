@@ -47,7 +47,7 @@ public abstract class VentanaAbstractRA extends JFrame {
     }
 
     /**
-     * Crea un botón con un fondo de color y otros atributos específicos.
+     * Crea un botón con un fondo de color y otros atributos específicos, como los bordes redondeados.
      * @param color Color hexadecimal para el fondo del botón.
      * @return Devuelve JButton con el color de fondo y atributos especificados.
      */
