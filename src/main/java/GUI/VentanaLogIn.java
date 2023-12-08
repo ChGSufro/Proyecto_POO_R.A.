@@ -108,7 +108,7 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
 
             } else {
-                if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword() ) )) {
+                if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword()))) {
                     this.dispose();
                     Cliente usuario_activo = this.gestorDeClientes.loginUsario(field_usuario.getText(), new String(field_contrasena.getPassword()));
                     VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, usuario_activo);

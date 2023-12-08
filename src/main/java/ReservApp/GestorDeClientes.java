@@ -70,9 +70,7 @@ public class GestorDeClientes {
     }
 
     public int obtenerPosicionUsuario(String Usuario) {
-
         int posicion = -1;
-
         for (int i = 0; i < this.listaClientes.size(); i++) {
             if ((this.listaClientes.get(i)).getUsuario().equals(Usuario)) {
                 posicion = i;
@@ -92,13 +90,13 @@ public class GestorDeClientes {
     public void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
         if (!usuarioExiste(nuevoNombre)) {
             usuarioIngresado.setUsuario(nuevoNombre);
+
         }
     }
 
     public Boolean contraseñaCorrecta(Cliente usuarioIngresado, String contraseña){
         return usuarioIngresado.getContraseña().equals(contraseña);
     }
-
 
 
     public Boolean modificarContraseña(
