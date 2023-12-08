@@ -9,14 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
-
-    public static void main(String[] args) {
-        GestorDeClientes gestorDeClientes = new GestorDeClientes();
-        Cliente usuario = gestorDeClientes.getListaClientes().get(0);
-        VentanaMenuPrincipal ventanaMenuPrincipal = new VentanaMenuPrincipal(gestorDeClientes, usuario);
-        ventanaMenuPrincipal.setVisible(true);
-    }
+public final class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut, b_cerrarSesion, b_modificarUsuario;

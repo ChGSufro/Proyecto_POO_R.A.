@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionListener{
+public final class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionListener{
 
 
     JButton b_regreso;

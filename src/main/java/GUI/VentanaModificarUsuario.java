@@ -7,8 +7,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
-public class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
+public final class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_celular, l_contraseñaActual, l_contraseñaNueva, l_confirmarContraseña;
@@ -182,10 +183,10 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
 
 
     @Override
-    public void actionPerformed(ActionEvent event) {
+    public void actionPerformed(ActionEvent e) {
 
-        if (event.getSource() == box_modificarUsuario){
-            if (box_modificarUsuario.getSelectedItem().equals("Nombre Usuario:")){
+        if (e.getSource() == box_modificarUsuario){
+            if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Nombre Usuario:")){
                 l_usuario.setVisible(true);
                 field_usuario.setVisible(true);
 
@@ -200,7 +201,7 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
 
                 l_confirmarContraseña.setVisible(false);
                 field_confirmarContraseña.setVisible(false);
-            } else if (box_modificarUsuario.getSelectedItem().equals("Celular")){
+            } else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
 
@@ -215,8 +216,8 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
 
                 l_confirmarContraseña.setVisible(false);
                 field_confirmarContraseña.setVisible(false);
-
-            }else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+            }
+            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
 
@@ -234,20 +235,21 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
             }
         }
 
-        if (event.getSource() == b_guardar){
+        if (e.getSource() == b_guardar){
 
-            if (box_modificarUsuario.getSelectedItem().equals("Nombre Usuario:")){
+            if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Nombre Usuario:")){
                 //Campos no vacios
                 if (field_usuario.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un nombre de usuario valido");
                 }
+
                 else{
                     gestorDeClientes.modificarNombreUsuario(cliente, field_usuario.getText());
                     JOptionPane.showMessageDialog(null, "Nombre de usuario modificado correctamente");
                 }
             }
 
-            else if (box_modificarUsuario.getSelectedItem().equals("Celular")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
                 //Campos no vacios
                 if (field_celular.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
@@ -263,7 +265,7 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
                 }
             }
 
-            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
                 //Campos no vacios
                 if (field_contraseñaActual.getText().replace(" ", "").isEmpty()||
                         field_contraseñaNueva.getText().replace(" ", "").isEmpty() ||
@@ -286,7 +288,7 @@ public class VentanaModificarUsuario extends VentanaAbstractRA implements Action
             }
         }
 
-        if (event.getSource() == b_regresar){
+        if (e.getSource() == b_regresar){
             dispose();
         }
 

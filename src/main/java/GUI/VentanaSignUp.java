@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 
-public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
+public final class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JLabel l_usuario, l_celular, l_contarseña, l_conf_contraseña;

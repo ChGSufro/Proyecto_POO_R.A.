@@ -11,8 +11,9 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 
-public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
-    
+public final class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
+
+
     JPanel panelInf, panelSup;
     JLabel idCabaña;
     JTextField field_idCabaña;
@@ -23,7 +24,7 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
     public VentanaCheckOut(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.usuarioIngresado = usuarioIngresado;
         this.listaCabañas = listaCabañas;
-        setTitle("CheckOut de cabaña");
+        setTitle("Reserva de cabaña");
 
         panelSup = new JPanel();
         panelSup.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 450));
