@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="clases final">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="resouces">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/Archivos/Clientes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaModificarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaModificarUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\resources" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\java" />
@@ -119,6 +118,8 @@
       <workItem from="1702047509006" duration="443000" />
       <workItem from="1702051585284" duration="2991000" />
       <workItem from="1702061128942" duration="125000" />
+      <workItem from="1702065026709" duration="759000" />
+      <workItem from="1702065997640" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -352,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702047719149</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="resouces">
+      <option name="closed" value="true" />
+      <created>1702065293652</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702065293652</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +382,7 @@
     <MESSAGE value="commit para merge" />
     <MESSAGE value="Detalles" />
     <MESSAGE value="clases final" />
-    <option name="LAST_COMMIT_MESSAGE" value="clases final" />
+    <MESSAGE value="resouces" />
+    <option name="LAST_COMMIT_MESSAGE" value="resouces" />
   </component>
 </project>
