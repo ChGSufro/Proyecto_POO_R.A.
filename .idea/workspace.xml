@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Archivos/Cabañas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Archivos/Clientes.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,15 +241,7 @@
       <workItem from="1701998813462" duration="337000" />
       <workItem from="1702049282641" duration="603000" />
       <workItem from="1702049939582" duration="1000" />
-      <workItem from="1702050097314" duration="20415000" />
-    </task>
-    <task id="LOCAL-00011" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701739418796</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1701739418796</updated>
+      <workItem from="1702050097314" duration="23032000" />
     </task>
     <task id="LOCAL-00012" summary="MenuBienvenida">
       <option name="closed" value="true" />
@@ -628,7 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702070679822</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="documentacion">
+      <option name="closed" value="true" />
+      <created>1702074690167</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1702074690167</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

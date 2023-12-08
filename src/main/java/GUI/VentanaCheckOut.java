@@ -15,12 +15,12 @@ import java.util.ArrayList;
  * Siempre y cuando cuente con cabañas reservadas.
  */
 public final class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
-    JPanel panelInf, panelSup; // panel con
-    JLabel idCabaña;
-    JTextField field_idCabaña;
-    JButton b_checkOut, b_regresar;
-    Cliente usuarioIngresado;
-    ArrayList<Cabaña> listaCabañas;
+    private JPanel panelInf, panelSup; // panel con
+    private JLabel idCabaña;
+    private JTextField field_idCabaña;
+    private JButton b_checkOut, b_regresar;
+    protected Cliente usuarioIngresado;
+    protected ArrayList<Cabaña> listaCabañas;
 
     /**
      * Constructor de la ventana que setea sus caracteristicas y carga los paneles.

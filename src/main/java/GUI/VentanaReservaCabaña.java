@@ -15,10 +15,10 @@ import java.util.ArrayList;
  */
 public final class VentanaReservaCabaña extends VentanaAbstractRA implements ActionListener {
 
-    JPanel panelInf, panelSup; // panel sin scroll y con scroll respectivamente
-    JLabel idCabaña;
-    JTextField field_idCabaña;
-    JButton b_reservar, b_regresar;
+    private JPanel panelInf, panelSup; // panel sin scroll y con scroll respectivamente
+    private JLabel idCabaña;
+    private JTextField field_idCabaña;
+    private JButton b_reservar, b_regresar;
     private ArrayList<Cabaña> listaCabañas;
     private Cliente usuarioIngresado;
 

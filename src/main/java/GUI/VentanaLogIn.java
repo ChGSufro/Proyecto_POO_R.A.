@@ -13,11 +13,11 @@ import java.awt.event.ActionListener;
  */
 public final class VentanaLogIn extends VentanaAbstractRA implements ActionListener {
 
-    JPanel panel;
-    JLabel l_usuario, l_contrasena;
-    JTextField field_usuario;
-    JPasswordField field_contrasena;
-    JButton b_iniciarSesion, b_regresar;
+    private JPanel panel;
+    private JLabel l_usuario, l_contrasena;
+    private JTextField field_usuario;
+    private JPasswordField field_contrasena;
+    private JButton b_iniciarSesion, b_regresar;
     private GestorDeClientes gestorDeClientes;
 
     /**
@@ -117,7 +117,10 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
         return botonIniciarSesion;
     }
 
-
+    /**
+     * Metodo que crea el boton que recibe la informacion del ID de la cabaña que se quiere arrendar.
+     * @return JButton que realiza la reserva de la cabaña.
+     */
     private JButton crearBotonRegresar(){
         JButton botonRegresar = crearBoton("#047994");
         botonRegresar.setText("Regresar");
@@ -127,9 +130,13 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
         return botonRegresar;
     }
 
+    /**
+     * Metodo de la interfaz ActionListener que captura los eventos de la ventana.
+     * @param event El evento que ocurrió en la ventana.
+     */
     @Override
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == b_iniciarSesion){
+    public void actionPerformed(ActionEvent event) {
+        if (event.getSource() == b_iniciarSesion){
             if (field_usuario.getText().isEmpty() || field_contrasena.getText().isEmpty()){
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
 
@@ -144,8 +151,7 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
                 }
             }
         }
-
-        if (e.getSource() == b_regresar){
+        if (event.getSource() == b_regresar){
             this.dispose();
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);

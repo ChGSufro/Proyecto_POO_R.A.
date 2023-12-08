@@ -7,13 +7,19 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * GUI que se muestra a la hora de ejecutar el programa y que permite logear o registrar.
+ */
 public final class VentanaMenuBienvenida extends VentanaAbstractRA implements ActionListener {
 
     JPanel panel;
     JButton b_registroSesion, b_inicioSesion;
     private GestorDeClientes gestorDeClientes;
 
-
+    /**
+     * Constructor de la ventana, que setea las caracteristicas de esta y recibe el gestor de clientes para el logeo o registro.
+     * @param gestorDeClientes Encargado de realizar el logeo o registro.
+     */
     public VentanaMenuBienvenida(GestorDeClientes gestorDeClientes){
         this.gestorDeClientes = gestorDeClientes;
 
@@ -38,8 +44,10 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
         setContentPane(fondo);
     }
 
-
-    //Eventos independientes de action listener
+    /**
+     * Metodo que crea el boton que dirige a la ventana de SignUp.
+     * @return JButton que el usuario puede presionar para registrarse.
+     */
     public JButton b_registroSesion() {
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Registro             ");
@@ -48,6 +56,11 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
         boton.setForeground(Color.BLACK);
         return boton;
     }
+
+    /**
+     * Metodo que crea el boton que dirige a la ventana de LogIn.
+     * @return JButton que el usuario puede presionar para logearse.
+     */
     public JButton b_inicioSesion(){
         JButton boton = crearBoton("#047994");
         boton.setText("Inicio Sesión     ");
@@ -58,19 +71,22 @@ public final class VentanaMenuBienvenida extends VentanaAbstractRA implements Ac
     }
 
     //Eventos de action listener
+
+    /**
+     * Metodo de la interfaz ActionListener que captura los eventos de la ventana.
+     * @param event El evento que ocurrió en la ventana.
+     */
     @Override
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == b_registroSesion) {
+    public void actionPerformed(ActionEvent event) {
+        if (event.getSource() == b_registroSesion) {
             dispose();
             VentanaSignUp menu = new VentanaSignUp(this.gestorDeClientes);
             menu.setVisible(true);
         }
-        else if(e.getSource() == b_inicioSesion) {
+        else if(event.getSource() == b_inicioSesion) {
             dispose();
             VentanaLogIn menu = new VentanaLogIn(this.gestorDeClientes);
             menu.setVisible(true);
         }
     }
-
-
 }
