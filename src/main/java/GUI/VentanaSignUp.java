@@ -100,11 +100,11 @@ public final class VentanaSignUp extends VentanaAbstractRA implements ActionList
         labelCelular.setForeground(Color.BLACK);
         return labelCelular;
     }
+
     /**
      * Metodo que crea un Field donde el Cliente debe ingresar su celular.
      * @return JtextField donde el cliente debe ingresar el celular.
      */
-
     private JTextField crearFieldCelular(){
         JTextField fieldCelular = new JTextField();
         fieldCelular.setBounds(25, 420, 250, 20);
