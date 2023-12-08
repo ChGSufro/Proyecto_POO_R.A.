@@ -54,10 +54,10 @@ class GestorDeClientesTest {
      */
     @Test
     void obtenerPosicionUsuario() {
-        assertEquals(gestorDeClientes.obtenerPosicionUsuario(listaClientes.get(0).getUsuario()), 0); //le paso el nombre del usuario y retorna la posicion de este.
         // usuario en la posicion 0 es Javier
-        assertNotEquals(gestorDeClientes.obtenerPosicionUsuario(listaClientes.get(0).getUsuario()), 1); //le paso el nombre del usuario y retorna la posicion de este.
+        assertEquals(gestorDeClientes.obtenerPosicionUsuario(listaClientes.get(0).getUsuario()), 0); //le paso el nombre del usuario y retorna la posicion de este.
         //usuario en la posicion 0 es Javier por lo que el resultado 1 es falso
+        assertNotEquals(gestorDeClientes.obtenerPosicionUsuario(listaClientes.get(0).getUsuario()), 1); //le paso el nombre del usuario y retorna la posicion de este.
         //System.out.println(listaClientes.get(0).getUsuario());
     }
 
@@ -74,6 +74,7 @@ class GestorDeClientesTest {
     /**
      * Prueba donde se garantiza el correcto funcionamiento del metodo "modificarCelular" de la Clase GestorDeClientes.
      * Se ejemplifica 2 casos, uno cuando falla y otro cuando funciona.
+     * Se muuestran por consola los cambios
      */
     @Test
     void modificarCelular() {
@@ -81,5 +82,20 @@ class GestorDeClientesTest {
         assertTrue(gestorDeClientes.modificarCelular(listaClientes.get(0), 911111111)); // largo correcto del numero de celular
         assertFalse(gestorDeClientes.modificarCelular(listaClientes.get(0), 1234)); // largo insuficiente, no de modifica el numero del usuario.
         System.out.println(listaClientes.get(0).getCelular()); // numero modificado
+    }
+
+    /**
+     * Demostracion de correcto funcionamiento del metodo "modificarContraseña" de la Clase GestorDeClientes.
+     * Se ejemplifica 2 casos, uno cuando falla y otro cuando funciona.
+     * Se muuestran por consola los cambios
+     */
+    @Test
+    void modificarContraseña() {
+        System.out.println(listaClientes.get(0).getContraseña()); // contraseña original.
+        // la siguiente prueba es en el caso donde ambas contraseñas coinciden.
+        assertTrue(gestorDeClientes.modificarContraseña(listaClientes.get(0), "holaPruebaUnitaria", "holaPruebaUnitaria"));
+        // la siguiente prueba es en el caso donde ambas contraseñas no coinciden.
+        assertFalse(gestorDeClientes.modificarContraseña(listaClientes.get(0), "holaPruebaUnitaria", "adiosPruebaUnitaria"));
+        System.out.println(listaClientes.get(0).getContraseña()); // contraseña nueva.
     }
 }

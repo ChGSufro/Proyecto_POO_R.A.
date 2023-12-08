@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion y Pruebas Unitarias">
       <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReservApp/GestorDeClientesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReservApp/GestorDeClientesTest.java" afterDir="false" />
     </list>
@@ -58,6 +56,7 @@
     "Application.VentanaReservaCabaña.executor": "Run",
     "JUnit.GestorDeClientesTest.contraseñaCorrecta.executor": "Run",
     "JUnit.GestorDeClientesTest.modificarCelular.executor": "Run",
+    "JUnit.GestorDeClientesTest.modificarContraseña.executor": "Run",
     "JUnit.GestorDeClientesTest.obtenerPosicionUsuario.executor": "Run",
     "JUnit.GestorDeClientesTest.validarUsuario.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -96,7 +95,7 @@
       <recent name="GestionDeArchivos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GestorDeClientesTest.modificarCelular">
+  <component name="RunManager" selected="JUnit.GestorDeClientesTest.modificarContraseña">
     <configuration name="GestorDeClientesTest.contraseñaCorrecta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Proyectos" />
       <extension name="coverage">
@@ -124,6 +123,22 @@
       <option name="PACKAGE_NAME" value="ReservApp" />
       <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
       <option name="METHOD_NAME" value="modificarCelular" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorDeClientesTest.modificarContraseña" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyectos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReservApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ReservApp" />
+      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
+      <option name="METHOD_NAME" value="modificarContraseña" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,6 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GestorDeClientesTest.modificarContraseña" />
         <item itemvalue="JUnit.GestorDeClientesTest.modificarCelular" />
         <item itemvalue="JUnit.GestorDeClientesTest.contraseñaCorrecta" />
         <item itemvalue="JUnit.GestorDeClientesTest.obtenerPosicionUsuario" />
@@ -219,15 +235,7 @@
       <workItem from="1701998813462" duration="337000" />
       <workItem from="1702049282641" duration="603000" />
       <workItem from="1702049939582" duration="1000" />
-      <workItem from="1702050097314" duration="12022000" />
-    </task>
-    <task id="LOCAL-00002" summary="R.A">
-      <option name="closed" value="true" />
-      <created>1699568863219</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1699568863219</updated>
+      <workItem from="1702050097314" duration="13701000" />
     </task>
     <task id="LOCAL-00003" summary="R.A">
       <option name="closed" value="true" />
@@ -613,14 +621,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702060869588</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="documentacion y Pruebas Unitarias">
+      <option name="closed" value="true" />
+      <created>1702063832338</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1702063832338</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".json" />
     <MESSAGE value="Interfaz" />
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
@@ -645,6 +660,7 @@
     <MESSAGE value="fix de gui" />
     <MESSAGE value="arreglos" />
     <MESSAGE value="documentacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="documentacion" />
+    <MESSAGE value="documentacion y Pruebas Unitarias" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentacion y Pruebas Unitarias" />
   </component>
 </project>
