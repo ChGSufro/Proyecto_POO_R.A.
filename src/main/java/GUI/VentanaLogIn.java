@@ -99,8 +99,6 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
         return botonRegresar;
     }
 
-
-
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_iniciarSesion){
@@ -108,9 +106,9 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
                 JOptionPane.showMessageDialog(null, "Por favor, ingrese todos los datos");
 
             } else {
-                if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword() ) )) {
+                if (this.gestorDeClientes.validarUsuario(field_usuario.getText(), new String(field_contrasena.getPassword()))) {
                     this.dispose();
-                    Cliente usuario_activo = this.gestorDeClientes.loginUsario(field_usuario.getText(), new String(field_contrasena.getPassword()));
+                    Cliente usuario_activo = this.gestorDeClientes.loginUsario(field_usuario.getText());
                     VentanaMenuPrincipal menu = new VentanaMenuPrincipal(this.gestorDeClientes, usuario_activo);
                     menu.setVisible(true);
                 } else {

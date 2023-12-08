@@ -5,10 +5,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.RoundRectangle2D;
 
+/**
+ * Clase abstracta que sirve como base para las ventanas de la aplicación.
+ * Proporciona métodos comunes para configurar la apariencia de las ventanas.
+ */
 public abstract class VentanaAbstractRA extends JFrame {
 
-    protected JPanel fondo;
+    protected JPanel fondo; //panel de la ventana
 
+    /**
+     * Constructor de la clase VentanaAbstractRA.
+     * Configura propiedades comunes de las ventanas, como el gradiente.
+     */
     public VentanaAbstractRA(){
         setSize(new Dimension(300, 600));
         setIconImage(new ImageIcon("Logos/iconoApp.png").getImage());
@@ -22,6 +30,10 @@ public abstract class VentanaAbstractRA extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Detiene el programa cuando se cierra la ventana
     }
 
+    /**
+     * Método que crea un panel con un gradiente como fondo.
+     * @return JPanel con un gradiente como fondo.
+     */
     public JPanel panelConGradiente(){
         return new JPanel(){
             @Override
@@ -33,6 +45,12 @@ public abstract class VentanaAbstractRA extends JFrame {
             }
         };
     }
+
+    /**
+     * Crea un botón con un fondo de color y otros atributos específicos.
+     * @param color Color hexadecimal para el fondo del botón.
+     * @return Devuelve JButton con el color de fondo y atributos especificados.
+     */
     public JButton crearBoton(String color){//Crea un boton con un texto, color de fondo y tamaño de letra
         JButton boton = new JButton(){
             @Override//Pinto un fondo con efecto de rectangulo redondeado
@@ -49,6 +67,12 @@ public abstract class VentanaAbstractRA extends JFrame {
         boton.setForeground(Color.BLACK); //Cambio el color de la letra
         return boton;
     }
+
+    /**
+     * Agrega un scroll invisible a un panel.
+     * @param panel JPanel al que se agregará el scroll.
+     * @return JScrollPane con scroll invisible.
+     */
     public JScrollPane scrollInvisible(JPanel panel){//Agrega un scroll invisible a un panel
         JScrollPane scroll = new JScrollPane(panel);
         JScrollBar bar = new JScrollBar(JScrollBar.VERTICAL) {
@@ -66,7 +90,12 @@ public abstract class VentanaAbstractRA extends JFrame {
         return scroll;
     }
 
-    // Conjunto componente reutilizables
+    // Métodos para componentes reutilizables
+
+    /**
+     * Agrega un logo y un título predeterminado al inicio de un panel.
+     * @param panel JPanel al que se agregarán los componentes.
+     */
     public void cargarLogoPrincipal(JPanel panel){//Agrego un logo y un titulo posicionado por defecto al comienzo de la ventana
         JLabel titulo = new JLabel("RESERV-APP");
         titulo.setForeground(Color.BLACK);
@@ -92,6 +121,10 @@ public abstract class VentanaAbstractRA extends JFrame {
         panel.add(subTitulo2);
     }
 
+    /**
+     * Crea un menú superior con un logo y un botón de usuario.
+     * @return JMenuBar con los elementos del menú.
+     */
     public JMenuBar menu(){
         JMenuBar menuBar = new JMenuBar();
         menuBar.setPreferredSize(new Dimension(300, 40));//Establezco dimensiones
@@ -109,6 +142,10 @@ public abstract class VentanaAbstractRA extends JFrame {
 
         return menuBar;
     }
+    /**
+     * Crea un botón con un ícono de usuario, el cual desplegará la VentanaModicifarUsuario.
+     * @return JButton con ícono de usuario.
+     */
     public JButton botonMenu() {
         // Crear un botón con un logo
         JButton b_usuario = new JButton(new GestorDeArchivos().cargarImgIcono("Logos/usuario.png",40, 40));

@@ -71,9 +71,6 @@ public class Cabaña {
 
 
     //Metodos setter:
-    public void setNombre(String Nombre) {
-        this.nombre = Nombre;
-    }
     public void setIsOcupada(boolean isOcupada) {
         this.isOcupada = isOcupada;
     }

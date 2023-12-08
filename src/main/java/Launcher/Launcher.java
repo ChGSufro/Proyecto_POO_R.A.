@@ -3,8 +3,15 @@ package Launcher;
 import GUI.VentanaMenuBienvenida;
 import ReservApp.GestorDeClientes;
 
+/**
+ * Clase encargada de lanzar la VentanaMenuBienvenida, la cual comienza la app.
+ */
 public class Launcher {
 
+    /**
+     * Metodo main
+     * @param args
+     */
     public static void main(String[] args) {
         GestorDeClientes gestorDeClientes = new GestorDeClientes();
         VentanaMenuBienvenida menuBienvenida = new VentanaMenuBienvenida(gestorDeClientes);

@@ -201,8 +201,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
 
                 l_confirmarContraseña.setVisible(false);
                 field_confirmarContraseña.setVisible(false);
-            }
-            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
+            } else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
 
@@ -218,7 +217,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 l_confirmarContraseña.setVisible(false);
                 field_confirmarContraseña.setVisible(false);
             }
-            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
+            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
 
