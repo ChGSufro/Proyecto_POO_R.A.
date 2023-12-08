@@ -15,7 +15,7 @@ public class GestorDeClientes {
      * Constructor que se encarga de rellenar el ArrayList de clientes desde el archivo Clientes.json.
      */
     public GestorDeClientes(){
-        listaClientes = setListaClientes(new GestorDeArchivos().obtenerClientesDesdeArchivoJson());
+        this.listaClientes = setListaClientes(new GestorDeArchivos().obtenerClientesDesdeArchivoJson());
     }
 
     /**
@@ -117,7 +117,6 @@ public class GestorDeClientes {
      * @param Usuario Usuario el cual se quiere buscar.
      * @return retorna la posicion del usuario en la lista, en caso de no existir devuelve -1, lo que indica que no existe.
      */
-
     public int obtenerPosicionUsuario(String Usuario) {
         int posicion = -1;
         for (int i = 0; i < this.listaClientes.size(); i++) {
@@ -168,8 +167,8 @@ public class GestorDeClientes {
      * @param nuevaContraseña2 ContraseñaConfirmacion ingresada para modificacion.
      * @return Devuelve verdadero en el caso de que ambas sean iguales.
      */
-    public Boolean modificarContraseña(
-            Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
+    public Boolean modificarContraseña(Cliente usuarioIngresado,
+                                       String nuevaContraseña, String nuevaContraseña2){
 
         if (nuevaContraseña.equals(nuevaContraseña2)){
             usuarioIngresado.setContraseña(nuevaContraseña);

@@ -99,8 +99,6 @@ public final class VentanaLogIn extends VentanaAbstractRA implements ActionListe
         return botonRegresar;
     }
 
-
-
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == b_iniciarSesion){

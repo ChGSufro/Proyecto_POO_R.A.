@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaMenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReservApp/GestorDeClientesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReservApp/GestorDeClientesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -48,39 +50,125 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VentanaCheckOut.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VentanaMenuPrincipal.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VentanaReservaCabaña.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;190&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;200&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Alcalde&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Launcher.executor": "Run",
+    "Application.VentanaCheckOut.executor": "Run",
+    "Application.VentanaMenuPrincipal.executor": "Run",
+    "Application.VentanaReservaCabaña.executor": "Run",
+    "JUnit.GestorDeClientesTest.contraseñaCorrecta.executor": "Run",
+    "JUnit.GestorDeClientesTest.modificarCelular.executor": "Run",
+    "JUnit.GestorDeClientesTest.obtenerPosicionUsuario.executor": "Run",
+    "JUnit.GestorDeClientesTest.validarUsuario.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "190",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "200",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Alcalde",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ReservApp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="GUI" />
       <recent name="GestionDeArchivos" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GestorDeClientesTest.modificarCelular">
+    <configuration name="GestorDeClientesTest.contraseñaCorrecta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyectos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReservApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ReservApp" />
+      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
+      <option name="METHOD_NAME" value="contraseñaCorrecta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorDeClientesTest.modificarCelular" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyectos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReservApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ReservApp" />
+      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
+      <option name="METHOD_NAME" value="modificarCelular" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorDeClientesTest.obtenerPosicionUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyectos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReservApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ReservApp" />
+      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
+      <option name="METHOD_NAME" value="obtenerPosicionUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorDeClientesTest.validarUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Proyectos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReservApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ReservApp" />
+      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
+      <option name="METHOD_NAME" value="validarUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GestorDeClientesTest.modificarCelular" />
+        <item itemvalue="JUnit.GestorDeClientesTest.contraseñaCorrecta" />
+        <item itemvalue="JUnit.GestorDeClientesTest.obtenerPosicionUsuario" />
+        <item itemvalue="JUnit.GestorDeClientesTest.validarUsuario" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -131,15 +219,7 @@
       <workItem from="1701998813462" duration="337000" />
       <workItem from="1702049282641" duration="603000" />
       <workItem from="1702049939582" duration="1000" />
-      <workItem from="1702050097314" duration="9115000" />
-    </task>
-    <task id="LOCAL-00001" summary="R.A">
-      <option name="closed" value="true" />
-      <created>1699568510969</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699568510969</updated>
+      <workItem from="1702050097314" duration="12022000" />
     </task>
     <task id="LOCAL-00002" summary="R.A">
       <option name="closed" value="true" />
@@ -525,7 +605,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702058951147</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="documentacion">
+      <option name="closed" value="true" />
+      <created>1702060869588</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702060869588</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
