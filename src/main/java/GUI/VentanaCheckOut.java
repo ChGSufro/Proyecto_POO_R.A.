@@ -149,7 +149,7 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
                 int idCabaña = Integer.parseInt(field_idCabaña.getText());
                 for (Cabaña cabaña : this.listaCabañas) {
                     if (cabaña.getId() == idCabaña) {
-                        cabaña.checkOutCabaña_INTERFAZ();
+                        cabaña.checkOutCabaña_GUI();
                         JOptionPane.showMessageDialog(null, "CheckOut realizado exitosamente");
                         dispose();
                         idValido = true;

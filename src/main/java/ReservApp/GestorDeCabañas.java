@@ -81,11 +81,11 @@ public class GestorDeCabañas {
     }
 
     public void registrarCabañasEnArchivoJson(){
-        ArrayList<JSONObject> list = new ArrayList<>();
+        ArrayList<JSONObject> listaCabañasJson = new ArrayList<>();
         for (Cabaña cabaña : listaCabañas){
-            list.add(cabaña.cabañaToJson());
+            listaCabañasJson.add(cabaña.cabañaToJson());
         }
-        new GestorDeArchivos().escribirCabañasEnArchivoJson(list);
+        new GestorDeArchivos().escribirCabañasEnArchivoJson(listaCabañasJson);
     }
 
 
