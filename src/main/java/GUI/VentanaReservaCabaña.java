@@ -152,7 +152,7 @@ public class VentanaReservaCabaña extends VentanaAbstractRA implements ActionLi
                 int idCabaña = Integer.parseInt(field_idCabaña.getText());
                 for (Cabaña cabaña : this.listaCabañas) {
                     if (cabaña.getId() == idCabaña) {
-                        cabaña.reservarCabaña_INTERFAZ(this.usuarioIngresado);
+                        cabaña.reservarCabaña_GUI(this.usuarioIngresado);
                         JOptionPane.showMessageDialog(null, "Cabaña reservada exitosamente");
                         dispose();
                         idValido = true;
