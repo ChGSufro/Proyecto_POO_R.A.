@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="arreglos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaLogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,7 @@
       <workItem from="1701998813462" duration="337000" />
       <workItem from="1702049282641" duration="603000" />
       <workItem from="1702049939582" duration="1000" />
-      <workItem from="1702050097314" duration="7096000" />
+      <workItem from="1702050097314" duration="7773000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -501,14 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702056104296</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="documentacion">
+      <option name="closed" value="true" />
+      <created>1702058539026</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702058539026</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="R.A" />
     <MESSAGE value=".json" />
     <MESSAGE value="Interfaz" />
     <MESSAGE value="leerArchivo modificado" />
@@ -533,6 +538,7 @@
     <MESSAGE value="Documentación" />
     <MESSAGE value="fix de gui" />
     <MESSAGE value="arreglos" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos" />
+    <MESSAGE value="documentacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentacion" />
   </component>
 </project>
