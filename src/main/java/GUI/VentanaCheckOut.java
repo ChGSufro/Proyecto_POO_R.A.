@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 
-public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
+public final class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
 
 
     JPanel panelInf, panelSup;
