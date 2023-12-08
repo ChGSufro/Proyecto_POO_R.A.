@@ -4,35 +4,63 @@ import GestionDeArchivos.GestorDeArchivos;
 import org.json.JSONObject;
 import java.util.ArrayList;
 
+/**
+ * Clase encargada de la administracion de los datos de los clientes, ArrayList, datos, login, entre otros.
+ */
 public class GestorDeClientes {
 
-    private ArrayList<Cliente> listaClientes;
+    private ArrayList<Cliente> listaClientes; // lista de clientes obtenidos de archivo JSON
 
+    /**
+     * Constructor que se encarga de rellenar el ArrayList de clientes desde el archivo Clientes.json.
+     */
     public GestorDeClientes(){
         listaClientes = setListaClientes(new GestorDeArchivos().obtenerClientesDesdeArchivoJson());
     }
 
+    /**
+     * Metodo getListaClientes
+     * @return Devuelve un ArrayList de tipo cliente.
+     */
     public ArrayList<Cliente> getListaClientes(){
         return this.listaClientes;
     }
 
-    //genera un cliente a partir de un objeto json
-    private Cliente instanciarClienteJson (JSONObject archivoCliente) {
-        return new Cliente(archivoCliente.getString("usuario"), archivoCliente.getString("contraseña"), archivoCliente.getInt("celular"));
+    /**
+     * genera un cliente a partir de un JSONObject.
+     * @param jsonCliente JSONObject con los datos del cliente.
+     * @return Devuelve un objeto de tipo Cliente.
+     */
+    private Cliente instanciarClienteJson (JSONObject jsonCliente) {
+        return new Cliente(jsonCliente.getString("usuario"), jsonCliente.getString("contraseña"), jsonCliente.getInt("celular"));
     }
-    //genera una lista de clientes a partir de una lista de archivos json
-    private ArrayList<Cliente> setListaClientes(ArrayList<JSONObject> clientes){
+
+    //
+
+    /**
+     * Genera una ArrayList de tipo Cliente a partir de una ArrayList de JSONObjetc de clientes.
+     * @param jsonClientes ArrayList JSONObject con datos de clientes
+     * @return Devuelve ArrayList de Clientes
+     */
+    private ArrayList<Cliente> setListaClientes(ArrayList<JSONObject> jsonClientes){
         ArrayList<Cliente> newListClientes = new ArrayList<>();
-        for (JSONObject cliente : clientes){
+        for (JSONObject cliente : jsonClientes){
             newListClientes.add(instanciarClienteJson(cliente));
         }
         return newListClientes;
     }
 
-    public boolean singUP(String usuario, int celular, String password, String passwordConf){
+    /**
+     * Metodo usado en VentanaSignUP para realizar el registro de un nuevo usuario.
+     * @param usuario Nombre de usuario.
+     * @param celular Celular del usuario.
+     * @param password Contraseña del usuario.
+     * @param passwordConf Contraseña confirmacion de usuario.
+     * @return Devuelve un verdadero solo cuando los datos son validos y el usuario no existia previamente.
+     */
+    public boolean signUP(String usuario, int celular, String password, String passwordConf){
         if(Integer.toString(celular).length() != 9){
             return false;
-
         }else if(!password.equals(passwordConf)) {
             return false;
         }
@@ -44,6 +72,11 @@ public class GestorDeClientes {
         }
     }
 
+    /**
+     * Metodo encargado de verificar la existencia de un usuario en el ArrayList
+     * @param usuario
+     * @return
+     */
     private Boolean usuarioExiste(String usuario){
         for (Cliente cliente : this.listaClientes){
             if (cliente.getUsuario().equals(usuario)){

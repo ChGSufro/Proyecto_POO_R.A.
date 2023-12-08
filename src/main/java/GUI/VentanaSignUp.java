@@ -154,7 +154,7 @@ public class VentanaSignUp extends VentanaAbstractRA implements ActionListener {
                     String passwordCongIngresada = new String(field_conf_contraseña.getPassword());
                     try {
                         int celularUsuario = Integer.parseInt(field_celular.getText());
-                        if(gestorDeClientes.singUP(usuarioIngresado, celularUsuario, passwordIngresada, passwordCongIngresada)){
+                        if(gestorDeClientes.signUP(usuarioIngresado, celularUsuario, passwordIngresada, passwordCongIngresada)){
                             JOptionPane.showMessageDialog(null, "Usuario creado Existosamente");
                             this.gestorDeClientes.registrarClientesEnArchivoJson();
                             this.dispose();
