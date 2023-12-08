@@ -86,21 +86,37 @@ public class GestorDeClientes {
         return false;
     }
 
-    public Cliente loginUsario(String usuario, String contraseña){
+    /**
+     * Metodo usado en el login del sistema para obtener cliente logeado haciendo uso del metodo "obtenerPosicionUsuario".
+     * @param usuario Nombre del usuario
+     * @return Devuelve objeto de tipo Cliente, luego de obtener su posicion en el ArrayList de usuarios.
+     */
+    public Cliente loginUsario(String usuario){
         int posicion = 0;
         posicion = obtenerPosicionUsuario(usuario);
         return listaClientes.get(posicion);
     }
 
+    /**
+     * Metodo que verifica si las credenciales ingresadas por el usuario coinciden con los datos existentes.
+     * @param usuario Usuario ingresado.
+     * @param contraseña Contraseña ingresada.
+     * @return Retorna verdadero en el caso de que las credenciales coincidan con los datos existentes.
+     */
     public boolean validarUsuario(String usuario, String contraseña) {
         for (int i = 0; i < listaClientes.size(); i++) {
-
             if ((listaClientes.get(i)).getUsuario().equals(usuario) && (listaClientes.get(i)).getContraseña().equals(contraseña)) {
                 return true;
             }
         }
         return false;
     }
+
+    /**
+     * Obtiene el index del usuario pasado como parametro.
+     * @param Usuario Usuario el cual se quiere buscar.
+     * @return retorna la posicion del usuario en la lista, en caso de no existir devuelve -1, lo que indica que no existe.
+     */
 
     public int obtenerPosicionUsuario(String Usuario) {
         int posicion = -1;
@@ -112,6 +128,10 @@ public class GestorDeClientes {
         return posicion;
     }
 
+    /**
+     * Metodo encargado de ingresar los datos de clientes en el archivo "Clientes.json".
+     * Haciendo uso del metodo "escribirClientesEnArchivoJson(...)" de la clase GestorDeArchivos.
+     */
     public void registrarClientesEnArchivoJson(){
         ArrayList<JSONObject> list = new ArrayList<>();
         for (Cliente cliente : listaClientes){
@@ -120,18 +140,34 @@ public class GestorDeClientes {
         new GestorDeArchivos().escribirClientesEnArchivoJson(list);
     }
 
+    /**
+     * Metodo que modifica los datos de los usuarios desde la VentanaModificarUsuario.
+     * @param usuarioIngresado Objeto Cliente, es cual se encuentra logeado en el sistema.
+     * @param nuevoNombre Nuevo nombre del cliente
+     */
     public void modificarNombreUsuario(Cliente usuarioIngresado, String nuevoNombre){
         if (!usuarioExiste(nuevoNombre)) {
             usuarioIngresado.setUsuario(nuevoNombre);
-
         }
     }
 
+    /**
+     * Verifica si la contraseña del Cliente logeado coincide con la contraseña recibida por la VentanaModificarUsuario.
+     * @param usuarioIngresado Cliente logeado en el sistema
+     * @param contraseña Contraseña recibida desde la ventana
+     * @return Devuelve verdadero en el caso de que las contraseñas coincidan.
+     */
     public Boolean contraseñaCorrecta(Cliente usuarioIngresado, String contraseña){
         return usuarioIngresado.getContraseña().equals(contraseña);
     }
 
-
+    /**
+     * Metodo que valida que contraseña y contraseñaConfirmacion sean iguales para confirmar el cambio.
+     * @param usuarioIngresado Cliente logeado actualmente
+     * @param nuevaContraseña Contraseña ingresada para modificacion.
+     * @param nuevaContraseña2 ContraseñaConfirmacion ingresada para modificacion.
+     * @return Devuelve verdadero en el caso de que ambas sean iguales.
+     */
     public Boolean modificarContraseña(
             Cliente usuarioIngresado, String nuevaContraseña, String nuevaContraseña2){
 
@@ -142,6 +178,12 @@ public class GestorDeClientes {
         return false;
     }
 
+    /**
+     * Metodo que verifica que el numero de caracteres del celular sea igual a 9.
+     * @param usuarioIngresado Cliente logeado actualmente.
+     * @param nuevoCelular Nuevo numero de celular del usuario
+     * @return Devuelve verdadero en el caso de que el numero sea de largo 9.
+     */
     public Boolean modificarCelular(Cliente usuarioIngresado, int nuevoCelular){
 
         if (Integer.toString(nuevoCelular).length() == 9) {
