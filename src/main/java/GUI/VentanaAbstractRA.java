@@ -15,7 +15,7 @@ public abstract class VentanaAbstractRA extends JFrame {
 
     /**
      * Constructor de la clase VentanaAbstractRA.
-     * Configura propiedades comunes de las ventanas.
+     * Configura propiedades comunes de las ventanas, como el gradiente.
      */
     public VentanaAbstractRA(){
         setSize(new Dimension(300, 600));
