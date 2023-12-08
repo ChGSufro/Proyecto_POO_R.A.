@@ -16,7 +16,7 @@ public class GestorDeArchivos {
      * Crea una carpeta en el proyecto
      * @param nombre es el nombre que tendrá la carpeta
      */
-    private void crearCarpeta(String nombre){
+    private void crearCarpetaS(String nombre){
         File Carpeta = new File(nombre);
         Carpeta.mkdirs();
     }
@@ -26,14 +26,11 @@ public class GestorDeArchivos {
     /**
      * Metodo el cual escribe en los json.
      * Es el encargado de guardar los cambios a la hora de cerrar el programa.
-     * @param carpeta recibe el nombre de la carpeta en donde se encuentra el archivo.
-     * @param Nombre recibe el nombre del archivo el cual será escrito o sobre escrito.
+     * @param ruta recibe el nombre del archivo el cual será escrito o sobre escrito.
      * @param list Es un ArrayList de JSONObject de donde se obtendrán los datos para escribir.
      */
-    private void escribirArchivoJSON(String carpeta, String Nombre, ArrayList<JSONObject> list){
-        crearCarpeta(carpeta);//Creo la carpeta si no existe
-
-        try (FileWriter file = new FileWriter(carpeta + File.separator + Nombre + ".json")) {
+    private void escribirArchivoJSON(String ruta, ArrayList<JSONObject> list){
+        try (FileWriter file = new FileWriter(ruta)) {
             file.write("[\n");//Agrego un corchete al inicio
             for (int posicion = 0; posicion < list.size(); posicion++) {
                 file.write(list.get(posicion).toString());//Escribe cada JSONObject de la lista en una linea
@@ -69,7 +66,6 @@ public class GestorDeArchivos {
 
         } catch (IOException ignore) {}//No se cae si el archivo no existe
 
-
         return listaJson;
     }
 
@@ -80,7 +76,8 @@ public class GestorDeArchivos {
      * @param listaCabañas es el ArrayList de JSONObject de cabañas el cual se escribirá en el archivo.
      */
     public void escribirCabañasEnArchivoJson(ArrayList<JSONObject> listaCabañas) {
-        escribirArchivoJSON("Archivos", "Cabañas", listaCabañas);
+        crearCarpetaS("src/main/resources/Archivos");
+        escribirArchivoJSON("src/main/resources/Archivos/Cabañas.json", listaCabañas);
     }
 
     /**
@@ -88,7 +85,8 @@ public class GestorDeArchivos {
      * @param listaClientes es el ArrayList de JSONObject de clientes el cual se escribirá en el archivo.
      */
     public void escribirClientesEnArchivoJson(ArrayList<JSONObject> listaClientes) {
-        escribirArchivoJSON("Archivos", "Clientes", listaClientes);
+        crearCarpetaS("src/main/resources/Archivos");
+        escribirArchivoJSON("src/main/resources/Archivos/Clientes.json", listaClientes);
     }
 
     /**
@@ -97,7 +95,7 @@ public class GestorDeArchivos {
      */
 
     public ArrayList<JSONObject> obtenerCabañasDesdeArchivoJson() {
-        return leerArchivoJson("Archivos/Cabañas.json");
+        return leerArchivoJson("src/main/resources/Archivos/Cabañas.json");
     }
 
     /**
@@ -105,7 +103,7 @@ public class GestorDeArchivos {
      * @return devuelve el ArrayList de JSONObject de clientes.
      */
     public ArrayList<JSONObject> obtenerClientesDesdeArchivoJson() {
-        return leerArchivoJson("Archivos/Clientes.json");
+        return leerArchivoJson("src/main/resources/Archivos/Clientes.json");
     }
 
     //Gui
@@ -118,7 +116,7 @@ public class GestorDeArchivos {
      * @return devuelve el objeto de tipo ImageIcon que será mostrado en la ventana correspondiente
      */
     public ImageIcon cargarImgIcono(String ruta, int ancho, int alto) {
-        ImageIcon icono = new ImageIcon(ruta);
+        ImageIcon icono = new ImageIcon("src/main/resources/" + ruta);
         Image imagen = icono.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
         return new ImageIcon(imagen);
     }

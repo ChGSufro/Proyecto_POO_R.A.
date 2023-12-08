@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public final class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
 
@@ -185,7 +186,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource() == box_modificarUsuario){
-            if (box_modificarUsuario.getSelectedItem().equals("Nombre Usuario:")){
+            if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Nombre Usuario:")){
                 l_usuario.setVisible(true);
                 field_usuario.setVisible(true);
 
@@ -201,7 +202,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 l_confirmarContraseña.setVisible(false);
                 field_confirmarContraseña.setVisible(false);
             }
-            else if (box_modificarUsuario.getSelectedItem().equals("Celular")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
 
@@ -217,7 +218,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 l_confirmarContraseña.setVisible(false);
                 field_confirmarContraseña.setVisible(false);
             }
-            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
 
@@ -237,7 +238,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
 
         if (e.getSource() == b_guardar){
 
-            if (box_modificarUsuario.getSelectedItem().equals("Nombre Usuario:")){
+            if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Nombre Usuario:")){
                 //Campos no vacios
                 if (field_usuario.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un nombre de usuario valido");
@@ -249,7 +250,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 }
             }
 
-            else if (box_modificarUsuario.getSelectedItem().equals("Celular")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
                 //Campos no vacios
                 if (field_celular.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
@@ -265,7 +266,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 }
             }
 
-            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
                 //Campos no vacios
                 if (field_contraseñaActual.getText().replace(" ", "").isEmpty()||
                         field_contraseñaNueva.getText().replace(" ", "").isEmpty() ||
