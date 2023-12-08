@@ -107,7 +107,6 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
         return boton;
     }
 
-
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -142,7 +141,6 @@ public class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionLis
                 VentanaCheckOut ventanaCheckOut = new VentanaCheckOut(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado), this.usuarioIngresado);
                 ventanaCheckOut.setVisible(true);
             }
-
         }
 
         if (e.getSource() == b_cerrarSesion){

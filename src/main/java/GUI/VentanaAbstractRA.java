@@ -5,10 +5,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.RoundRectangle2D;
 
+/**
+ * Clase abstracta que sirve como base para las ventanas de la aplicación.
+ * Proporciona métodos comunes para configurar la apariencia de las ventanas.
+ */
 public abstract class VentanaAbstractRA extends JFrame {
 
-    protected JPanel fondo;
+    protected JPanel fondo; //panel de la ventana
 
+    /**
+     * Constructor de la clase VentanaAbstractRA.
+     * Configura propiedades comunes de las ventanas.
+     */
     public VentanaAbstractRA(){
         setSize(new Dimension(300, 600));
         setIconImage(new ImageIcon("Logos/iconoApp.png").getImage());
