@@ -8,6 +8,9 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Clase para las Pruebas de los metodos mas relevantes de la clase GestorDeClientes.
+ */
 class GestorDeClientesTest {
 
     /* valores inciales

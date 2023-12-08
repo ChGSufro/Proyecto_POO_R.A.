@@ -116,7 +116,7 @@ public class VentanaCheckOut extends VentanaAbstractRA implements ActionListener
         return precio;
     }
     private JLabel crearLabelIdCabaña(){
-        JLabel labelIdCabaña = new JLabel("ID cabaña a desalojar: ");
+        JLabel labelIdCabaña = new JLabel("ID cabaña a desalojar:     ");
         labelIdCabaña.setBounds(25, 10, 130, 20);
         labelIdCabaña.setForeground(Color.BLACK);
         return labelIdCabaña;
