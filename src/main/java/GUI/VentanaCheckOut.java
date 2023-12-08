@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Siempre y cuando cuente con cabañas reservadas.
  */
 public final class VentanaCheckOut extends VentanaAbstractRA implements ActionListener {
-    JPanel panelInf, panelSup;
+    JPanel panelInf, panelSup; // panel con
     JLabel idCabaña;
     JTextField field_idCabaña;
     JButton b_checkOut, b_regresar;
@@ -25,7 +25,7 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
     public VentanaCheckOut(ArrayList<Cabaña> listaCabañas, Cliente usuarioIngresado){
         this.usuarioIngresado = usuarioIngresado;
         this.listaCabañas = listaCabañas;
-        setTitle("Reserva de cabaña");
+        setTitle("CheckOut de cabaña");
 
         panelSup = new JPanel();
         panelSup.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 450));

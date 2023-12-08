@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public final class VentanaMostrarCabaña extends VentanaAbstractRA implements ActionListener{
 
-
     JButton b_regreso;
 
     public VentanaMostrarCabaña(ArrayList<Cabaña> listaCabañas){

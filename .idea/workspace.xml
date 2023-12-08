@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,23 +237,7 @@
       <workItem from="1701998813462" duration="337000" />
       <workItem from="1702049282641" duration="603000" />
       <workItem from="1702049939582" duration="1000" />
-      <workItem from="1702050097314" duration="15857000" />
-    </task>
-    <task id="LOCAL-00007" summary="leerArchivo modificado">
-      <option name="closed" value="true" />
-      <created>1699758773582</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1699758773582</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Arrendatario index">
-      <option name="closed" value="true" />
-      <created>1700139011712</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1700139011712</updated>
+      <workItem from="1702050097314" duration="18482000" />
     </task>
     <task id="LOCAL-00009" summary="MenuBienvenida">
       <option name="closed" value="true" />
@@ -628,7 +615,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702066840485</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="documentacion">
+      <option name="closed" value="true" />
+      <created>1702067278104</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1702067278104</updated>
+    </task>
+    <task id="LOCAL-00057" summary="documentacion">
+      <option name="closed" value="true" />
+      <created>1702067488768</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1702067488768</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
