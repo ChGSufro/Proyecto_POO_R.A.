@@ -23,7 +23,7 @@ public abstract class VentanaAbstractRA extends JFrame {
 
         fondo = panelConGradiente();
         fondo.setPreferredSize(new Dimension(0, 0));
-        fondo.setLayout(new BoxLayout(fondo, BoxLayout.PAGE_AXIS));
+        fondo.setLayout(null);
 
         setResizable(false);//Bloqueo boton de maximizar
         setLocationRelativeTo(null);//Posiciona la ventana en el centro
@@ -87,6 +87,7 @@ public abstract class VentanaAbstractRA extends JFrame {
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);//Hago que no se vea la barra
         scroll.setOpaque(false);//Hago que no se vea el fondo del scrollpane
         scroll.getViewport().setOpaque(false);
+        scroll.setBounds(0, 0, 300, 700);
         return scroll;
     }
 

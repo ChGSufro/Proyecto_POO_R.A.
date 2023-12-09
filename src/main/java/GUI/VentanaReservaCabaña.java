@@ -3,6 +3,8 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import ReservApp.Cabaña;
 import ReservApp.Cliente;
+import ReservApp.GestorDeCabañas;
+import ReservApp.GestorDeClientes;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,6 +16,13 @@ import java.util.ArrayList;
  * GUI encargada de la reserva de las cabañas disponibles.
  */
 public final class VentanaReservaCabaña extends VentanaAbstractRA implements ActionListener {
+    public static void main(String[] args) {
+
+        ArrayList<Cabaña> listaCabañas = new GestorDeCabañas(new GestorDeClientes()).getListaCabañas();
+        Cliente usuarioIngresado = new Cliente("Juan", "Perez", 123456789);
+        VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(listaCabañas, usuarioIngresado);
+        ventanaReservaCabaña.setVisible(true);
+    }
 
     private JPanel panelInf, panelSup; // panel sin scroll y con scroll respectivamente
     private JLabel idCabaña;
@@ -47,7 +56,8 @@ public final class VentanaReservaCabaña extends VentanaAbstractRA implements Ac
         cargarCabañas(this.listaCabañas, panelSup);
 
         panelInf = new JPanel();
-        panelInf.setPreferredSize(new Dimension(0, 200));
+        panelInf.setBounds(0, 450, 300, 150);
+        panelInf.setPreferredSize(new Dimension(0, 150));
         panelInf.setOpaque(false);
         panelInf.setBorder(BorderFactory.createEmptyBorder());
         panelInf.setLayout(null);
@@ -62,7 +72,9 @@ public final class VentanaReservaCabaña extends VentanaAbstractRA implements Ac
         b_reservar.addActionListener(this);
         panelInf.add(b_reservar);
 
-        fondo.add(scrollInvisible(panelSup));
+        JScrollPane scroll = scrollInvisible(panelSup);
+        scroll.setBounds(0, 0, 300, 450);
+        fondo.add(scroll);
         fondo.add(panelInf);
         setContentPane(fondo);
     }

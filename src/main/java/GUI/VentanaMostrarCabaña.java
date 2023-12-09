@@ -41,8 +41,6 @@ public final class VentanaMostrarCabaña extends VentanaAbstractRA implements Ac
         fondo.add(scrollInvisible(panel));
 
         add(fondo);
-
-        setVisible(true);
     }
 
     /**
