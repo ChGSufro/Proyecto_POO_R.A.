@@ -9,9 +9,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Ventana Principal despues del Login, donde se muestran los botones que puede realizar el usuario.
- */
 public final class VentanaMenuPrincipal extends VentanaAbstractRA implements ActionListener {
 
     private JPanel panel;
@@ -20,11 +17,6 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
     private GestorDeCabañas gestorDeCabañas;
     private Cliente usuarioIngresado;
 
-    /**
-     * Constructor de la ventana, que setea las caracteristicas de esta, recibe el gestor de clientes y cliente logeado.
-     * @param gestorDeClientes Encargado de administrar los clientes del sistema.
-     * @param usuarioIngresado Usuario logeado actualmente en el sistema.
-     */
     public VentanaMenuPrincipal(GestorDeClientes gestorDeClientes, Cliente usuarioIngresado){
         this.gestorDeClientes = gestorDeClientes;
         this.gestorDeCabañas = new GestorDeCabañas(this.gestorDeClientes);
@@ -67,10 +59,6 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
         setContentPane(fondo);
     }
 
-    /**
-     * Metodo que crea el boton que dirige a la ventana donde se muestran todas las cabañas.
-     * @return Devuelve el JButton que el usuario puede presionar para ver todas las cabañas.
-     */
     private JButton crearBotonMostrarCabañas(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Mostrar cabañas");
@@ -79,10 +67,6 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
         return boton;
     }
 
-    /**
-     * Metodo que crea el boton que dirige a la ventana donde se arriendan las cabañas.
-     * @return Devuelve el JButton que el usuario puede presionar para arrendar cabañas.
-     */
     private JButton crearBotonArrendarCabaña(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Arrendar cabaña");
@@ -91,10 +75,6 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
         return boton;
     }
 
-    /**
-     * Metodo que crea el boton que dirige a la ventana donde se muestran todas las cabañas reservadas por el usuario logeado.
-     * @return Devuelve el JButton que el usuario puede presionar para ver todas las cabañas reservadas por el usuario actual.
-     */
     private JButton crearBotonVerReservas(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Ver reservas");
@@ -103,10 +83,6 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
         return boton;
     }
 
-    /**
-     * Metodo que crea el boton que dirige a la ventana donde el usuario puede realizar el checkout de sus cabañas.
-     * @return Devuelve el JButton que el usuario puede presionar para realizar el checkout de la cabaña.
-     */
     private JButton crearBotonCheckOut(){
         JButton boton = crearBoton("#EC9E48");
         boton.setText("Check-out");
@@ -115,10 +91,6 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
         return boton;
     }
 
-    /**
-     * Metodo que crea el boton que cierra la sesion del usuario y guarda los cambios en los archivos Clientes.json y Cabañas.json.
-     * @return Devuelve el JButton que el usuario puede presionar para el cierre de la sesion.
-     */
     private JButton crearBotonCerrarSesion(){
         JButton boton = crearBoton("#047994");
         boton.setText("Cerrar sesión");
@@ -127,19 +99,15 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
         return boton;
     }
 
-    /**
-     * Metodo de la interfaz ActionListener que captura los eventos de la ventana.
-     * @param event El evento que ocurrió en la ventana.
-     */
     @Override
-    public void actionPerformed(ActionEvent event) {
+    public void actionPerformed(ActionEvent e) {
 
-        if (event.getSource() == b_mostrarCabañas){
+        if (e.getSource() == b_mostrarCabañas){
             VentanaMostrarCabaña ventanaMostrarCabaña = new VentanaMostrarCabaña(gestorDeCabañas.getListaCabañas());
             ventanaMostrarCabaña.setVisible(true);
         }
 
-        if (event.getSource() == b_arrendarCabaña){
+        if (e.getSource() == b_arrendarCabaña){
             if (gestorDeCabañas.getCabañasDisponibles().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "No hay cabañas disponibles");
             } else {
@@ -148,7 +116,7 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
             }
         }
 
-        if (event.getSource() == b_verReservas){
+        if (e.getSource() == b_verReservas){
             if (gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado).isEmpty()){
                 JOptionPane.showMessageDialog(null, "No tiene cabañas reservadas");
 
@@ -158,7 +126,7 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
             }
         }
 
-        if (event.getSource() == b_checkOut){
+        if (e.getSource() == b_checkOut){
             if(gestorDeCabañas.getCabañasReservadas(this.usuarioIngresado).isEmpty()){
                 JOptionPane.showMessageDialog(null, "No tiene cabañas reservadas");
             }else{
@@ -167,7 +135,7 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
             }
         }
 
-        if (event.getSource() == b_cerrarSesion){
+        if (e.getSource() == b_cerrarSesion){
             dispose();
             this.gestorDeCabañas.registrarCabañasEnArchivoJson();
             this.gestorDeClientes.registrarClientesEnArchivoJson();
@@ -175,7 +143,7 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
             menu.setVisible(true);
         }
 
-        if (event.getSource() == b_modificarUsuario){
+        if (e.getSource() == b_modificarUsuario){
             VentanaModificarUsuario menu = new VentanaModificarUsuario(this.usuarioIngresado, this.gestorDeClientes);
             menu.setVisible(true);
         }
