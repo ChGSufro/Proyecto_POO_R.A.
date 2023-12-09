@@ -3,6 +3,8 @@ package Launcher;
 import GUI.VentanaMenuBienvenida;
 import ReservApp.GestorDeClientes;
 
+import javax.swing.*;
+
 /**
  * Clase encargada de lanzar la VentanaMenuBienvenida, la cual comienza la app.
  */
@@ -17,10 +19,11 @@ public class Launcher {
         menuBienvenida.setVisible(true);
     }
 
-    // color Amarillento #FFBC61 (fondo)
-    // color Amarillento/anaranjado #EC9E48 (boton)
-    // color Azul/verde #047994 (boton)
-    // color gris #D9D9D9 (campo de texto)
+    // color #FFBC61 - #FFFFFF (fondo)
+    // color #EC9E48 (boton amarillo/anaranjado)
+    // color #047994 (boton azul)
+    // color #D9D9D9 (campo de texto)
+    // color #BA813E menu
 
-    //Tipografia logo: IBM Plex Sans Bold
+    // Fuente logo: IBM Plex Sans
 }

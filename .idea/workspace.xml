@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="Idea" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="workspace para merge">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,22 +30,16 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Gajardo" />
+    <option name="BRANCH" value="origin/Faundez" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Faundez-Pruebas" />
+        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Proyecto_POO_R.A" />
     <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -52,44 +52,36 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VentanaCheckOut.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VentanaMenuPrincipal.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VentanaReservaCabaña.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;190&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;200&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Faundez&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources/Logos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
+      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\resources\Logos" />
+      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\resources" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
+      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="GUI" />
       <recent name="GestionDeArchivos" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-20.0.2-azul-20.0.2-3183f394aec4-18ea16e8" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -125,11 +117,19 @@
       <workItem from="1701304119437" duration="221000" />
       <workItem from="1701343559556" duration="10000" />
       <workItem from="1701739374681" duration="5258000" />
-      <workItem from="1701800027577" duration="3373000" />
-      <workItem from="1701898611241" duration="139000" />
-      <workItem from="1701956249688" duration="115000" />
-      <workItem from="1701956386491" duration="9064000" />
-      <workItem from="1702149206773" duration="612000" />
+      <workItem from="1701800027577" duration="8742000" />
+      <workItem from="1701905325344" duration="11783000" />
+      <workItem from="1701956986264" duration="20994000" />
+      <workItem from="1702047509006" duration="443000" />
+      <workItem from="1702051585284" duration="2991000" />
+      <workItem from="1702061128942" duration="125000" />
+      <workItem from="1702065026709" duration="759000" />
+      <workItem from="1702065997640" duration="1403000" />
+      <workItem from="1702068049321" duration="1416000" />
+      <workItem from="1702131744046" duration="2868000" />
+      <workItem from="1702138155331" duration="3499000" />
+      <workItem from="1702145275392" duration="2186000" />
+      <workItem from="1702150170025" duration="4232000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -235,221 +235,221 @@
       <option name="project" value="LOCAL" />
       <updated>1701870150274</updated>
     </task>
-    <task id="LOCAL-00014" summary="agregue el objeto gestor de clientes">
+    <task id="LOCAL-00014" summary="MenuBienvenida">
       <option name="closed" value="true" />
-      <created>1701871460099</created>
+      <created>1701871002988</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1701871460099</updated>
+      <updated>1701871002988</updated>
     </task>
-    <task id="LOCAL-00015" summary="se registran usuarios, funciona todo bien hasta menu principal">
+    <task id="LOCAL-00015" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701896948326</created>
+      <created>1701873732392</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1701896948326</updated>
+      <updated>1701873732392</updated>
     </task>
-    <task id="LOCAL-00016" summary="metodo ver cabañas reservadas">
+    <task id="LOCAL-00016" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701897658317</created>
+      <created>1701873894108</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1701897658317</updated>
+      <updated>1701873894108</updated>
     </task>
-    <task id="LOCAL-00017" summary="empece la ventana de modificar usuario">
+    <task id="LOCAL-00017" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701898568819</created>
+      <created>1701874008267</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1701898568819</updated>
+      <updated>1701874008267</updated>
     </task>
-    <task id="LOCAL-00018" summary="borre una cosa innecesaria">
+    <task id="LOCAL-00018" summary="MostrarCabañas">
       <option name="closed" value="true" />
-      <created>1701898638975</created>
+      <created>1701905351617</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1701898638975</updated>
+      <updated>1701905351617</updated>
     </task>
-    <task id="LOCAL-00019" summary="commit cosas idea">
+    <task id="LOCAL-00019" summary="actualizacion">
       <option name="closed" value="true" />
-      <created>1701956456545</created>
+      <created>1701908756351</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1701956456545</updated>
+      <updated>1701908756351</updated>
     </task>
-    <task id="LOCAL-00020" summary="commit cosas idea">
+    <task id="LOCAL-00020" summary="actualizacion">
       <option name="closed" value="true" />
-      <created>1701956887465</created>
+      <created>1701908776351</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1701956887465</updated>
+      <updated>1701908776351</updated>
     </task>
-    <task id="LOCAL-00021" summary="commit reservar cabaña">
+    <task id="LOCAL-00021" summary="CheckOut">
       <option name="closed" value="true" />
-      <created>1701958015318</created>
+      <created>1701956835702</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1701958015318</updated>
+      <updated>1701956835702</updated>
     </task>
-    <task id="LOCAL-00022" summary="commit reservar cabaña">
+    <task id="LOCAL-00022" summary="Modificar Usuario">
       <option name="closed" value="true" />
-      <created>1701958026129</created>
+      <created>1701962305299</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1701958026129</updated>
+      <updated>1701962305299</updated>
     </task>
-    <task id="LOCAL-00023" summary="commit reservar cabaña">
+    <task id="LOCAL-00023" summary="Modificar Usuario">
       <option name="closed" value="true" />
-      <created>1701958791702</created>
+      <created>1701963688114</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1701958791702</updated>
+      <updated>1701963688114</updated>
     </task>
-    <task id="LOCAL-00024" summary="commit reservar cabaña">
+    <task id="LOCAL-00024" summary="actualizar">
       <option name="closed" value="true" />
-      <created>1701958814280</created>
+      <created>1701964579883</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1701958814280</updated>
+      <updated>1701964579883</updated>
     </task>
-    <task id="LOCAL-00025" summary="commit reservar cabaña">
+    <task id="LOCAL-00025" summary="commit para merge">
       <option name="closed" value="true" />
-      <created>1701959782628</created>
+      <created>1701973906008</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1701959782628</updated>
+      <updated>1701973906008</updated>
     </task>
-    <task id="LOCAL-00026" summary="commit reservar cabaña">
+    <task id="LOCAL-00026" summary="commit para merge">
       <option name="closed" value="true" />
-      <created>1701959806691</created>
+      <created>1701973938782</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1701959806691</updated>
+      <updated>1701973938782</updated>
     </task>
-    <task id="LOCAL-00027" summary="arreglos checkout y reservar">
+    <task id="LOCAL-00027" summary="Detalles">
       <option name="closed" value="true" />
-      <created>1701960405255</created>
+      <created>1701992695963</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1701960405255</updated>
+      <updated>1701992695963</updated>
     </task>
-    <task id="LOCAL-00028" summary="arreglos reservar">
+    <task id="LOCAL-00028" summary="Detalles">
       <option name="closed" value="true" />
-      <created>1701960885188</created>
+      <created>1701992950181</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1701960885188</updated>
+      <updated>1701992950181</updated>
     </task>
-    <task id="LOCAL-00029" summary="arreglos checkout">
+    <task id="LOCAL-00029" summary="clases final">
       <option name="closed" value="true" />
-      <created>1701960932748</created>
+      <created>1702047719149</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1701960932748</updated>
+      <updated>1702047719149</updated>
     </task>
-    <task id="LOCAL-00030" summary="arreglos reservar">
+    <task id="LOCAL-00030" summary="resouces">
       <option name="closed" value="true" />
-      <created>1701961147654</created>
+      <created>1702065293652</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1701961147654</updated>
+      <updated>1702065293652</updated>
     </task>
-    <task id="LOCAL-00031" summary="arreglos reservar y checkout">
+    <task id="LOCAL-00031" summary="resouces">
       <option name="closed" value="true" />
-      <created>1701961499478</created>
+      <created>1702067461182</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1701961499478</updated>
+      <updated>1702067461182</updated>
     </task>
-    <task id="LOCAL-00032" summary="idea">
+    <task id="LOCAL-00032" summary="detalles rutas">
       <option name="closed" value="true" />
-      <created>1701962052660</created>
+      <created>1702133606274</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1701962052660</updated>
+      <updated>1702133606274</updated>
     </task>
-    <task id="LOCAL-00033" summary="fix cabañas no se instancian con arrendatario">
+    <task id="LOCAL-00033" summary="detalles">
       <option name="closed" value="true" />
-      <created>1701963393949</created>
+      <created>1702145501047</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1701963393949</updated>
+      <updated>1702145501047</updated>
     </task>
-    <task id="LOCAL-00034" summary="arreglos pequeños de encapsulamiento">
+    <task id="LOCAL-00034" summary="detalles">
       <option name="closed" value="true" />
-      <created>1701963651319</created>
+      <created>1702149989425</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1701963651319</updated>
+      <updated>1702149989425</updated>
     </task>
-    <task id="LOCAL-00035" summary="idea">
+    <task id="LOCAL-00035" summary="detalles">
       <option name="closed" value="true" />
-      <created>1701963663132</created>
+      <created>1702150818267</created>
       <option name="number" value="00035" />
       <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1701963663132</updated>
+      <updated>1702150818267</updated>
     </task>
-    <task id="LOCAL-00036" summary="idea">
+    <task id="LOCAL-00036" summary="detalles">
       <option name="closed" value="true" />
-      <created>1701964622265</created>
+      <created>1702150872731</created>
       <option name="number" value="00036" />
       <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1701964622265</updated>
+      <updated>1702150872731</updated>
     </task>
-    <task id="LOCAL-00037" summary="actualiza json usuarios">
+    <task id="LOCAL-00037" summary="detalles">
       <option name="closed" value="true" />
-      <created>1701965366617</created>
+      <created>1702150927152</created>
       <option name="number" value="00037" />
       <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1701965366617</updated>
+      <updated>1702150927152</updated>
     </task>
-    <task id="LOCAL-00038" summary="actualiza borrar metodos innecesarios">
+    <task id="LOCAL-00038" summary="algunos private">
       <option name="closed" value="true" />
-      <created>1701965428477</created>
+      <created>1702155714540</created>
       <option name="number" value="00038" />
       <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
-      <updated>1701965428477</updated>
+      <updated>1702155714540</updated>
     </task>
-    <task id="LOCAL-00039" summary="Idea">
+    <task id="LOCAL-00039" summary="workspace para merge">
       <option name="closed" value="true" />
-      <created>1702149255705</created>
+      <created>1702155803416</created>
       <option name="number" value="00039" />
       <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1702149255705</updated>
+      <updated>1702155803416</updated>
     </task>
-    <task id="LOCAL-00040" summary="Idea">
+    <task id="LOCAL-00040" summary="workspace para merge">
       <option name="closed" value="true" />
-      <created>1702149589306</created>
+      <created>1702155854691</created>
       <option name="number" value="00040" />
       <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
-      <updated>1702149589306</updated>
+      <updated>1702155854691</updated>
     </task>
     <option name="localTasksCounter" value="41" />
     <servers />
@@ -464,23 +464,19 @@
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
-    <MESSAGE value="agregue el objeto gestor de clientes" />
-    <MESSAGE value="se registran usuarios, funciona todo bien hasta menu principal" />
-    <MESSAGE value="metodo ver cabañas reservadas" />
-    <MESSAGE value="empece la ventana de modificar usuario" />
-    <MESSAGE value="borre una cosa innecesaria" />
-    <MESSAGE value="commit cosas idea" />
-    <MESSAGE value="commit reservar cabaña" />
-    <MESSAGE value="arreglos checkout y reservar" />
-    <MESSAGE value="arreglos checkout" />
-    <MESSAGE value="arreglos reservar" />
-    <MESSAGE value="arreglos reservar y checkout" />
-    <MESSAGE value="fix cabañas no se instancian con arrendatario" />
-    <MESSAGE value="arreglos pequeños de encapsulamiento" />
-    <MESSAGE value="idea" />
-    <MESSAGE value="actualiza json usuarios" />
-    <MESSAGE value="actualiza borrar metodos innecesarios" />
-    <MESSAGE value="Idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Idea" />
+    <MESSAGE value="MostrarCabañas" />
+    <MESSAGE value="actualizacion" />
+    <MESSAGE value="CheckOut" />
+    <MESSAGE value="Modificar Usuario" />
+    <MESSAGE value="actualizar" />
+    <MESSAGE value="commit para merge" />
+    <MESSAGE value="Detalles" />
+    <MESSAGE value="clases final" />
+    <MESSAGE value="resouces" />
+    <MESSAGE value="detalles rutas" />
+    <MESSAGE value="detalles" />
+    <MESSAGE value="algunos private" />
+    <MESSAGE value="workspace para merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace para merge" />
   </component>
 </project>

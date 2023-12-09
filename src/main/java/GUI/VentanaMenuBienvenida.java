@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
  */
 public final class VentanaMenuBienvenida extends VentanaAbstractRA implements ActionListener {
 
-    JPanel panel;
-    JButton b_registroSesion, b_inicioSesion;
+    private JPanel panel;
+    private JButton b_registroSesion, b_inicioSesion;
     private GestorDeClientes gestorDeClientes;
 
     /**

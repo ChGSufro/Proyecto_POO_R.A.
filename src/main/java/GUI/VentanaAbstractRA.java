@@ -23,7 +23,7 @@ public abstract class VentanaAbstractRA extends JFrame {
 
         fondo = panelConGradiente();
         fondo.setPreferredSize(new Dimension(0, 0));
-        fondo.setLayout(new BoxLayout(fondo, BoxLayout.PAGE_AXIS));
+        fondo.setLayout(null);
 
         setResizable(false);//Bloqueo boton de maximizar
         setLocationRelativeTo(null);//Posiciona la ventana en el centro
@@ -87,6 +87,7 @@ public abstract class VentanaAbstractRA extends JFrame {
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);//Hago que no se vea la barra
         scroll.setOpaque(false);//Hago que no se vea el fondo del scrollpane
         scroll.getViewport().setOpaque(false);
+        scroll.setBounds(0, 0, 300, 700);
         return scroll;
     }
 
@@ -143,12 +144,12 @@ public abstract class VentanaAbstractRA extends JFrame {
         return menuBar;
     }
     /**
-     * Crea un botón con un ícono de usuario, el cual desplegará la VentanaModicifarUsuario.
+     * Crea un botón con un ícono de usuario, el cual podra desplegar la VentanaModicifarUsuario.
      * @return JButton con ícono de usuario.
      */
     public JButton botonMenu() {
         // Crear un botón con un logo
-        JButton b_usuario = new JButton(new GestorDeArchivos().cargarPng("Logos/usuario.png",40, 40));
+        JButton b_usuario = new JButton(new GestorDeArchivos().cargarPng("Logos/usuario.png", 30, 30));
         b_usuario.setContentAreaFilled(false);//Elimino relleno automatico
         b_usuario.setBorderPainted(false);//Elimino bordes
         b_usuario.setFocusPainted(false);//Elimino efecto de click
