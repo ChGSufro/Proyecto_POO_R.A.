@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="resouces">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="detalles">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Cabañas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Clientes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +55,7 @@
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources/Logos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,6 +69,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\resources\Logos" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\resources" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
@@ -129,7 +123,10 @@
       <workItem from="1702065026709" duration="759000" />
       <workItem from="1702065997640" duration="1403000" />
       <workItem from="1702068049321" duration="1416000" />
-      <workItem from="1702131744046" duration="1595000" />
+      <workItem from="1702131744046" duration="2868000" />
+      <workItem from="1702138155331" duration="3499000" />
+      <workItem from="1702145275392" duration="2186000" />
+      <workItem from="1702150170025" duration="2518000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -379,7 +376,55 @@
       <option name="project" value="LOCAL" />
       <updated>1702067461182</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="detalles rutas">
+      <option name="closed" value="true" />
+      <created>1702133606274</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1702133606274</updated>
+    </task>
+    <task id="LOCAL-00033" summary="detalles">
+      <option name="closed" value="true" />
+      <created>1702145501047</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702145501047</updated>
+    </task>
+    <task id="LOCAL-00034" summary="detalles">
+      <option name="closed" value="true" />
+      <created>1702149989425</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702149989425</updated>
+    </task>
+    <task id="LOCAL-00035" summary="detalles">
+      <option name="closed" value="true" />
+      <created>1702150818267</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702150818267</updated>
+    </task>
+    <task id="LOCAL-00036" summary="detalles">
+      <option name="closed" value="true" />
+      <created>1702150872731</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702150872731</updated>
+    </task>
+    <task id="LOCAL-00037" summary="detalles">
+      <option name="closed" value="true" />
+      <created>1702150927152</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702150927152</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +446,8 @@
     <MESSAGE value="Detalles" />
     <MESSAGE value="clases final" />
     <MESSAGE value="resouces" />
-    <option name="LAST_COMMIT_MESSAGE" value="resouces" />
+    <MESSAGE value="detalles rutas" />
+    <MESSAGE value="detalles" />
+    <option name="LAST_COMMIT_MESSAGE" value="detalles" />
   </component>
 </project>
