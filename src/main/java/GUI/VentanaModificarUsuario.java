@@ -329,19 +329,18 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                         field_confirmarContraseña.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese correctamente todos los campos,\n los espacios en blanco no cuentan.");
                 }
-                else{
-                    if (!gestorDeClientes.contraseñaCorrecta(cliente, field_contraseñaActual.getText())){
-                        JOptionPane.showMessageDialog(null, "Contraseña incorrecta.");
-                        return;
-                    }
-                    if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
-                        JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente.");
-                        return;
-                    }
-                    JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden.");
-                    }
+
+                if (!gestorDeClientes.contraseñaCorrecta(cliente, field_contraseñaActual.getText())){
+                    JOptionPane.showMessageDialog(null, "Contraseña incorrecta.");return;
                 }
+                if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
+                    JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente.");
+                    return;
+                }
+                    JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden.");
             }
+        }
+
 
         if (event.getSource() == b_regresar){
             dispose();
