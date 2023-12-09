@@ -96,7 +96,7 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
         return titulo;
     }
     private JLabel cabañaImagen(Cabaña cabaña, int posicion){
-        JLabel imagen = new JLabel(new GestorDeArchivos().cargarImgIcono("CabañasImagenes/" + cabaña.getId() + ".png", 200, 120));
+        JLabel imagen = new JLabel(new GestorDeArchivos().cargarPng("CabañasImagenes/" + cabaña.getId() + ".png", 200, 120));
         imagen.setBackground(new Color(217, 217, 217, 100));//Gris 50% transparente
         imagen.setOpaque(true);//Hago que se vea el fondo
         imagen.setBounds(25, posicion, 200, 120);
