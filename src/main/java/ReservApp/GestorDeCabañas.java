@@ -3,7 +3,6 @@ package ReservApp;
 import org.json.JSONObject;
 import GestionDeArchivos.GestorDeArchivos;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class GestorDeCabañas {
@@ -11,7 +10,7 @@ public class GestorDeCabañas {
     private ArrayList<Cabaña> listaCabañas;
 
     public GestorDeCabañas(GestorDeClientes gestorDeClientes){
-        listaCabañas = setListaCabaña(new GestorDeArchivos().listaCabañaJson(),gestorDeClientes);
+        listaCabañas = setListaCabaña(new GestorDeArchivos().obtenerCabañasDesdeArchivoJson(),gestorDeClientes);
     }
 
     public ArrayList<Cabaña> getListaCabañas() {
@@ -82,11 +81,11 @@ public class GestorDeCabañas {
     }
 
     public void registrarCabañasEnArchivoJson(){
-        ArrayList<JSONObject> list = new ArrayList<>();
+        ArrayList<JSONObject> listaCabañasJson = new ArrayList<>();
         for (Cabaña cabaña : listaCabañas){
-            list.add(cabaña.cabañaToJson());
+            listaCabañasJson.add(cabaña.cabañaToJson());
         }
-        new GestorDeArchivos().escribirCabañaJson(list);
+        new GestorDeArchivos().escribirCabañasEnArchivoJson(listaCabañasJson);
     }
 
 

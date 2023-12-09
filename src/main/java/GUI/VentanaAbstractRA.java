@@ -3,18 +3,23 @@ package GUI;
 import GestionDeArchivos.GestorDeArchivos;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.geom.RoundRectangle2D;
 
+/**
+ * Clase abstracta que sirve como base para las ventanas de la aplicación.
+ * Proporciona métodos comunes para configurar la apariencia de las ventanas.
+ */
 public abstract class VentanaAbstractRA extends JFrame {
 
-    protected JPanel fondo;
-    protected JButton b_usuario;
+    protected JPanel fondo; //panel de la ventana
 
+    /**
+     * Constructor de la clase VentanaAbstractRA.
+     * Configura propiedades comunes de las ventanas, como el gradiente.
+     */
     public VentanaAbstractRA(){
-        setSize(new Dimension(400, 700));
-        setIconImage(new GestorDeArchivos().cargarImgIcono("Logos", "iconoApp", 500, 500).getImage());
+        setSize(new Dimension(300, 600));
+        setIconImage(new ImageIcon("Logos/iconoApp.png").getImage());
 
         fondo = panelConGradiente();
         fondo.setPreferredSize(new Dimension(0, 0));
@@ -25,6 +30,10 @@ public abstract class VentanaAbstractRA extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Detiene el programa cuando se cierra la ventana
     }
 
+    /**
+     * Método que crea un panel con un gradiente como fondo.
+     * @return JPanel con un gradiente como fondo.
+     */
     public JPanel panelConGradiente(){
         return new JPanel(){
             @Override
@@ -36,23 +45,34 @@ public abstract class VentanaAbstractRA extends JFrame {
             }
         };
     }
+
+    /**
+     * Crea un botón con un fondo de color y otros atributos específicos, como los bordes redondeados.
+     * @param color Color hexadecimal para el fondo del botón.
+     * @return Devuelve JButton con el color de fondo y atributos especificados.
+     */
     public JButton crearBoton(String color){//Crea un boton con un texto, color de fondo y tamaño de letra
         JButton boton = new JButton(){
-
             @Override//Pinto un fondo con efecto de rectangulo redondeado
             protected void paintComponent(Graphics g) {
-                Graphics2D g2 = (Graphics2D) g.create();
-                g2.setPaint(Color.decode(color));//Establezco el color del fondo
+                Graphics2D g2 = (Graphics2D) g;
+                g2.setPaint(Color.decode(color));//Establezco el color
                 g2.fill(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 30, 30));//Pinto un rectangulo de bordes redondeados
-                g2.dispose();
                 super.paintComponent(g);//Pinto el original por encima para que se vean todas las propiedades
             }
         };
         boton.setContentAreaFilled(false); //Hago que no se genere el fondo por defecto
         boton.setBorderPainted(false); //Elimina bordes por defecto
         boton.setFocusPainted(false); //Elimina el efecto de click
+        boton.setForeground(Color.BLACK); //Cambio el color de la letra
         return boton;
     }
+
+    /**
+     * Agrega un scroll invisible a un panel.
+     * @param panel JPanel al que se agregará el scroll.
+     * @return JScrollPane con scroll invisible.
+     */
     public JScrollPane scrollInvisible(JPanel panel){//Agrega un scroll invisible a un panel
         JScrollPane scroll = new JScrollPane(panel);
         JScrollBar bar = new JScrollBar(JScrollBar.VERTICAL) {
@@ -70,55 +90,68 @@ public abstract class VentanaAbstractRA extends JFrame {
         return scroll;
     }
 
-    // Conjunto componente reutilizables
+    // Métodos para componentes reutilizables
+
+    /**
+     * Agrega un logo y un título predeterminado al inicio de un panel.
+     * @param panel JPanel al que se agregarán los componentes.
+     */
     public void cargarLogoPrincipal(JPanel panel){//Agrego un logo y un titulo posicionado por defecto al comienzo de la ventana
         JLabel titulo = new JLabel("RESERV-APP");
         titulo.setForeground(Color.BLACK);
-        titulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 40));
-        titulo.setBounds(70,60, 300, 40);
+        titulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 30));
+        titulo.setBounds(50,50, 200, 30);
         panel.add(titulo);
 
         //Agrego un png
-        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos", "logo" ,250, 250));
-        logo.setBounds(70, 90, 250, 250);
+        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos/logo.png", 200, 200));
+        logo.setBounds(50, 80, 200, 200);
         panel.add(logo);
 
         JLabel subTitulo = new JLabel("Reservas de cabañas");
         subTitulo.setForeground(Color.BLACK);
-        subTitulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 25));
-        subTitulo.setBounds(75,340,300,30);
+        subTitulo.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
+        subTitulo.setBounds(40,280,220,20);
         panel.add(subTitulo);
 
         JLabel subTitulo2 = new JLabel("IX región.");
         subTitulo2.setForeground(Color.BLACK);
-        subTitulo2.setFont(new Font("IBM Plex Sans", Font.BOLD, 25));
-        subTitulo2.setBounds(150,365,200,30);
+        subTitulo2.setFont(new Font("IBM Plex Sans", Font.BOLD, 20));
+        subTitulo2.setBounds(100,300,100,30);
         panel.add(subTitulo2);
     }
 
+    /**
+     * Crea un menú superior con un logo y un botón de usuario.
+     * @return JMenuBar con los elementos del menú.
+     */
     public JMenuBar menu(){
         JMenuBar menuBar = new JMenuBar();
         menuBar.setPreferredSize(new Dimension(300, 40));//Establezco dimensiones
         menuBar.setBackground(Color.decode("#BA813E"));//Cambio color
         menuBar.setBorderPainted(false);//Elimino bordes
 
-        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos", "logo", 50, 50));
+        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos/logo.png", 50, 50));
 
         JLabel separacion = new JLabel(
-                "                                                                                 ");//Etiqueta en blaco para separar los elementos, no se pudo de otra forma
+                "                                                     ");//Etiqueta en blaco para separar los elementos, no se pudo de otra forma
 
         // Añadir el botón y logo a la barra de menú
         menuBar.add(logo);
         menuBar.add(separacion);
-        menuBar.add(botonMenu());
 
         return menuBar;
     }
-    private JButton botonMenu() {
+    /**
+     * Crea un botón con un ícono de usuario, el cual desplegará la VentanaModicifarUsuario.
+     * @return JButton con ícono de usuario.
+     */
+    public JButton botonMenu() {
         // Crear un botón con un logo
-        JButton b_usuario = new JButton(new GestorDeArchivos().cargarImgIcono("Logos", "usuario",40, 40));
+        JButton b_usuario = new JButton(new GestorDeArchivos().cargarImgIcono("Logos/usuario.png",40, 40));
         b_usuario.setContentAreaFilled(false);//Elimino relleno automatico
         b_usuario.setBorderPainted(false);//Elimino bordes
+        b_usuario.setFocusPainted(false);//Elimino efecto de click
         return b_usuario;
     }
 
