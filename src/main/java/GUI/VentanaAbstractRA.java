@@ -143,12 +143,12 @@ public abstract class VentanaAbstractRA extends JFrame {
         return menuBar;
     }
     /**
-     * Crea un botón con un ícono de usuario, el cual desplegará la VentanaModicifarUsuario.
+     * Crea un botón con un ícono de usuario, el cual podra desplegar la VentanaModicifarUsuario.
      * @return JButton con ícono de usuario.
      */
     public JButton botonMenu() {
         // Crear un botón con un logo
-        JButton b_usuario = new JButton(new GestorDeArchivos().cargarPng("Logos/usuario.png",40, 40));
+        JButton b_usuario = new JButton(new ImageIcon("src/main/resources/Logos/usuario.png"));
         b_usuario.setContentAreaFilled(false);//Elimino relleno automatico
         b_usuario.setBorderPainted(false);//Elimino bordes
         b_usuario.setFocusPainted(false);//Elimino efecto de click

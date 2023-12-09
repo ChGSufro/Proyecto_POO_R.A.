@@ -284,7 +284,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 field_confirmarContraseña.setVisible(false);
 
             }
-            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
                 l_celular.setVisible(false);
@@ -296,6 +296,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 l_confirmarContraseña.setVisible(true);
                 field_confirmarContraseña.setVisible(true);
             }
+
         }if (event.getSource() == b_guardar){
             if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Nombre Usuario:")){
                 //Campos no vacios
@@ -333,12 +334,13 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                     }
                     if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
                         JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden");
+                        return;
+                    }
+                    JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden");
                     }
                 }
             }
-        }
+
         if (event.getSource() == b_regresar){
             dispose();
         }
