@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="detalles">
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/Launcher/Launcher.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="workspace para merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +123,7 @@
       <workItem from="1702131744046" duration="2868000" />
       <workItem from="1702138155331" duration="3499000" />
       <workItem from="1702145275392" duration="2186000" />
-      <workItem from="1702150170025" duration="2518000" />
+      <workItem from="1702150170025" duration="3020000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -424,7 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702150927152</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="algunos private">
+      <option name="closed" value="true" />
+      <created>1702155714540</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702155714540</updated>
+    </task>
+    <task id="LOCAL-00039" summary="workspace para merge">
+      <option name="closed" value="true" />
+      <created>1702155803416</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702155803416</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,6 +461,8 @@
     <MESSAGE value="resouces" />
     <MESSAGE value="detalles rutas" />
     <MESSAGE value="detalles" />
-    <option name="LAST_COMMIT_MESSAGE" value="detalles" />
+    <MESSAGE value="algunos private" />
+    <MESSAGE value="workspace para merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace para merge" />
   </component>
 </project>
