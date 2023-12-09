@@ -35,7 +35,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
         setTitle("Modificar usuario");
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 1000));
+        panel.setPreferredSize(new Dimension(0, 800));
         panel.setOpaque(false);
         panel.setLayout(null);
 

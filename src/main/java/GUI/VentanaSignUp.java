@@ -28,7 +28,7 @@ public final class VentanaSignUp extends VentanaAbstractRA implements ActionList
         setTitle("Registro de usuario");
 
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, 750));
+        panel.setPreferredSize(new Dimension(0, 800));
         panel.setOpaque(false);
         panel.setLayout(null);
 
