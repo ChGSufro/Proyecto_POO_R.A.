@@ -7,10 +7,9 @@ import ReservApp.GestorDeClientes;
  * Clase encargada de lanzar la VentanaMenuBienvenida, la cual comienza la app.
  */
 public class Launcher {
-
     /**
-     * Metodo main
-     * @param args
+     * Metodo main.
+     * @param args main.
      */
     public static void main(String[] args) {
         GestorDeClientes gestorDeClientes = new GestorDeClientes();
