@@ -19,7 +19,7 @@ public abstract class VentanaAbstractRA extends JFrame {
      */
     public VentanaAbstractRA(){
         setSize(new Dimension(300, 600));
-        setIconImage(new ImageIcon("Logos/iconoApp.png").getImage());
+        setIconImage(new ImageIcon("src/main/resources/Logos/iconoApp.png").getImage());
 
         fondo = panelConGradiente();
         fondo.setPreferredSize(new Dimension(0, 0));
@@ -104,7 +104,7 @@ public abstract class VentanaAbstractRA extends JFrame {
         panel.add(titulo);
 
         //Agrego un png
-        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos/logo.png", 200, 200));
+        JLabel logo = new JLabel(new GestorDeArchivos().cargarPng("Logos/logo.png", 200, 200));
         logo.setBounds(50, 80, 200, 200);
         panel.add(logo);
 
@@ -131,7 +131,7 @@ public abstract class VentanaAbstractRA extends JFrame {
         menuBar.setBackground(Color.decode("#BA813E"));//Cambio color
         menuBar.setBorderPainted(false);//Elimino bordes
 
-        JLabel logo = new JLabel(new GestorDeArchivos().cargarImgIcono("Logos/logo.png", 50, 50));
+        JLabel logo = new JLabel(new GestorDeArchivos().cargarPng("Logos/logo.png", 50, 50));
 
         JLabel separacion = new JLabel(
                 "                                                     ");//Etiqueta en blaco para separar los elementos, no se pudo de otra forma
@@ -148,7 +148,7 @@ public abstract class VentanaAbstractRA extends JFrame {
      */
     public JButton botonMenu() {
         // Crear un botón con un logo
-        JButton b_usuario = new JButton(new GestorDeArchivos().cargarImgIcono("Logos/usuario.png",40, 40));
+        JButton b_usuario = new JButton(new GestorDeArchivos().cargarPng("Logos/usuario.png",40, 40));
         b_usuario.setContentAreaFilled(false);//Elimino relleno automatico
         b_usuario.setBorderPainted(false);//Elimino bordes
         b_usuario.setFocusPainted(false);//Elimino efecto de click

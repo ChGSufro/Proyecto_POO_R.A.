@@ -115,7 +115,7 @@ public class GestorDeArchivos {
      * @param alto alto de la imagen.
      * @return devuelve el objeto de tipo ImageIcon que será mostrado en la ventana correspondiente
      */
-    public ImageIcon cargarImgIcono(String ruta, int ancho, int alto) {
+    public ImageIcon cargarPng(String ruta, int ancho, int alto) {
         ImageIcon icono = new ImageIcon("src/main/resources/" + ruta);
         Image imagen = icono.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH); // escala la imagen
         return new ImageIcon(imagen);
