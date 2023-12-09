@@ -14,14 +14,14 @@ import java.util.Objects;
  */
 public final class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
 
-    JPanel panel;
-    JLabel l_usuario, l_celular, l_contraseñaActual, l_contraseñaNueva, l_confirmarContraseña;
-    JTextField field_usuario, field_celular;
-    JComboBox<String> box_modificarUsuario;
-    JPasswordField field_contraseñaActual, field_contraseñaNueva, field_confirmarContraseña;
-    JButton b_guardar, b_regresar;
-    Cliente cliente;
-    GestorDeClientes gestorDeClientes;
+    private JPanel panel;
+    private JLabel l_usuario, l_celular, l_contraseñaActual, l_contraseñaNueva, l_confirmarContraseña;
+    private JTextField field_usuario, field_celular;
+    private JComboBox<String> box_modificarUsuario;
+    private JPasswordField field_contraseñaActual, field_contraseñaNueva, field_confirmarContraseña;
+    private JButton b_guardar, b_regresar;
+    private Cliente cliente;
+    private GestorDeClientes gestorDeClientes;
 
     /**
      * Construccion de la ventana, donde se establecen sus carecteristicas y se le da como parametro el gestor de clientes y el usuario logeado.
@@ -284,7 +284,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 field_confirmarContraseña.setVisible(false);
 
             }
-            else if (box_modificarUsuario.getSelectedItem().equals("Contraseña")){
+            else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
                 l_usuario.setVisible(false);
                 field_usuario.setVisible(false);
                 l_celular.setVisible(false);
@@ -296,49 +296,54 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                 l_confirmarContraseña.setVisible(true);
                 field_confirmarContraseña.setVisible(true);
             }
+
         }if (event.getSource() == b_guardar){
             if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Nombre Usuario:")){
                 //Campos no vacios
                 if (field_usuario.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un nombre de usuario valido");
+                    return;
                 }
-                else{
-                    gestorDeClientes.modificarNombreUsuario(cliente, field_usuario.getText());
-                    JOptionPane.showMessageDialog(null, "Nombre de usuario modificado correctamente");
-                }
+
+                gestorDeClientes.modificarNombreUsuario(cliente, field_usuario.getText());
+                JOptionPane.showMessageDialog(null, "Nombre de usuario modificado correctamente");
+
             }else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Celular")){
                 //Campos no vacios
                 if (field_celular.getText().replace(" ", "").isEmpty()){
                     JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
+                    return;
                 }
-                else{
-                    try{
-                        gestorDeClientes.modificarCelular(cliente, Integer.parseInt(field_celular.getText()));
-                        JOptionPane.showMessageDialog(null, "Celular modificado correctamente");
-                    }catch (NumberFormatException error){
-                        JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
-                    }
+
+                try{
+                    gestorDeClientes.modificarCelular(cliente, Integer.parseInt(field_celular.getText()));
+                    JOptionPane.showMessageDialog(null, "Celular modificado correctamente");
+                }catch (NumberFormatException error){
+                    JOptionPane.showMessageDialog(null, "Ingrese un celular valido");
                 }
+
             }else if (Objects.equals(box_modificarUsuario.getSelectedItem(), "Contraseña")){
                 //Campos no vacios
                 if (field_contraseñaActual.getText().replace(" ", "").isEmpty()||
                         field_contraseñaNueva.getText().replace(" ", "").isEmpty() ||
                         field_confirmarContraseña.getText().replace(" ", "").isEmpty()){
-                    JOptionPane.showMessageDialog(null, "Ingrese todos los campos");
+                    JOptionPane.showMessageDialog(null, "Ingrese correctamente todos los campos,\n los espacios en blanco no cuentan.");
+                    return;
                 }
-                else{
-                    if (!gestorDeClientes.contraseñaCorrecta(cliente, field_contraseñaActual.getText())){
-                        JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
-                        return;
-                    }
-                    if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
-                        JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden");
-                    }
+
+                if (!gestorDeClientes.contraseñaCorrecta(cliente, field_contraseñaActual.getText())){
+                    JOptionPane.showMessageDialog(null, "Contraseña incorrecta.");
+                    return;
                 }
+                if (gestorDeClientes.modificarContraseña(cliente, field_contraseñaNueva.getText(), field_confirmarContraseña.getText())) {
+                    JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente.");
+                    return;
+                }
+                    JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden.");
             }
         }
+
+
         if (event.getSource() == b_regresar){
             dispose();
         }

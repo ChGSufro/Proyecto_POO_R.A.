@@ -19,8 +19,8 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
     private JLabel idCabaña;
     private JTextField field_idCabaña;
     private JButton b_checkOut, b_regresar;
-    protected Cliente usuarioIngresado;
-    protected ArrayList<Cabaña> listaCabañas;
+    private Cliente usuarioIngresado;
+    private ArrayList<Cabaña> listaCabañas;
 
     /**
      * Constructor de la ventana que setea sus caracteristicas y carga los paneles.
@@ -47,7 +47,8 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
         cargarCabañas(this.listaCabañas, panelSup);
 
         panelInf = new JPanel();
-        panelInf.setPreferredSize(new Dimension(0, 200));
+        panelInf.setBounds(0, 450, 300, 150);
+        panelInf.setPreferredSize(new Dimension(0, 150));
         panelInf.setOpaque(false);
         panelInf.setBorder(BorderFactory.createEmptyBorder());
         panelInf.setLayout(null);
@@ -62,7 +63,9 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
         b_checkOut.addActionListener(this);
         panelInf.add(b_checkOut);
 
-        fondo.add(scrollInvisible(panelSup));
+        JScrollPane scroll = scrollInvisible(panelSup);
+        scroll.setBounds(0, 0, 300, 450);
+        fondo.add(scroll);
         fondo.add(panelInf);
         setContentPane(fondo);
     }
@@ -125,7 +128,7 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
      * @return Devuelve un Jlabel con la imagen de la cabaña.
      */
     private JLabel cabañaImagen(Cabaña cabaña, int posicion){
-        JLabel imagen = new JLabel(new GestorDeArchivos().cargarImgIcono("CabañasImagenes/" + cabaña.getId() + ".png", 200, 120));
+        JLabel imagen = new JLabel(new GestorDeArchivos().cargarPng("CabañasImagenes/" + cabaña.getId() + ".png", 200, 120));
         imagen.setBackground(new Color(217, 217, 217, 100));//Gris 50% transparente
         imagen.setOpaque(true);//Hago que se vea el fondo
         imagen.setBounds(25, posicion, 200, 120);
