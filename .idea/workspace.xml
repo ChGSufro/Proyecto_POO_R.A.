@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Launcher/Launcher.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,12 +20,11 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Gajardo" />
+    <option name="BRANCH" value="origin/Faundez" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,148 +44,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Launcher.executor": "Run",
-    "Application.VentanaCheckOut.executor": "Run",
-    "Application.VentanaMenuPrincipal.executor": "Run",
-    "Application.VentanaReservaCabaña.executor": "Run",
-    "JUnit.GestorDeClientesTest.contraseñaCorrecta.executor": "Run",
-    "JUnit.GestorDeClientesTest.modificarCelular.executor": "Run",
-    "JUnit.GestorDeClientesTest.modificarContraseña.executor": "Run",
-    "JUnit.GestorDeClientesTest.obtenerPosicionUsuario.executor": "Run",
-    "JUnit.GestorDeClientesTest.validarUsuario.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "190",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "200",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "Alcalde",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/javie/IdeaProjects/Proyecto_POO",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.deploy.options",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;190&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;200&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Alcalde&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/Logos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\Logos" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A" />
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\java" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="ReservApp" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="GUI" />
       <recent name="GestionDeArchivos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GestorDeClientesTest.contraseñaCorrecta">
-    <configuration name="GestorDeClientesTest.contraseñaCorrecta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyectos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReservApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ReservApp" />
-      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
-      <option name="METHOD_NAME" value="contraseñaCorrecta" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestorDeClientesTest.modificarCelular" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyectos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReservApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ReservApp" />
-      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
-      <option name="METHOD_NAME" value="modificarCelular" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestorDeClientesTest.modificarContraseña" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyectos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReservApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ReservApp" />
-      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
-      <option name="METHOD_NAME" value="modificarContraseña" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestorDeClientesTest.obtenerPosicionUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyectos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReservApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ReservApp" />
-      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
-      <option name="METHOD_NAME" value="obtenerPosicionUsuario" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestorDeClientesTest.validarUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Proyectos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ReservApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ReservApp" />
-      <option name="MAIN_CLASS_NAME" value="ReservApp.GestorDeClientesTest" />
-      <option name="METHOD_NAME" value="validarUsuario" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.GestorDeClientesTest.modificarContraseña" />
-        <item itemvalue="JUnit.GestorDeClientesTest.modificarCelular" />
-        <item itemvalue="JUnit.GestorDeClientesTest.contraseñaCorrecta" />
-        <item itemvalue="JUnit.GestorDeClientesTest.obtenerPosicionUsuario" />
-        <item itemvalue="JUnit.GestorDeClientesTest.validarUsuario" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-20.0.2-azul-20.0.2-3183f394aec4-4edb7f01" />
+        <option value="jdk-20.0.2-corretto-20.0.2.1-3183f394aec4-bc38cd27" />
       </set>
     </attachedChunks>
   </component>
@@ -231,14 +119,112 @@
       <workItem from="1701800027577" duration="3373000" />
       <workItem from="1701898611241" duration="139000" />
       <workItem from="1701956249688" duration="115000" />
-      <workItem from="1701956386491" duration="8980000" />
-      <workItem from="1701988099393" duration="6833000" />
-      <workItem from="1701998813462" duration="337000" />
-      <workItem from="1702049282641" duration="603000" />
-      <workItem from="1702049939582" duration="1000" />
-      <workItem from="1702050097314" duration="25444000" />
-      <workItem from="1702077701764" duration="665000" />
-      <workItem from="1702078440256" duration="772000" />
+      <workItem from="1701956386491" duration="352000" />
+      <workItem from="1701971646309" duration="73000" />
+    </task>
+    <task id="LOCAL-00001" summary="R.A">
+      <option name="closed" value="true" />
+      <created>1699568510969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699568510969</updated>
+    </task>
+    <task id="LOCAL-00002" summary="R.A">
+      <option name="closed" value="true" />
+      <created>1699568863219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699568863219</updated>
+    </task>
+    <task id="LOCAL-00003" summary="R.A">
+      <option name="closed" value="true" />
+      <created>1699569482321</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699569482321</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".json">
+      <option name="closed" value="true" />
+      <created>1699569641820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699569641820</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".json">
+      <option name="closed" value="true" />
+      <created>1699569819683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699569819683</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Interfaz">
+      <option name="closed" value="true" />
+      <created>1699573965098</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699573965098</updated>
+    </task>
+    <task id="LOCAL-00007" summary="leerArchivo modificado">
+      <option name="closed" value="true" />
+      <created>1699758773582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699758773582</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Arrendatario index">
+      <option name="closed" value="true" />
+      <created>1700139011712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700139011712</updated>
+    </task>
+    <task id="LOCAL-00009" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1700773886587</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700773886587</updated>
+    </task>
+    <task id="LOCAL-00010" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1700774339859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700774339860</updated>
+    </task>
+    <task id="LOCAL-00011" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1701739418796</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701739418796</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1701744603860</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701744603860</updated>
+    </task>
+    <task id="LOCAL-00013" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1701870150274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701870150274</updated>
     </task>
     <task id="LOCAL-00014" summary="agregue el objeto gestor de clientes">
       <option name="closed" value="true" />
@@ -288,357 +274,103 @@
       <option name="project" value="LOCAL" />
       <updated>1701956456545</updated>
     </task>
-    <task id="LOCAL-00020" summary="commit cosas idea">
+    <task id="LOCAL-00020" summary="update">
       <option name="closed" value="true" />
-      <created>1701956887465</created>
+      <created>1701958812298</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1701956887465</updated>
+      <updated>1701958812298</updated>
     </task>
-    <task id="LOCAL-00021" summary="commit reservar cabaña">
+    <task id="LOCAL-00021" summary="update">
       <option name="closed" value="true" />
-      <created>1701958015318</created>
+      <created>1701958832929</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1701958015318</updated>
+      <updated>1701958832929</updated>
     </task>
-    <task id="LOCAL-00022" summary="commit reservar cabaña">
+    <task id="LOCAL-00022" summary="update">
       <option name="closed" value="true" />
-      <created>1701958026129</created>
+      <created>1701959786116</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1701958026129</updated>
+      <updated>1701959786116</updated>
     </task>
-    <task id="LOCAL-00023" summary="commit reservar cabaña">
+    <task id="LOCAL-00023" summary="update">
       <option name="closed" value="true" />
-      <created>1701958791702</created>
+      <created>1701959801100</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1701958791702</updated>
+      <updated>1701959801100</updated>
     </task>
-    <task id="LOCAL-00024" summary="commit reservar cabaña">
+    <task id="LOCAL-00024" summary="update">
       <option name="closed" value="true" />
-      <created>1701958814280</created>
+      <created>1701960414746</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1701958814280</updated>
+      <updated>1701960414746</updated>
     </task>
-    <task id="LOCAL-00025" summary="commit reservar cabaña">
+    <task id="LOCAL-00025" summary="update">
       <option name="closed" value="true" />
-      <created>1701959782628</created>
+      <created>1701960461824</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1701959782628</updated>
+      <updated>1701960461824</updated>
     </task>
-    <task id="LOCAL-00026" summary="commit reservar cabaña">
+    <task id="LOCAL-00026" summary="update">
       <option name="closed" value="true" />
-      <created>1701959806691</created>
+      <created>1701960669787</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1701959806691</updated>
+      <updated>1701960669787</updated>
     </task>
-    <task id="LOCAL-00027" summary="arreglos checkout y reservar">
+    <task id="LOCAL-00027" summary="update">
       <option name="closed" value="true" />
-      <created>1701960405255</created>
+      <created>1701960937298</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1701960405255</updated>
+      <updated>1701960937298</updated>
     </task>
-    <task id="LOCAL-00028" summary="arreglos reservar">
+    <task id="LOCAL-00028" summary="update">
       <option name="closed" value="true" />
-      <created>1701960885188</created>
+      <created>1701960948774</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1701960885188</updated>
+      <updated>1701960948774</updated>
     </task>
-    <task id="LOCAL-00029" summary="arreglos checkout">
+    <task id="LOCAL-00029" summary="update">
       <option name="closed" value="true" />
-      <created>1701960932748</created>
+      <created>1701961519760</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1701960932748</updated>
+      <updated>1701961519760</updated>
     </task>
-    <task id="LOCAL-00030" summary="arreglos reservar">
+    <task id="LOCAL-00030" summary="update">
       <option name="closed" value="true" />
-      <created>1701961147654</created>
+      <created>1701961966436</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1701961147654</updated>
+      <updated>1701961966437</updated>
     </task>
-    <task id="LOCAL-00031" summary="arreglos reservar y checkout">
-      <option name="closed" value="true" />
-      <created>1701961499478</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1701961499478</updated>
-    </task>
-    <task id="LOCAL-00032" summary="idea">
-      <option name="closed" value="true" />
-      <created>1701962052660</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1701962052660</updated>
-    </task>
-    <task id="LOCAL-00033" summary="fix cabañas no se instancian con arrendatario">
-      <option name="closed" value="true" />
-      <created>1701963393949</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1701963393949</updated>
-    </task>
-    <task id="LOCAL-00034" summary="arreglos pequeños de encapsulamiento">
-      <option name="closed" value="true" />
-      <created>1701963651319</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1701963651319</updated>
-    </task>
-    <task id="LOCAL-00035" summary="idea">
-      <option name="closed" value="true" />
-      <created>1701963663132</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1701963663132</updated>
-    </task>
-    <task id="LOCAL-00036" summary="idea">
-      <option name="closed" value="true" />
-      <created>1701964622265</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1701964622265</updated>
-    </task>
-    <task id="LOCAL-00037" summary="actualiza json usuarios">
-      <option name="closed" value="true" />
-      <created>1701965366617</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1701965366617</updated>
-    </task>
-    <task id="LOCAL-00038" summary="update">
-      <option name="closed" value="true" />
-      <created>1701987128696</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1701987128696</updated>
-    </task>
-    <task id="LOCAL-00039" summary="update">
-      <option name="closed" value="true" />
-      <created>1701991614707</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1701991614707</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Documentación">
-      <option name="closed" value="true" />
-      <created>1701992289943</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1701992289943</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Documentación">
-      <option name="closed" value="true" />
-      <created>1701992418718</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1701992418718</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Documentación">
-      <option name="closed" value="true" />
-      <created>1701995060353</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1701995060353</updated>
-    </task>
-    <task id="LOCAL-00043" summary="fix de gui">
-      <option name="closed" value="true" />
-      <created>1702050543770</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1702050543770</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fix de gui">
-      <option name="closed" value="true" />
-      <created>1702050580848</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1702050580848</updated>
-    </task>
-    <task id="LOCAL-00045" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1702053023207</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1702053023207</updated>
-    </task>
-    <task id="LOCAL-00046" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1702056104296</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1702056104296</updated>
-    </task>
-    <task id="LOCAL-00047" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702058539026</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1702058539026</updated>
-    </task>
-    <task id="LOCAL-00048" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702058898249</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1702058898249</updated>
-    </task>
-    <task id="LOCAL-00049" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702058951147</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1702058951147</updated>
-    </task>
-    <task id="LOCAL-00050" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702060869588</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1702060869588</updated>
-    </task>
-    <task id="LOCAL-00051" summary="documentacion y Pruebas Unitarias">
-      <option name="closed" value="true" />
-      <created>1702063832338</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1702063832338</updated>
-    </task>
-    <task id="LOCAL-00052" summary="documentacion y Pruebas Unitarias">
-      <option name="closed" value="true" />
-      <created>1702064849562</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1702064849562</updated>
-    </task>
-    <task id="LOCAL-00053" summary="documentacion y Pruebas Unitarias">
-      <option name="closed" value="true" />
-      <created>1702065121093</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1702065121093</updated>
-    </task>
-    <task id="LOCAL-00054" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702066735922</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1702066735922</updated>
-    </task>
-    <task id="LOCAL-00055" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702066840485</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1702066840485</updated>
-    </task>
-    <task id="LOCAL-00056" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702067278104</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1702067278104</updated>
-    </task>
-    <task id="LOCAL-00057" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702067488768</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1702067488768</updated>
-    </task>
-    <task id="LOCAL-00058" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702070273544</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1702070273544</updated>
-    </task>
-    <task id="LOCAL-00059" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702070679822</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1702070679822</updated>
-    </task>
-    <task id="LOCAL-00060" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702074690167</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1702074690167</updated>
-    </task>
-    <task id="LOCAL-00061" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702076645231</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1702076645231</updated>
-    </task>
-    <task id="LOCAL-00062" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702077521810</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1702077521810</updated>
-    </task>
-    <option name="localTasksCounter" value="63" />
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="R.A" />
+    <MESSAGE value=".json" />
     <MESSAGE value="Interfaz" />
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
@@ -649,25 +381,7 @@
     <MESSAGE value="empece la ventana de modificar usuario" />
     <MESSAGE value="borre una cosa innecesaria" />
     <MESSAGE value="commit cosas idea" />
-    <MESSAGE value="commit reservar cabaña" />
-    <MESSAGE value="arreglos checkout y reservar" />
-    <MESSAGE value="arreglos checkout" />
-    <MESSAGE value="arreglos reservar" />
-    <MESSAGE value="arreglos reservar y checkout" />
-    <MESSAGE value="fix cabañas no se instancian con arrendatario" />
-    <MESSAGE value="arreglos pequeños de encapsulamiento" />
-    <MESSAGE value="idea" />
-    <MESSAGE value="actualiza json usuarios" />
     <MESSAGE value="update" />
-    <MESSAGE value="Documentación" />
-    <MESSAGE value="fix de gui" />
-    <MESSAGE value="arreglos" />
-    <MESSAGE value="documentacion y Pruebas Unitarias" />
-    <MESSAGE value="documentacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="documentacion" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
