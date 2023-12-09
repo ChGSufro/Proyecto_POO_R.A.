@@ -16,10 +16,9 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
 
     private JPanel panel;
     private JButton b_mostrarCabañas, b_arrendarCabaña, b_verReservas, b_checkOut, b_cerrarSesion, b_modificarUsuario;
-
     private GestorDeClientes gestorDeClientes;
     private GestorDeCabañas gestorDeCabañas;
-    public Cliente usuarioIngresado;
+    private Cliente usuarioIngresado;
 
     /**
      * Constructor de la ventana, que setea las caracteristicas de esta, recibe el gestor de clientes y cliente logeado.

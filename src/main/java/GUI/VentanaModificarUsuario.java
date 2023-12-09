@@ -14,14 +14,14 @@ import java.util.Objects;
  */
 public final class VentanaModificarUsuario extends VentanaAbstractRA implements ActionListener {
 
-    JPanel panel;
-    JLabel l_usuario, l_celular, l_contraseñaActual, l_contraseñaNueva, l_confirmarContraseña;
-    JTextField field_usuario, field_celular;
-    JComboBox<String> box_modificarUsuario;
-    JPasswordField field_contraseñaActual, field_contraseñaNueva, field_confirmarContraseña;
-    JButton b_guardar, b_regresar;
-    Cliente cliente;
-    GestorDeClientes gestorDeClientes;
+    private JPanel panel;
+    private JLabel l_usuario, l_celular, l_contraseñaActual, l_contraseñaNueva, l_confirmarContraseña;
+    private JTextField field_usuario, field_celular;
+    private JComboBox<String> box_modificarUsuario;
+    private JPasswordField field_contraseñaActual, field_contraseñaNueva, field_confirmarContraseña;
+    private JButton b_guardar, b_regresar;
+    private Cliente cliente;
+    private GestorDeClientes gestorDeClientes;
 
     /**
      * Construccion de la ventana, donde se establecen sus carecteristicas y se le da como parametro el gestor de clientes y el usuario logeado.
