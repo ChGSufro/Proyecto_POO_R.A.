@@ -148,7 +148,7 @@ public abstract class VentanaAbstractRA extends JFrame {
      */
     public JButton botonMenu() {
         // Crear un botón con un logo
-        JButton b_usuario = new JButton(new ImageIcon("src/main/resources/Logos/usuario.png"));
+        JButton b_usuario = new JButton(new GestorDeArchivos().cargarPng("Logos/usuario.png", 30, 30));
         b_usuario.setContentAreaFilled(false);//Elimino relleno automatico
         b_usuario.setBorderPainted(false);//Elimino bordes
         b_usuario.setFocusPainted(false);//Elimino efecto de click
