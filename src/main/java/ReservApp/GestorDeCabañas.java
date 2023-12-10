@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Clase encargada de Gestionar los arreglos y datos de las cabañas.
  */
-public class    GestorDeCabañas {
+public class GestorDeCabañas {
 
     private ArrayList<Cabaña> listaCabañas;
 
@@ -20,6 +20,13 @@ public class    GestorDeCabañas {
         listaCabañas = setListaCabaña(new GestorDeArchivos().obtenerCabañasDesdeArchivoJson(),gestorDeClientes);
     }
 
+    /**
+     * Devuelve la lista de cabañas.
+     * @return ArrayList de las Cabañas existentes.
+     */
+    public ArrayList<Cabaña> getListaCabañas() {
+        return this.listaCabañas;
+    }
 
     /**
      * Metodo que obtiene solo las cabañas reservadas por el usuario que se pasa como parametro.
