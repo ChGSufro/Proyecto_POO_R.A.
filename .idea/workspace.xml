@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="comentario">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commit para merge">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Faundez" />
+    <option name="BRANCH" value="origin/Alcalde" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -126,7 +127,7 @@
       <workItem from="1702138155331" duration="3499000" />
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
-      <workItem from="1702167279473" duration="2095000" />
+      <workItem from="1702167279473" duration="2796000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -488,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702170110811</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="commit para merge">
+      <option name="closed" value="true" />
+      <created>1702170244331</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702170244331</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +515,6 @@
     <MESSAGE value="CheckOut" />
     <MESSAGE value="Modificar Usuario" />
     <MESSAGE value="actualizar" />
-    <MESSAGE value="commit para merge" />
     <MESSAGE value="Detalles" />
     <MESSAGE value="clases final" />
     <MESSAGE value="resouces" />
@@ -517,6 +525,7 @@
     <MESSAGE value="layout" />
     <MESSAGE value="manubar" />
     <MESSAGE value="comentario" />
-    <option name="LAST_COMMIT_MESSAGE" value="comentario" />
+    <MESSAGE value="commit para merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit para merge" />
   </component>
 </project>
