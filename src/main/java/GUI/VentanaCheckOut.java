@@ -38,6 +38,8 @@ public final class VentanaCheckOut extends VentanaAbstractRA implements ActionLi
         panelSup.setBorder(BorderFactory.createEmptyBorder());
         panelSup.setLayout(null);
 
+        setJMenuBar(menu());
+
         cargarLogoPrincipal(panelSup);
 
         b_regresar = crearBotonRegresar();

@@ -32,6 +32,8 @@ public final class VentanaSignUp extends VentanaAbstractRA implements ActionList
         panel.setOpaque(false);
         panel.setLayout(null);
 
+        setJMenuBar(menu());
+
         cargarLogoPrincipal(panel);
 
         l_usuario = crearLabelUsuario();
