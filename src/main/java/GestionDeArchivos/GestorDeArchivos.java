@@ -41,7 +41,7 @@ public class GestorDeArchivos {
                 file.write("\n");//Salta un espacio despues de cada JSONObject
             }
             file.write("]");//Cierro con un corchete
-        } catch (IOException ignored) {
+        } catch (IOException error) {
             throw new RuntimeException("Error al guardar los datos, intentelo mas tarde");
         }
     }
