@@ -42,6 +42,7 @@ public class GestorDeArchivos {
             }
             file.write("]");//Cierro con un corchete
         } catch (IOException error) {
+
             throw new RuntimeException("Error al guardar los datos, intentelo mas tarde");
         }
     }
