@@ -59,7 +59,7 @@ public class GestorDeCabañas {
     //Metodo para instanciar los objetos, a partir de un Json:
     private Cabaña instanciarCabañaJson (JSONObject archivoCabaña, GestorDeClientes gestorDeClientes) {
         //GestorDeClientes gestorDeClientes = new GestorDeClientes();
-        if (archivoCabaña.getBoolean("isOcupada")){
+        if (archivoCabaña.getBoolean("isOcupada")){//Se trata de instanciar una cabaña con arrendatario
             int pos = gestorDeClientes.obtenerPosicionUsuario(archivoCabaña.getString("arrendatarios"));
             try{
                 return new Cabaña(
@@ -73,7 +73,7 @@ public class GestorDeCabañas {
                 System.out.println("Arrendatario no registrado, se desocupara la cabaña.");
             }
         }
-        return new Cabaña(
+        return new Cabaña(//Se instancia una cabaña sin arrendatario
                 archivoCabaña.getInt("id"),
                 archivoCabaña.getString("nombre"),
                 archivoCabaña.getInt("habitaciones"),
