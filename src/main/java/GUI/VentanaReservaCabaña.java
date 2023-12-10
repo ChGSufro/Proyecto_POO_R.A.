@@ -47,6 +47,8 @@ public final class VentanaReservaCabaña extends VentanaAbstractRA implements Ac
         panelSup.setBorder(BorderFactory.createEmptyBorder());
         panelSup.setLayout(null);
 
+        setJMenuBar(menu());
+
         cargarLogoPrincipal(panelSup);
 
         b_regresar = crearBotonRegresar();
