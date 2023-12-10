@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="coomit para merge">
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commt para merge final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,15 +125,7 @@
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
       <workItem from="1702167279473" duration="5986000" />
-      <workItem from="1702221964320" duration="1971000" />
-    </task>
-    <task id="LOCAL-00008" summary="Arrendatario index">
-      <option name="closed" value="true" />
-      <created>1700139011712</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1700139011712</updated>
+      <workItem from="1702221964320" duration="2723000" />
     </task>
     <task id="LOCAL-00009" summary="MenuBienvenida">
       <option name="closed" value="true" />
@@ -521,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702225128529</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="commt para merge final">
+      <option name="closed" value="true" />
+      <created>1702243469927</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1702243469927</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,6 +550,7 @@
     <MESSAGE value="commit para merge" />
     <MESSAGE value="extepcion" />
     <MESSAGE value="coomit para merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="coomit para merge" />
+    <MESSAGE value="commt para merge final" />
+    <option name="LAST_COMMIT_MESSAGE" value="commt para merge final" />
   </component>
 </project>
