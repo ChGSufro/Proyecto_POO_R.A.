@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="extepcion">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="coomit para merge">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GestionDeArchivos/GestorDeArchivos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,15 +127,7 @@
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
       <workItem from="1702167279473" duration="5986000" />
-      <workItem from="1702221964320" duration="973000" />
-    </task>
-    <task id="LOCAL-00007" summary="leerArchivo modificado">
-      <option name="closed" value="true" />
-      <created>1699758773582</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1699758773582</updated>
+      <workItem from="1702221964320" duration="1971000" />
     </task>
     <task id="LOCAL-00008" summary="Arrendatario index">
       <option name="closed" value="true" />
@@ -522,7 +513,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702173107031</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="coomit para merge">
+      <option name="closed" value="true" />
+      <created>1702225128528</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225128529</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,6 +551,7 @@
     <MESSAGE value="comentario" />
     <MESSAGE value="commit para merge" />
     <MESSAGE value="extepcion" />
-    <option name="LAST_COMMIT_MESSAGE" value="extepcion" />
+    <MESSAGE value="coomit para merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="coomit para merge" />
   </component>
 </project>
