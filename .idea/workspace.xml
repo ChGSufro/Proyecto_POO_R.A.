@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="documentacion" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Gajardo" />
+    <option name="BRANCH" value="origin/Faundez" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -47,7 +49,6 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;190&quot;,
@@ -75,16 +76,6 @@
       <recent name="GUI" />
       <recent name="GestionDeArchivos" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Proyecto_POO_R.A/JavaDoc/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -132,6 +123,8 @@
       <workItem from="1701956249688" duration="115000" />
       <workItem from="1701956386491" duration="352000" />
       <workItem from="1701971646309" duration="73000" />
+      <workItem from="1702079630713" duration="1235000" />
+      <workItem from="1702170617379" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -373,31 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701961966437</updated>
     </task>
-    <task id="LOCAL-00031" summary="documentacion">
+    <task id="LOCAL-00031" summary="update">
       <option name="closed" value="true" />
-      <created>1702161694563</created>
+      <created>1702080198897</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1702161694563</updated>
+      <updated>1702080198898</updated>
     </task>
-    <task id="LOCAL-00032" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702170126971</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1702170126971</updated>
-    </task>
-    <task id="LOCAL-00033" summary="documentacion">
-      <option name="closed" value="true" />
-      <created>1702170167371</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1702170167371</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +405,6 @@
     <MESSAGE value="borre una cosa innecesaria" />
     <MESSAGE value="commit cosas idea" />
     <MESSAGE value="update" />
-    <MESSAGE value="documentacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="documentacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
