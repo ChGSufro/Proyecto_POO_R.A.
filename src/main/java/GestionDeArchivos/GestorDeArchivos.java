@@ -16,7 +16,7 @@ public class GestorDeArchivos {
      * Crea una carpeta en el proyecto
      * @param nombre es el nombre que tendrá la carpeta
      */
-    private void crearCarpetaS(String nombre){
+    private void crearcarpetas(String nombre){
         File Carpeta = new File(nombre);
         Carpeta.mkdirs();
     }
@@ -76,7 +76,7 @@ public class GestorDeArchivos {
      * @param listaCabañas es el ArrayList de JSONObject de cabañas el cual se escribirá en el archivo.
      */
     public void escribirCabañasEnArchivoJson(ArrayList<JSONObject> listaCabañas) {
-        crearCarpetaS("src/main/resources/Archivos");
+        crearcarpetas("src/main/resources/Archivos");
         escribirArchivoJSON("src/main/resources/Archivos/Cabañas.json", listaCabañas);
     }
 
@@ -85,7 +85,7 @@ public class GestorDeArchivos {
      * @param listaClientes es el ArrayList de JSONObject de clientes el cual se escribirá en el archivo.
      */
     public void escribirClientesEnArchivoJson(ArrayList<JSONObject> listaClientes) {
-        crearCarpetaS("src/main/resources/Archivos");
+        crearcarpetas("src/main/resources/Archivos");
         escribirArchivoJSON("src/main/resources/Archivos/Clientes.json", listaClientes);
     }
 
