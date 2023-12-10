@@ -169,8 +169,12 @@ public final class VentanaMenuPrincipal extends VentanaAbstractRA implements Act
 
         if (event.getSource() == b_cerrarSesion){
             dispose();
-            this.gestorDeCabañas.registrarCabañasEnArchivoJson();
-            this.gestorDeClientes.registrarClientesEnArchivoJson();
+            try {
+                this.gestorDeCabañas.registrarCabañasEnArchivoJson();
+                this.gestorDeClientes.registrarClientesEnArchivoJson();
+            } catch (RuntimeException error) {
+                JOptionPane.showMessageDialog(null, error.getMessage());
+            }
             VentanaMenuBienvenida menu = new VentanaMenuBienvenida(this.gestorDeClientes);
             menu.setVisible(true);
         }

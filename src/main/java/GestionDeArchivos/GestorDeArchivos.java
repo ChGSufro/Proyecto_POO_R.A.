@@ -42,6 +42,7 @@ public class GestorDeArchivos {
             }
             file.write("]");//Cierro con un corchete
         } catch (IOException ignored) {
+            throw new RuntimeException("Error al escribir el archivo");
         }
     }
 
@@ -64,7 +65,7 @@ public class GestorDeArchivos {
                 } catch (JSONException ignore){}
             }
 
-        } catch (IOException ignore) {}//No se cae si el archivo no existe
+        } catch (IOException ignore) {}
 
         return listaJson;
     }
