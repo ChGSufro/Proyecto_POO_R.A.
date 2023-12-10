@@ -124,7 +124,7 @@
       <workItem from="1702138155331" duration="3499000" />
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
-      <workItem from="1702167279473" duration="3390000" />
+      <workItem from="1702167279473" duration="3709000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -502,7 +502,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702170953655</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="commit para merge">
+      <option name="closed" value="true" />
+      <created>1702171450171</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702171450171</updated>
+    </task>
+    <task id="LOCAL-00049" summary="commit para merge">
+      <option name="closed" value="true" />
+      <created>1702171686748</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702171686748</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
