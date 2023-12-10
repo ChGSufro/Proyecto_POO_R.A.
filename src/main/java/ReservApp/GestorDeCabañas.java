@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Clase encargada de Gestionar los arreglos y datos de las cabañas.
  */
-public class GestorDeCabañas {
+public class    GestorDeCabañas {
 
     private ArrayList<Cabaña> listaCabañas;
 
