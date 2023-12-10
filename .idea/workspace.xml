@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="workspace para merge">
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="comentario">
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaAbstractRA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaCheckOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaMostrarCabaña.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +125,8 @@
       <workItem from="1702131744046" duration="2868000" />
       <workItem from="1702138155331" duration="3499000" />
       <workItem from="1702145275392" duration="2186000" />
-      <workItem from="1702150170025" duration="4232000" />
+      <workItem from="1702150170025" duration="6576000" />
+      <workItem from="1702167279473" duration="2095000" />
     </task>
     <task id="LOCAL-00001" summary="R.A">
       <option name="closed" value="true" />
@@ -451,7 +448,47 @@
       <option name="project" value="LOCAL" />
       <updated>1702155854691</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="workspace para merge">
+      <option name="closed" value="true" />
+      <created>1702157191793</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702157191793</updated>
+    </task>
+    <task id="LOCAL-00042" summary="layout">
+      <option name="closed" value="true" />
+      <created>1702162494228</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702162494228</updated>
+    </task>
+    <task id="LOCAL-00043" summary="manubar">
+      <option name="closed" value="true" />
+      <created>1702169518516</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702169518516</updated>
+    </task>
+    <task id="LOCAL-00044" summary="manubar">
+      <option name="closed" value="true" />
+      <created>1702169601241</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702169601241</updated>
+    </task>
+    <task id="LOCAL-00045" summary="comentario">
+      <option name="closed" value="true" />
+      <created>1702170110811</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702170110811</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,6 +514,9 @@
     <MESSAGE value="detalles" />
     <MESSAGE value="algunos private" />
     <MESSAGE value="workspace para merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace para merge" />
+    <MESSAGE value="layout" />
+    <MESSAGE value="manubar" />
+    <MESSAGE value="comentario" />
+    <option name="LAST_COMMIT_MESSAGE" value="comentario" />
   </component>
 </project>
