@@ -26,7 +26,7 @@ public final class VentanaMostrarCabaña extends VentanaAbstractRA implements Ac
         setJMenuBar(menu());
 
         JPanel panel = new JPanel();
-        panel.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 450));
+        panel.setPreferredSize(new Dimension(0, listaCabañas.size()*230 + 500));
         panel.setLayout(null);
         panel.setOpaque(false);
 

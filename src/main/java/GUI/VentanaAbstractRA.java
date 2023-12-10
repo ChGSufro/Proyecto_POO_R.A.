@@ -87,7 +87,7 @@ public abstract class VentanaAbstractRA extends JFrame {
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);//Hago que no se vea la barra
         scroll.setOpaque(false);//Hago que no se vea el fondo del scrollpane
         scroll.getViewport().setOpaque(false);
-        scroll.setBounds(0, 0, 300, 700);
+        scroll.setBounds(0, 0, 300, 600);
         return scroll;
     }
 

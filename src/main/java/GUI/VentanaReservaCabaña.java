@@ -42,7 +42,7 @@ public final class VentanaReservaCabaña extends VentanaAbstractRA implements Ac
         setTitle("Reserva de cabaña");
 
         panelSup = new JPanel();
-        panelSup.setPreferredSize(new Dimension(0, listaCabañas.size()*250 + 450)); //?
+        panelSup.setPreferredSize(new Dimension(0, listaCabañas.size()*230 + 500));
         panelSup.setOpaque(false);
         panelSup.setBorder(BorderFactory.createEmptyBorder());
         panelSup.setLayout(null);
