@@ -169,11 +169,15 @@ public class GestorDeClientes {
      */
     public Boolean modificarContraseña(Cliente usuarioIngresado,
                                        String nuevaContraseña, String nuevaContraseña2){
-        if (nuevaContraseña.equals(nuevaContraseña2)){
-            usuarioIngresado.setContraseña(nuevaContraseña);
-            return true;
+        if (nuevaContraseña.equals(usuarioIngresado.getContraseña())){
+            return false;
         }
-        return false;
+
+        if (!nuevaContraseña.equals(nuevaContraseña2)){
+            usuarioIngresado.setContraseña(nuevaContraseña);
+            return false;
+        }
+        return true;
     }
 
     /**

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commt para merge final" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commt para merge final">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_06-12-23_10_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_06-12-23_10_36__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_08-12-23_20_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_08-12-23_20_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_22_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_22_22__Changes_.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Alcalde" />
+    <option name="BRANCH" value="origin/Gajardo" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -125,15 +130,7 @@
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
       <workItem from="1702167279473" duration="5986000" />
-      <workItem from="1702221964320" duration="2723000" />
-    </task>
-    <task id="LOCAL-00009" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1700773886587</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1700773886587</updated>
+      <workItem from="1702221964320" duration="3677000" />
     </task>
     <task id="LOCAL-00010" summary="MenuBienvenida">
       <option name="closed" value="true" />
@@ -519,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702243469927</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="commt para merge final">
+      <option name="closed" value="true" />
+      <created>1702243673302</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1702243673302</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

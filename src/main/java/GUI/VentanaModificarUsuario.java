@@ -339,7 +339,7 @@ public final class VentanaModificarUsuario extends VentanaAbstractRA implements 
                     JOptionPane.showMessageDialog(null, "Contraseña modificada correctamente.");
                     return;
                 }
-                    JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden.");
+                    JOptionPane.showMessageDialog(null, "Las nuevas contraseñas no coinciden o son iguales a la anterior.");
             }
         }
 
