@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="detalle" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="esto no se subio :(" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,23 +125,7 @@
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
       <workItem from="1702167279473" duration="5986000" />
-      <workItem from="1702221964320" duration="4214000" />
-    </task>
-    <task id="LOCAL-00011" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701739418796</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1701739418796</updated>
-    </task>
-    <task id="LOCAL-00012" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701744603860</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1701744603860</updated>
+      <workItem from="1702221964320" duration="5421000" />
     </task>
     <task id="LOCAL-00013" summary="MenuBienvenida">
       <option name="closed" value="true" />
@@ -519,15 +503,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702252825457</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="merge final">
+      <option name="closed" value="true" />
+      <created>1702252898192</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1702252898192</updated>
+    </task>
+    <task id="LOCAL-00061" summary="esto no se subio :(">
+      <option name="closed" value="true" />
+      <created>1702254056410</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1702254056410</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".json" />
-    <MESSAGE value="Interfaz" />
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
@@ -551,6 +549,8 @@
     <MESSAGE value="coomit para merge" />
     <MESSAGE value="commt para merge final" />
     <MESSAGE value="detalle" />
-    <option name="LAST_COMMIT_MESSAGE" value="detalle" />
+    <MESSAGE value="merge final" />
+    <MESSAGE value="esto no se subio :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="esto no se subio :(" />
   </component>
 </project>
