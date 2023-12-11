@@ -173,10 +173,10 @@ public class GestorDeClientes {
             return false;
         }
 
-        if (!nuevaContraseña.equals(nuevaContraseña2)){
-            usuarioIngresado.setContraseña(nuevaContraseña);
+        if (!nuevaContraseña.equals(nuevaContraseña2)){;
             return false;
         }
+        usuarioIngresado.setContraseña(nuevaContraseña);
         return true;
     }
 
