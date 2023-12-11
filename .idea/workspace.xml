@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="esto no se subio :(" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commt para merge final">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_06-12-23_10_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_06-12-23_10_36__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_08-12-23_20_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_08-12-23_20_54__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_22_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_22_22__Changes_.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="Gajardo" />
+        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Proyecto_POO_R.A" />
@@ -44,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "481",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "21",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources/Logos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources/Logos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chris\IdeaProjects\Proyecto_POO_R.A\src\main\resources\Logos" />
@@ -125,7 +130,31 @@
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
       <workItem from="1702167279473" duration="5986000" />
-      <workItem from="1702221964320" duration="5421000" />
+      <workItem from="1702221964320" duration="3677000" />
+    </task>
+    <task id="LOCAL-00010" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1700774339859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700774339860</updated>
+    </task>
+    <task id="LOCAL-00011" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1701739418796</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701739418796</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MenuBienvenida">
+      <option name="closed" value="true" />
+      <created>1701744603860</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701744603860</updated>
     </task>
     <task id="LOCAL-00013" summary="MenuBienvenida">
       <option name="closed" value="true" />
@@ -495,37 +524,16 @@
       <option name="project" value="LOCAL" />
       <updated>1702243673302</updated>
     </task>
-    <task id="LOCAL-00059" summary="detalle">
-      <option name="closed" value="true" />
-      <created>1702252825457</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1702252825457</updated>
-    </task>
-    <task id="LOCAL-00060" summary="merge final">
-      <option name="closed" value="true" />
-      <created>1702252898192</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1702252898192</updated>
-    </task>
-    <task id="LOCAL-00061" summary="esto no se subio :(">
-      <option name="closed" value="true" />
-      <created>1702254056410</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1702254056410</updated>
-    </task>
-    <option name="localTasksCounter" value="62" />
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="R.A" />
+    <MESSAGE value=".json" />
+    <MESSAGE value="Interfaz" />
     <MESSAGE value="leerArchivo modificado" />
     <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
@@ -548,9 +556,6 @@
     <MESSAGE value="extepcion" />
     <MESSAGE value="coomit para merge" />
     <MESSAGE value="commt para merge final" />
-    <MESSAGE value="detalle" />
-    <MESSAGE value="merge final" />
-    <MESSAGE value="esto no se subio :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="esto no se subio :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="commt para merge final" />
   </component>
 </project>

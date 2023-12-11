@@ -61,15 +61,15 @@ public class GestorDeClientes {
     public boolean signUP(String usuario, int celular, String password, String passwordConf){
         if(Integer.toString(celular).length() != 9){
             return false;
-        }else if(!password.equals(passwordConf)) {
+        }
+        if(!password.equals(passwordConf)) {
             return false;
         }
-        if (!usuarioExiste(usuario)){
-            this.listaClientes.add(new Cliente(usuario, password, celular));
-            return true;
-        }else{
+        if (usuarioExiste(usuario)){
             return false;
         }
+        this.listaClientes.add(new Cliente(usuario, password, celular));
+        return true;
     }
 
     /**
@@ -169,11 +169,15 @@ public class GestorDeClientes {
      */
     public Boolean modificarContraseña(Cliente usuarioIngresado,
                                        String nuevaContraseña, String nuevaContraseña2){
-        if (nuevaContraseña.equals(nuevaContraseña2)){
-            usuarioIngresado.setContraseña(nuevaContraseña);
-            return true;
+        if (nuevaContraseña.equals(usuarioIngresado.getContraseña())){
+            return false;
         }
-        return false;
+
+        if (!nuevaContraseña.equals(nuevaContraseña2)){
+            usuarioIngresado.setContraseña(nuevaContraseña);
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -186,8 +190,9 @@ public class GestorDeClientes {
 
         if (Integer.toString(nuevoCelular).length() == 9) {
             usuarioIngresado.setCelular(nuevoCelular);
+            return true;
         }
-        return true;
+        return false;
     }
 
 }
