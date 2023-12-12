@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commt para merge final">
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_06-12-23_10_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_06-12-23_10_36__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_08-12-23_20_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_08-12-23_20_54__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_13_53__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_22_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/shelf/Uncommitted_changes_before_Update_at_09-12-2023_22_22__Changes_.xml" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Cabañas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Clientes.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="master" />
+        <entry key="$PROJECT_DIR$/../Proyecto_POO_R.A" value="Gajardo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Proyecto_POO_R.A" />
@@ -56,7 +55,7 @@
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;481&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;21&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Gajardo&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/IdeaProjects/Proyecto_POO_R.A/src/main/resources/Logos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -130,55 +129,9 @@
       <workItem from="1702145275392" duration="2186000" />
       <workItem from="1702150170025" duration="6576000" />
       <workItem from="1702167279473" duration="5986000" />
-      <workItem from="1702221964320" duration="3677000" />
-    </task>
-    <task id="LOCAL-00010" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1700774339859</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1700774339860</updated>
-    </task>
-    <task id="LOCAL-00011" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701739418796</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1701739418796</updated>
-    </task>
-    <task id="LOCAL-00012" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701744603860</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1701744603860</updated>
-    </task>
-    <task id="LOCAL-00013" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701870150274</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1701870150274</updated>
-    </task>
-    <task id="LOCAL-00014" summary="MenuBienvenida">
-      <option name="closed" value="true" />
-      <created>1701871002988</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1701871002988</updated>
-    </task>
-    <task id="LOCAL-00015" summary="MostrarCabañas">
-      <option name="closed" value="true" />
-      <created>1701873732392</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1701873732392</updated>
+      <workItem from="1702221964320" duration="5562000" />
+      <workItem from="1702255383240" duration="1090000" />
+      <workItem from="1702423650598" duration="410000" />
     </task>
     <task id="LOCAL-00016" summary="MostrarCabañas">
       <option name="closed" value="true" />
@@ -524,18 +477,61 @@
       <option name="project" value="LOCAL" />
       <updated>1702243673302</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="detalle">
+      <option name="closed" value="true" />
+      <created>1702252825457</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1702252825457</updated>
+    </task>
+    <task id="LOCAL-00060" summary="merge final">
+      <option name="closed" value="true" />
+      <created>1702252898192</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1702252898192</updated>
+    </task>
+    <task id="LOCAL-00061" summary="esto no se subio :(">
+      <option name="closed" value="true" />
+      <created>1702254056410</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1702254056410</updated>
+    </task>
+    <task id="LOCAL-00062" summary="commit para merge">
+      <option name="closed" value="true" />
+      <created>1702254123084</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1702254123084</updated>
+    </task>
+    <task id="LOCAL-00063" summary="esto no se habia mergeado :(">
+      <option name="closed" value="true" />
+      <created>1702254204686</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1702254204686</updated>
+    </task>
+    <task id="LOCAL-00064" summary=".">
+      <option name="closed" value="true" />
+      <created>1702255751705</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1702255751706</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="R.A" />
-    <MESSAGE value=".json" />
-    <MESSAGE value="Interfaz" />
-    <MESSAGE value="leerArchivo modificado" />
-    <MESSAGE value="Arrendatario index" />
     <MESSAGE value="MenuBienvenida" />
     <MESSAGE value="MostrarCabañas" />
     <MESSAGE value="actualizacion" />
@@ -552,10 +548,15 @@
     <MESSAGE value="layout" />
     <MESSAGE value="manubar" />
     <MESSAGE value="comentario" />
-    <MESSAGE value="commit para merge" />
     <MESSAGE value="extepcion" />
     <MESSAGE value="coomit para merge" />
     <MESSAGE value="commt para merge final" />
-    <option name="LAST_COMMIT_MESSAGE" value="commt para merge final" />
+    <MESSAGE value="detalle" />
+    <MESSAGE value="merge final" />
+    <MESSAGE value="esto no se subio :(" />
+    <MESSAGE value="commit para merge" />
+    <MESSAGE value="esto no se habia mergeado :(" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
