@@ -53,7 +53,6 @@ public class GestorDeArchivos {
      */
     private ArrayList<JSONObject> leerArchivoJson(String ruta) {
         ArrayList<JSONObject> listaJson = new ArrayList<>();
-
         try {
             BufferedReader lector = new BufferedReader(new FileReader(ruta));//Lee el archivo y lo almacena en un BufferedReader
             String linea;
@@ -66,7 +65,6 @@ public class GestorDeArchivos {
             }
 
         } catch (IOException ignore) {}
-
         return listaJson;
     }
 

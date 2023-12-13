@@ -1,6 +1,7 @@
 package ReservApp;
 
 import GestionDeArchivos.GestorDeArchivos;
+import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class GestorDeClientes {
     private Cliente instanciarClienteJson (JSONObject jsonCliente) {
         try {
             return new Cliente(jsonCliente.getString("usuario"), jsonCliente.getString("contraseña"), jsonCliente.getInt("celular"));
-        } catch (Exception e) {
+        } catch (JSONException e) {
             System.out.println("Error al instanciar cliente desde JSON, datos dañados");
         }
         return null;

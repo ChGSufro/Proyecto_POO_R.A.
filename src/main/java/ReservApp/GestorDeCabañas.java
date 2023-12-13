@@ -89,8 +89,6 @@ public class GestorDeCabañas {
      * @return Cabaña con los valores obtenidos del JSONObject.
      */
     private Cabaña instanciarCabañasDesdeJson(JSONObject jsonCabaña, GestorDeClientes gestorDeClientes) {
-        //GestorDeClientes gestorDeClientes = new GestorDeClientes();
-
             try {
                 if (jsonCabaña.getBoolean("isOcupada")){
                 int posicionUsuario = gestorDeClientes.obtenerPosicionUsuario(jsonCabaña.getString("arrendatarios"));
@@ -109,10 +107,10 @@ public class GestorDeCabañas {
             }
         try{
             return new Cabaña(
-                jsonCabaña.getInt("id"),
-                jsonCabaña.getString("nombre"),
-                jsonCabaña.getInt("habitaciones"),
-                jsonCabaña.getInt("baños"));
+                    jsonCabaña.getInt("id"),
+                    jsonCabaña.getString("nombre"),
+                    jsonCabaña.getInt("habitaciones"),
+                    jsonCabaña.getInt("baños"));
         }catch (JSONException error){
             System.out.println("Cabaña dañada, no ha sido posible recuperarla.");
         }
