@@ -108,13 +108,13 @@ public class GestorDeCabañas {
                 System.out.println("Arrendatario no registrado, se desocupara la cabaña.");
             }
         try{
-        return new Cabaña(
+            return new Cabaña(
                 jsonCabaña.getInt("id"),
                 jsonCabaña.getString("nombre"),
                 jsonCabaña.getInt("habitaciones"),
                 jsonCabaña.getInt("baños"));
         }catch (JSONException error){
-            System.out.println("Cabaña dañada, no ha sidp posible recuperarla.");
+            System.out.println("Cabaña dañada, no ha sido posible recuperarla.");
         }
         return null;
     }

@@ -35,7 +35,7 @@ public class GestorDeClientes {
         try {
             return new Cliente(jsonCliente.getString("usuario"), jsonCliente.getString("contraseña"), jsonCliente.getInt("celular"));
         } catch (Exception e) {
-            System.out.println("Error al instanciar cliente desde JSON, datos coruptos");
+            System.out.println("Error al instanciar cliente desde JSON, datos dañados");
         }
         return null;
     }

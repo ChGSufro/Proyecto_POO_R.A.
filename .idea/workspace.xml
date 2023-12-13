@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="commit para salir de la master">
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cb802568-be10-4188-9ded-b2e81327ced0" name="Changes" comment="soporte jsons corruptos">
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/GUI/VentanaReservaCabaña.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeCabañas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/java/ReservApp/GestorDeClientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Cabañas.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Cabañas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Clientes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyecto_POO_R.A/src/main/resources/Archivos/Clientes.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,15 +132,7 @@
       <workItem from="1702167279473" duration="5986000" />
       <workItem from="1702221964320" duration="5562000" />
       <workItem from="1702255383240" duration="1090000" />
-      <workItem from="1702423650598" duration="2874000" />
-    </task>
-    <task id="LOCAL-00017" summary="MostrarCabañas">
-      <option name="closed" value="true" />
-      <created>1701874008267</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1701874008267</updated>
+      <workItem from="1702423650598" duration="3976000" />
     </task>
     <task id="LOCAL-00018" summary="MostrarCabañas">
       <option name="closed" value="true" />
@@ -526,14 +518,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702424168906</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="soporte jsons corruptos">
+      <option name="closed" value="true" />
+      <created>1702426829945</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1702426829945</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MostrarCabañas" />
     <MESSAGE value="actualizacion" />
     <MESSAGE value="CheckOut" />
     <MESSAGE value="Modificar Usuario" />
@@ -558,6 +557,7 @@
     <MESSAGE value="esto no se habia mergeado :(" />
     <MESSAGE value="." />
     <MESSAGE value="commit para salir de la master" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit para salir de la master" />
+    <MESSAGE value="soporte jsons corruptos" />
+    <option name="LAST_COMMIT_MESSAGE" value="soporte jsons corruptos" />
   </component>
 </project>
