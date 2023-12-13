@@ -23,7 +23,7 @@ public class Launcher {
     // color #EC9E48 (boton amarillo/anaranjado)
     // color #047994 (boton azul)
     // color #D9D9D9 (campo de texto)
-    // color #BA813E menu
+    // color #BA813E (menu)
 
     // Fuente logo: IBM Plex Sans
 }
