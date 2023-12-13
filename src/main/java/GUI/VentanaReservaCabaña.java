@@ -16,13 +16,6 @@ import java.util.ArrayList;
  * GUI encargada de la reserva de las cabañas disponibles.
  */
 public final class VentanaReservaCabaña extends VentanaAbstractRA implements ActionListener {
-    public static void main(String[] args) {
-
-        ArrayList<Cabaña> listaCabañas = new GestorDeCabañas(new GestorDeClientes()).getListaCabañas();
-        Cliente usuarioIngresado = new Cliente("Juan", "Perez", 123456789);
-        VentanaReservaCabaña ventanaReservaCabaña = new VentanaReservaCabaña(listaCabañas, usuarioIngresado);
-        ventanaReservaCabaña.setVisible(true);
-    }
 
     private JPanel panelInf, panelSup; // panel sin scroll y con scroll respectivamente
     private JLabel idCabaña;

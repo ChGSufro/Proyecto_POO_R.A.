@@ -32,7 +32,12 @@ public class GestorDeClientes {
      * @return Devuelve un objeto de tipo Cliente.
      */
     private Cliente instanciarClienteJson (JSONObject jsonCliente) {
-        return new Cliente(jsonCliente.getString("usuario"), jsonCliente.getString("contraseña"), jsonCliente.getInt("celular"));
+        try {
+            return new Cliente(jsonCliente.getString("usuario"), jsonCliente.getString("contraseña"), jsonCliente.getInt("celular"));
+        } catch (Exception e) {
+            System.out.println("Error al instanciar cliente desde JSON, datos dañados");
+        }
+        return null;
     }
 
     //
@@ -45,7 +50,10 @@ public class GestorDeClientes {
     private ArrayList<Cliente> setListaClientes(ArrayList<JSONObject> jsonClientes){
         ArrayList<Cliente> newListClientes = new ArrayList<>();
         for (JSONObject cliente : jsonClientes){
-            newListClientes.add(instanciarClienteJson(cliente));
+            Cliente clienteInstanciado = instanciarClienteJson(cliente);
+            if (clienteInstanciado != null) {
+                newListClientes.add(clienteInstanciado);
+            }
         }
         return newListClientes;
     }
