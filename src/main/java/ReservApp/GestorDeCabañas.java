@@ -1,9 +1,11 @@
 package ReservApp;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 import GestionDeArchivos.GestorDeArchivos;
 
 import java.util.ArrayList;
+import java.util.jar.JarException;
 
 /**
  * Clase encargada de Gestionar los arreglos y datos de las cabañas.
@@ -69,7 +71,10 @@ public class GestorDeCabañas {
     private ArrayList<Cabaña> setListaCabaña(ArrayList<JSONObject> cabañas, GestorDeClientes gestorDeClientes){
         ArrayList<Cabaña> newListCabaña = new ArrayList<>();
         for (JSONObject cabaña : cabañas){
-            newListCabaña.add(instanciarCabañasDesdeJson(cabaña, gestorDeClientes));
+            Cabaña cabañaInstanciada = instanciarCabañasDesdeJson(cabaña, gestorDeClientes);
+            if (cabañaInstanciada != null) {
+                newListCabaña.add(cabañaInstanciada);
+            }
         }
         return newListCabaña;
     }
@@ -85,9 +90,10 @@ public class GestorDeCabañas {
      */
     private Cabaña instanciarCabañasDesdeJson(JSONObject jsonCabaña, GestorDeClientes gestorDeClientes) {
         //GestorDeClientes gestorDeClientes = new GestorDeClientes();
-        if (jsonCabaña.getBoolean("isOcupada")){
-            int posicionUsuario = gestorDeClientes.obtenerPosicionUsuario(jsonCabaña.getString("arrendatarios"));
-            try{
+
+            try {
+                if (jsonCabaña.getBoolean("isOcupada")){
+                int posicionUsuario = gestorDeClientes.obtenerPosicionUsuario(jsonCabaña.getString("arrendatarios"));
                 return new Cabaña(
                         jsonCabaña.getInt("id"),
                         jsonCabaña.getString("nombre"),
@@ -95,15 +101,22 @@ public class GestorDeCabañas {
                         jsonCabaña.getInt("baños"),
                         jsonCabaña.getBoolean("isOcupada"),
                         gestorDeClientes.getListaClientes().get(posicionUsuario));
+                }
+            }catch (JSONException error){
+                System.out.println("Cabaña dañada, se intentara instanciar sin arrendatario.");
             }catch (IndexOutOfBoundsException error){
                 System.out.println("Arrendatario no registrado, se desocupara la cabaña.");
             }
-        }
+        try{
         return new Cabaña(
                 jsonCabaña.getInt("id"),
                 jsonCabaña.getString("nombre"),
                 jsonCabaña.getInt("habitaciones"),
                 jsonCabaña.getInt("baños"));
+        }catch (JSONException error){
+            System.out.println("Cabaña dañada, no ha sidp posible recuperarla.");
+        }
+        return null;
     }
 
     /**
